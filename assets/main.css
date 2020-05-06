@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
-/*----------------------------------------Main Background Colours---*/
+/*----------------------------------------Main Page Styles---*/
 
 .header-color,
 .footer-color {
@@ -11,6 +11,16 @@
     background-color: #eaeaea;
 }
 
+.heading {
+    color: #ffffff;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+}
+
+.heading:hover {
+    color: #BAA571;
+}
+
 /*----------------------------------------Header---*/
 
 /*-------------------------------Logo---*/
@@ -19,17 +29,14 @@
     text-align: center;
 }
 
-.logo h1 {
-    color: #ffffff;
-    font-family: "Titillium", sans-serif;
-    font-weight: 300;
-}
-
 .logo a {
     text-decoration: none;
 }
 
-.logo h1:hover,
-.logo img:hover {
-    opacity: 70%;
+.btn {
+    border: 1px solid #ffffff;
+}
+
+.btn:hover {
+    border: 1px solid #BAA571;
 }

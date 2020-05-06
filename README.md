@@ -13,4 +13,12 @@
 
 * Bootstrap - grid layout and navbar
 
+--------------
+
+To Do
+- Link up Google API to search bar
+- Add Gallery of members
+- Quiz
+- Contact form JS
+
 
