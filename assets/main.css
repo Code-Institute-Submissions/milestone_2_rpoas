@@ -1,3 +1,6 @@
+
+/*----------------------------------------Main Background Colours---*/
+
 .header-color,
 .footer-color {
     background-color: #3b8dbd;
@@ -5,4 +8,12 @@
 
 .main-color {
     background-color: #eaeaea;
+}
+
+/*----------------------------------------Header---*/
+
+/*-------------------------------Logo---*/
+
+.logo {
+    text-align: center;
 }
