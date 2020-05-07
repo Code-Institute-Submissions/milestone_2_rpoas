@@ -19,6 +19,7 @@
 
 .heading:hover {
     color: #BAA571;
+    text-decoration: none;
 }
 
 /*----------------------------------------Header---*/
@@ -32,6 +33,7 @@
 .logo a {
     text-decoration: none;
 }
+
 
 /*-------------------------------Search Bar---*/
 
@@ -55,4 +57,8 @@ section {
 
 footer {
     position: absolute;
+}
+
+.list-inline-item {
+    text-align: center;
 }
