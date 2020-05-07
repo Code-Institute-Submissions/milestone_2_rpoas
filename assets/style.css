@@ -59,6 +59,19 @@ footer {
     position: absolute;
 }
 
+.list-inline {
+    text-align: center;
+}
+
 .list-inline-item {
     text-align: center;
+    padding: 1vh 2vw;
+}
+
+.list-inline-item img {
+    height: 5vh;
+}
+
+.list-inline-item i {
+    font-size: 5vh;
 }
