@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
-/*----------------------------------------Main Page Styles---*/
+/*----------------------------------------General Page Styles---*/
 
 .header-color,
 .footer-color {
@@ -33,10 +33,26 @@
     text-decoration: none;
 }
 
+/*-------------------------------Search Bar---*/
+
 .btn {
     border: 1px solid #ffffff;
 }
 
 .btn:hover {
     border: 1px solid #BAA571;
+}
+
+/*----------------------------------------Main---*/
+
+section {
+    position: relative;
+    min-height: 50vh;
+    padding-bottom: 
+}
+
+/*----------------------------------------Footer---*/
+
+footer {
+    position: absolute;
 }

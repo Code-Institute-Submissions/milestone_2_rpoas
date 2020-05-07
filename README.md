@@ -1,5 +1,5 @@
 
-<a src=""><img src="/assets/images/rpoasbadge.jpg" style="center"></a>
+<a src=""><img src="/assets/images/rpoasbadge.png" style="center"></a>
 
 # Retired Police Officers Association, Lanarkshire
 
