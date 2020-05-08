@@ -61,6 +61,11 @@
 .navbar-nav {
     margin: auto;
     border-top: 1px #BAA571 solid;
+    font-size: 2vw;
+}
+
+.nav-item {
+    padding: 1vh 3vw;
 }
 
 
@@ -90,9 +95,7 @@ footer {
 
 .sister-sites {
     padding-top: 2vh;
-    margin-top: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin: none 5vw;
     text-align: center;
 }
 
