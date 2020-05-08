@@ -59,19 +59,15 @@ footer {
     position: absolute;
 }
 
-.list-inline {
+.sister-sites {
+    padding: 2vh 1vw;
     text-align: center;
 }
 
-.list-inline-item {
-    text-align: center;
-    padding: 1vh 2vw;
-}
-
-.list-inline-item img {
+.sister-sites img {
     height: 5vh;
 }
 
-.list-inline-item i {
+.sister-sites i {
     font-size: 5vh;
 }
