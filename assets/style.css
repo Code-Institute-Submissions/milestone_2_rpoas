@@ -42,6 +42,12 @@
 
 .navbar-toggler {
     border: 1px solid #eaeaea;
+    margin: auto;
+}
+
+.navbar-toggler-icon {
+    color: #eaeaea;
+    height: 100%;
 }
 
 /*-------------------------------Nav Bar---*/
