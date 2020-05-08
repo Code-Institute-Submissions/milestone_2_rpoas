@@ -4,7 +4,7 @@
 
 .header-color,
 .footer-color {
-    background-color: #3b8dbd;
+    background-color: #006a94;
 }
 
 .main-color {
@@ -28,14 +28,31 @@
 
 .logo {
     text-align: center;
+    padding: 2vh;
+}
+
+.logo img {
+    width: 260px;
 }
 
 .logo a {
     text-decoration: none;
+    margin: auto;
+}
+
+.navbar-toggler {
+    border: 1px solid #eaeaea;
+}
+
+/*-------------------------------Nav Bar---*/
+
+.navbar-nav {
+    margin: auto;
+    border-top: 1px #BAA571 solid;
 }
 
 
-/*-------------------------------Search Bar---*/
+/*-------------------------------Search Bar-
 
 .btn {
     border: 1px solid #ffffff;
@@ -43,7 +60,7 @@
 
 .btn:hover {
     border: 1px solid #BAA571;
-}
+}. --*/
 
 /*----------------------------------------Main---*/
 
@@ -60,8 +77,15 @@ footer {
 }
 
 .sister-sites {
-    padding: 2vh 1vw;
+    padding-top: 2vh;
+    margin-top: none;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+}
+
+.sister-sites h3 {
+    font-size: 2vh;
 }
 
 .sister-sites img {
