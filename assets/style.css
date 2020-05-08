@@ -50,6 +50,12 @@
     height: 100%;
 }
 
+.navbar-toggler-icon:hover,
+.navbar-toggler:hover {
+    color: #BAA571;
+    border-color: #BAA571;
+}
+
 /*-------------------------------Nav Bar---*/
 
 .navbar-nav {
