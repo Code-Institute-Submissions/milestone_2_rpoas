@@ -17,7 +17,8 @@
     font-weight: 300;
 }
 
-.heading:hover {
+.heading:hover,
+.active a {
     color: #BAA571;
     text-decoration: none;
 }
@@ -99,7 +100,6 @@ footer {
 
 .sister-sites {
     padding-top: 2vh;
-    margin: none 5vw;
     text-align: center;
 }
 
