@@ -11,6 +11,14 @@
     background-color: #eaeaea;
 }
 
+body {
+    background-color: #eaeaea;
+}
+
+section {
+    padding-bottom: 10vh;
+}
+
 .header-footer-heading {
     color: #ffffff;
     font-family: "Titillium Web", sans-serif;
@@ -20,7 +28,7 @@
 .main-heading {
     color: #006a94;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .header-footer-heading:hover,
@@ -85,7 +93,12 @@
 section {
     position: relative;
     min-height: 50vh;
-    padding-bottom: 
+    padding-bottom: 20vh;
+}
+
+h2 {
+    font-size: 3vh;
+    padding: 1vh;
 }
 
 /*----------------------------------------Footer---*/
@@ -114,9 +127,9 @@ footer {
 /*----------------------------------------About Page---*/
 
 
-
 /*----------------------------------------Gallery Page---*/
 
 #map {
     min-height: 360px;
+    max-width: 568px;
 }
