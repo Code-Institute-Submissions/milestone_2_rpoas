@@ -11,13 +11,20 @@
     background-color: #eaeaea;
 }
 
-.heading {
+.header-footer-heading {
     color: #ffffff;
     font-family: "Titillium Web", sans-serif;
     font-weight: 300;
 }
 
-.heading:hover,
+.main-heading {
+    color: #006a94;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.header-footer-heading:hover,
+.main-heading:hover,
 .active a {
     color: #BAA571;
     text-decoration: none;
@@ -73,17 +80,6 @@
     padding: 1vh 2.5vw;
 }
 
-
-/*-------------------------------Search Bar-
-
-.btn {
-    border: 1px solid #ffffff;
-}
-
-.btn:hover {
-    border: 1px solid #BAA571;
-}. --*/
-
 /*----------------------------------------Main---*/
 
 section {
@@ -114,6 +110,12 @@ footer {
 .sister-sites i {
     font-size: 5vh;
 }
+
+/*----------------------------------------About Page---*/
+
+
+
+/*----------------------------------------Gallery Page---*/
 
 #map {
     min-height: 360px;
