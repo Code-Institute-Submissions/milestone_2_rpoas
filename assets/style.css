@@ -114,3 +114,7 @@ footer {
 .sister-sites i {
     font-size: 5vh;
 }
+
+#map {
+    min-height: 360px;
+}
