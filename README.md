@@ -18,9 +18,9 @@
 --------------
 
 To Do
-- Link up Google API to search bar
-- Add Gallery of members
+- Add Gallery of committee members
 - Quiz
 - Contact form JS
+- Change the icons on the map
 
 
