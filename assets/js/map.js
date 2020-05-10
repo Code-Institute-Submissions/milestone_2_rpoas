@@ -22,7 +22,7 @@ function initMap() {
 function initMap() {
     var mapProp = {
         center: new google.maps.LatLng(55.8617792, -4.0054024),
-        zoom: 9,
+        zoom: 7,
     }
     var map = new google.maps.Map(document.getElementById("photoMap"), mapProp);
     
