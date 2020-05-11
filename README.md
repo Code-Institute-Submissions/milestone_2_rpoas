@@ -11,9 +11,9 @@
 
 ## Technology
 
-* Bootstrap - grid layout and navbar
+* Bootstrap - grid layout, navbar, modal
 * JQuery - navbar
-* Google API - about page
+* Google API - Gallery page
 
 --------------
 
