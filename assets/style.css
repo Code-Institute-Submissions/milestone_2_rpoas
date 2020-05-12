@@ -48,7 +48,7 @@ section {
 }
 
 .logo img {
-    width: 260px;
+    height: 30vh;
     padding: 2vh;
 }
 
@@ -133,26 +133,34 @@ footer {
 .form-section {
     border: #BAA571 1px solid;
     border-radius: 10px;
-    margin: 1vh 1vw;
-    padding: 1vh 1vw;
+    margin: 3vh 10vw;
+    padding: 2vh 1vw;
 }
 
 .form-heading {
-    font-size: 2vh;
-}
-
-.form-heading h3 {
     text-align: center;
-
 }
 
 .form-control {
-    margin: 0;
-    width: inherit;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
 }
 
 .center-form button {
     text-align: center;
+    font-size: 4vh;
+}
+
+/*--------------------------------Banner---*/
+
+.banner {
+    background-color: #BAA571;
+    text-align: center;
+    padding: 3vh 1vw;
+}
+
+.banner h1 {
+    padding-bottom: 2vh;
 }
 
 /*----------------------------------------Gallery Page---*/

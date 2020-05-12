@@ -32,6 +32,7 @@
 - Style modal
 - Style photos (hover)
 - search function (by location and date)
+- Change the lnglats of markers to match with towns
 
 ### Contact
 - Form
