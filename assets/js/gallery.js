@@ -1,5 +1,6 @@
 function Modal(gallery) {
     const images = Array.from(gallery.querySelectorAll("img"));
+    const body = document.querySelector("body")
     const modal = document.querySelector(".modal");
     const prevButton = modal.querySelector(".previous");
     const nextButton = modal.querySelector(".next");
@@ -25,9 +26,23 @@ function Modal(gallery) {
         showImage(currentImage.parentElement.previousElementSibling.firstElementChild);
     }
 
+    function arrowKeys(event) {
+        if (event.key === "ArrowRight") showNextImage();
+        if (event.key === "ArrowLeft") showPrevImage();
+    }
 
+    images.forEach(image => image.addEventListener("click", handleImageClick));
 
-    images.forEach(image => image.addEventListener("click", handleImageClick))
+    /* Why is this not displaying modal when pressing return???
+
+    images.forEach(image => {
+        image.addEventListener("keyup", e => {
+            if (e.key === "Enter") {
+                showImage(e.currentTarget);
+            }
+        });
+    });
+    */
 
     nextButton.addEventListener("click", showNextImage);
     prevButton.addEventListener("click", showPrevImage);

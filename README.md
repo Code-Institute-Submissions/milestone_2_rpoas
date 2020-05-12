@@ -3,7 +3,7 @@
 
 # Retired Police Officers Association, Lanarkshire
 
-<a src="">Link to GitHub</a>
+[Link to GitHub](https://github.com/H4RP3RK/milestone_2_rpoas)
 
 --------------
 
@@ -17,10 +17,28 @@
 
 --------------
 
-To Do
+## To Do
+### Home Page
 - Add Gallery of committee members
-- Quiz
-- Contact form JS
+
+### Sign Up
+- Form
+- Link to database (Mailchimp?)
+- Paypal link?
+
+### Gallery
 - Change the icons on the map
+- Operate Gallery with keyboard
+- Style modal
+- Style photos (hover)
+- search function (by location and date)
+
+### Contact
+- Form
+- link to dad's email
+
+## Problems/Questions
+- How do I link contact form with Mailchimp?
+- How can the Gallery be operated by keyboard?
 
 
