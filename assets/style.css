@@ -26,7 +26,8 @@ section {
 }
 
 .main-heading,
-.form-heading {
+.form-heading,
+.form-heading button {
     color: #006a94;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
@@ -161,6 +162,12 @@ footer {
 
 .banner h1 {
     padding-bottom: 2vh;
+}
+
+.banner button {
+    background-color: #BAA571;
+    border: #006a94 1px solid;
+    border-radius: 10px;
 }
 
 /*----------------------------------------Gallery Page---*/
