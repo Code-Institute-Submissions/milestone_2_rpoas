@@ -25,7 +25,8 @@ section {
     font-weight: 300;
 }
 
-.main-heading {
+.main-heading,
+.form-heading {
     color: #006a94;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
@@ -127,6 +128,18 @@ footer {
 
 /*----------------------------------------About Page---*/
 
+/*----------------------------------------Sign Up Page---*/
+
+.form-section {
+    border: #BAA571 1px solid;
+    border-radius: 10px;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+}
+
+.form-heading h3 {
+    text-align: center;
+}
 
 /*----------------------------------------Gallery Page---*/
 
