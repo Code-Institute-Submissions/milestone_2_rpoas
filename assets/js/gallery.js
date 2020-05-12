@@ -17,13 +17,20 @@ function Modal(gallery) {
         showImage(event.currentTarget);
     }
 
-    images.forEach(image => image.addEventListener("click", handleImageClick))
-
     function showNextImage() {
         showImage(currentImage.parentElement.nextElementSibling.firstElementChild);
     }
 
+    function showPrevImage() {
+        showImage(currentImage.parentElement.previousElementSibling.firstElementChild);
+    }
+
+
+
+    images.forEach(image => image.addEventListener("click", handleImageClick))
+
     nextButton.addEventListener("click", showNextImage);
+    prevButton.addEventListener("click", showPrevImage);
 }
 
 const gallery = Modal(document.querySelector(".gallery"));
