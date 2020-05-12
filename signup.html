@@ -48,68 +48,119 @@
         <div class="container-lg main-color">
             <div class="center-form">
                 <form action="">
-                    <div class="row">
-                        <div class="col-2">
-                            <input type="text" name="title" id="title" class="form-control" placeholder="Title" required>
+                    <div class="contact-details">
+                        <div class="row">
+                            <div class="col heading">
+                                <h3>Contact Details</h3>
+                            </div>
                         </div>
-                        <div class="col">
-                            <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First Name" required>
+                        <div class="row">
+                            <div class="col-2">
+                                <input type="text" name="title" id="title" class="form-control" placeholder="Title" required>
+                            </div>
+                            <div class="col">
+                                <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="col">
+                                <input type="text" name="surname" id="surname" class="form-control" placeholder="Surname" required>
+                            </div>
                         </div>
-                        <div class="col">
-                            <input type="text" name="surname" id="surname" class="form-control" placeholder="Surname" required>
+                        <div class="row">
+                            <div class="col-9">
+                                <input type="text" name="address" id="address" class="form-control" placeholder="Address" required>
+                            </div>
+                            <div class="col-3">
+                                <input type="text" name="postcode" id="postcode" class="form-control" placeholder="Postcode" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-9">
-                            <input type="text" name="address" id="address" class="form-control" placeholder="Address" required>
-                        </div>
-                        <div class="col-3">
-                            <input type="text" name="postcode" id="postcode" class="form-control" placeholder="Postcode" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <input type="tel" name="mobile" id="mobile" class="form-control" placeholder="Mobile Telephone">
-                        </div>
-                        <div class="col-6">
-                            <input type="tel" name="telephone" id="telephone" class="form-control" placeholder="Landline Telephone">
-                        </div>
-                    </div>  
-                    <div class="row">
-                        <div class="col">
-                            <input type="email" name="email" id="emailAddress" class="form-control" placeholder="Email Address" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <label class="col-form-label" for="dob">Date of Birth</label>
-                        </div>
-                        <div class="col-3">
-                            <input type="date" name="dob" id="dob" class="form-control" placeholder="Date of Birth" required>
-                        </div>
-                        <div class="col-3">
-                            <label for="joinedDate">Date Joined Police</label>
-                        </div>
-                        <div class="col-3">
-                            <input type="month" name="joinedDate" id="joinedDate" class="form-control" placeholder="Date Joined Police" required>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="tel" name="mobile" id="mobile" class="form-control" placeholder="Mobile Telephone">
+                            </div>
+                            <div class="col-6">
+                                <input type="tel" name="telephone" id="telephone" class="form-control" placeholder="Landline Telephone">
+                            </div>
+                        </div>  
+                        <div class="row">
+                            <div class="col">
+                                <input type="email" name="email" id="emailAddress" class="form-control" placeholder="Email Address" required>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <label for="retiralDate">Retiral Date</label>
+                    <div class="personal-details">
+                        <div class="row">
+                            <div class="col heading">
+                                <h3>Personal Details</h3>
+                            </div>
                         </div>
-                        <div class="col-3">
-                            <input type="date" name="retiralDate" id="retiralDate" class="form-control" placeholder="Date Retired from Police" required>
+                        <div class="row">
+                            <div class="col-3">
+                                <label class="col-form-label" for="dob">Date of Birth</label>
+                            </div>
+                            <div class="col-3">
+                                <input type="date" name="dob" id="dob" class="form-control" placeholder="Date of Birth" required>
+                            </div>
+                            <div class="col-3">
+                                <label for="joinedDate">Date Joined Police</label>
+                            </div>
+                            <div class="col-3">
+                                <input type="month" name="joinedDate" id="joinedDate" class="form-control" placeholder="Date Joined Police" required>
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <input type="number" name="pensionNo" id="pensionNo" class="form-control" placeholder="Pension Number" required>
+                        <div class="row">
+                            <div class="col-3">
+                                <label for="retiralDate">Retiral Date</label>
+                            </div>
+                            <div class="col-3">
+                                <input type="date" name="retiralDate" id="retiralDate" class="form-control" placeholder="Date Retired from Police" required>
+                            </div>
+                            <div class="col-6">
+                                <input type="number" name="pensionNo" id="pensionNo" class="form-control" placeholder="Pension Number" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" name="station" id="station" class="form-control" placeholder="Where were you stationed?" required>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="nextkin">
+                        <div class="row">
+                            <div class="col heading">
+                                <h3>Next of Kin</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <input type="text" name="kinName" id="kinName" class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="col-4">
+                                <input type="text" name="kinRelationship" id="kinRelationship" class="form-control" placeholder="Relationship">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <input type="text" name="kinAddress" id="kinAddress" class="form-control" placeholder="Address">
+                            </div>
+                            <div class="col-4">
+                                <input type="text" name="kinPostcode" id="kinPostcode" class="form-control" placeholder="Postcode">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="tel" name="kinMobile" id="kinMobile" class="form-control" placeholder="Mobile Telephone">
+                            </div>
+                            <div class="col-6">
+                                <input type="tel" name="kinTelephone" id="kinTelephone" class="form-control" placeholder="Landline Telephone">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="email" name="kinEmail" id="kinEmailAddress" class="form-control" placeholder="Email Address">
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" name="station" id="station" class="form-control" placeholder="Where were you stationed?" required>
-                        </div>
-                    </div>  
+
                 </form>
             </div>
         </div>
