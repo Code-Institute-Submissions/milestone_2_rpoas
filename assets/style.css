@@ -2,41 +2,46 @@
 
 /*----------------------------------------General Page Styles---*/
 
-.header-color,
-.footer-color {
-    background-color: #006a94;
-}
-
-.main-color {
-    background-color: #eaeaea;
-}
-
 body {
     background-color: #eaeaea;
 }
 
-section {
-    padding-bottom: 10vh;
+.header-footer-color {
+    background-color: #006a94;
 }
 
-.header-footer-heading {
+.header-footer-text {
     color: #ffffff;
     font-family: "Titillium Web", sans-serif;
     font-weight: 300;
 }
 
-.main-heading,
-.form-heading,
-.form-heading button {
+.main-text {
     color: #006a94;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
 }
 
-.header-footer-heading:hover,
-.main-heading:hover,
-.active a {
+h1 {
+    font-size: 5vh;
+}
+
+h2 {
+    font-size: 3vh;
+}
+
+h3 {
+    font-size: 1.5vh;
+}
+
+.gold-hover:hover,
+.active {
     color: #BAA571;
+    text-decoration: none;
+}
+
+.white-hover:hover {
+    color: #eaeaea;
     text-decoration: none;
 }
 
@@ -51,15 +56,6 @@ section {
 .logo img {
     height: 30vh;
     padding: 2vh;
-}
-
-.logo a {
-    text-decoration: none;
-    margin: auto;
-}
-
-.logo h1 {
-    font-size: 5vh;
 }
 
 .navbar-toggler {
@@ -92,16 +88,11 @@ section {
 
 /*----------------------------------------Main---*/
 
-section {
+.main {
     position: relative;
     min-height: 50vh;
     padding-bottom: 20vh;
     overflow: scroll;
-}
-
-h2 {
-    font-size: 3vh;
-    padding: 1vh;
 }
 
 /*----------------------------------------Footer---*/
@@ -113,10 +104,6 @@ footer {
 .sister-sites {
     padding-top: 2vh;
     text-align: center;
-}
-
-.sister-sites h3 {
-    font-size: 1.5vh;
 }
 
 .sister-sites img {
@@ -164,11 +151,6 @@ footer {
     padding-bottom: 2vh;
 }
 
-.banner button {
-    background-color: #BAA571;
-    border: #006a94 1px solid;
-    border-radius: 10px;
-}
 
 /*----------------------------------------Gallery Page---*/
 
