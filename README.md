@@ -41,5 +41,6 @@
 ## Problems/Questions
 - How do I link contact form with Mailchimp?
 - How can the Gallery be operated by keyboard?
+- Why are there red crosses next to some of my github pushes?
 
 

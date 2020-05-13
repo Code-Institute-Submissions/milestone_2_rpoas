@@ -31,6 +31,10 @@ h2 {
 }
 
 h3 {
+    font-size: 2.25vh;
+}
+
+h4 {
     font-size: 1.5vh;
 }
 
@@ -121,17 +125,22 @@ footer {
 .form-section {
     border: #BAA571 1px solid;
     border-radius: 10px;
-    margin: 3vh 10vw;
+    margin: 3vh 0vw;
     padding: 2vh 1vw;
 }
 
-.form-heading {
+.form-section h2 {
     text-align: center;
 }
 
+.form-section label {
+    padding-top: 1vh;
+}
+
 .form-control {
-    margin-top: 0.5vh;
-    margin-bottom: 0.5vh;
+    margin: 0.5vh 0vw;
+    height: 5vh;
+    font-size: 2vh;
 }
 
 .center-form button {
