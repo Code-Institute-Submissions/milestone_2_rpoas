@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css" type="text/css">
     <link rel="stylesheet" href="/assets/style.css">
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_80Z1Wpez4mTay5lvoIqSm");
+        })();
+    </script>
+
     <title>RPOAS Lanarkshire</title>
 </head>
 <body>
@@ -24,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link header-footer-text gold-hover active" href="index.html">About <span class="sr-only">(current)</span></a>
+                        <a class="nav-link header-footer-text gold-hover" href="index.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link header-footer-text gold-hover" href="signup.html">Sign Up</a>
@@ -39,7 +49,7 @@
                         <a class="nav-link header-footer-text gold-hover" href="events.html">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link header-footer-text gold-hover" href="contact.html">Contact</a>
+                        <a class="nav-link header-footer-text gold-hover active" href="contact.html">Contact<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
@@ -64,7 +74,32 @@
                 </div>
             </div>
         </section>
-        <section class="container-lg">
+        <section class="container main-text center-form">
+            <form onsubmit="return sendMail(this);">
+                <div class="form-section">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Get in Touch</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="fullName" id="fullName" class="form-control main-text" placeholder="Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="email" name="email" id="emailAddress" class="form-control main-text" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <textarea name="query" id="query" rows="5" class="form-control" placeholder="Project description" required></textarea>
+                        </div>
+                    </div>  
+                    <button></button>
+                </div>
+            </form>
         </section>
     </main>
     <footer class="container-fluid header-footer-color">
@@ -82,6 +117,8 @@
             </div>
         </div>
     </footer>
+    <script src="/assets/js/contact.js"></script>
+
 </body>
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

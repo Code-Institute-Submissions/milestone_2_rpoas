@@ -14,6 +14,7 @@
 * Bootstrap - grid layout, navbar, modal
 * JQuery - navbar
 * Google API - Gallery page
+* Gallery - Wesbos https://beginnerjavascript.com/
 
 --------------
 
