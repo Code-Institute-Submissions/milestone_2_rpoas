@@ -9,17 +9,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css" type="text/css">
     <link rel="stylesheet" href="/assets/style.css">
-
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
-    </script>
-
-    <script type="text/javascript">
-        (function(){
-            emailjs.init("user_80Z1Wpez4mTay5lvoIqSm");
-        })();
-    </script>
-
     <title>RPOAS Lanarkshire</title>
 </head>
 <body>
@@ -89,15 +78,15 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <input type="email" name="email" id="emailAddress" class="form-control main-text" placeholder="Email Address" required>
+                            <input type="email" name="emailAddress" id="emailAddress" class="form-control main-text" placeholder="Email Address" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <textarea name="query" id="query" rows="5" class="form-control" placeholder="Project description" required></textarea>
+                            <textarea name="query" id="query" rows="5" class="form-control" placeholder="Get in touch with any questions, suggestions or photos" required></textarea>
                         </div>
                     </div>  
-                    <button></button>
+                    <button type="submit">Send</button>
                 </div>
             </form>
         </section>
@@ -117,12 +106,19 @@
             </div>
         </div>
     </footer>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_80Z1Wpez4mTay5lvoIqSm");
+        })();
+    </script>
+    
     <script src="/assets/js/contact.js"></script>
 
-</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+</body>
 </html>
