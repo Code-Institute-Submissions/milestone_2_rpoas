@@ -23,7 +23,7 @@
 - Add Gallery of committee members
 
 ### Sign Up
-- Form
+x Form
 - Link to database (Mailchimp?)
 - Paypal link?
 
@@ -36,8 +36,9 @@
 - Change the lnglats of markers to match with towns
 
 ### Contact
-- Form
+x Form
 - link to dad's email
+- Add button to upload photos
 
 ## Problems/Questions
 - How do I link contact form with Mailchimp?
