@@ -139,13 +139,14 @@ footer {
 
 .form-control {
     margin: 0.5vh 0vw;
-    height: 5vh;
+    max-height: 5vh;
     font-size: 2vh;
 }
 
 .center-form button {
     text-align: center;
     font-size: 4vh;
+    display: block;
 }
 
 /*--------------------------------Banner---*/
