@@ -36,7 +36,7 @@ function($) {
     fnames[19]='KINEMAIL';
     ftypes[19]='text';
     fnames[18]='KINTEL';
-    ftypes[18]='number';
+    ftypes[18]='phone';
     fnames[17]='KINADDRESS';
     ftypes[17]='text';
 } (jQuery);

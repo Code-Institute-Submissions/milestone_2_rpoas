@@ -31,11 +31,30 @@ h2 {
 }
 
 h3 {
-    font-size: 2.25vh;
+    font-size: 2.7vh;
 }
 
 h4 {
+    font-size: 2.25vh;
+}
+
+h5 {
     font-size: 1.5vh;
+}
+
+button {
+    background-color: #006a94;
+    color: #BAA571;
+    padding: 0.7vh 1vw;
+    border: #BAA571 1px solid;
+    border-radius: 10px;
+    display: block;
+}
+
+button:hover {
+    background-color: #BAA571;
+    color: #006a94;
+    border-color: #006a94
 }
 
 .gold-hover:hover,
@@ -143,10 +162,10 @@ footer {
     font-size: 2vh;
 }
 
+#mc_embed_signup button,
 .center-form button {
-    text-align: center;
-    font-size: 4vh;
-    display: block;
+    margin: auto;
+    font-size: 3vh;
 }
 
 /*--------------------------------Banner---*/
@@ -184,4 +203,13 @@ footer {
 .modal img {
     height: 100%;
     width: 100%;
+}
+
+/*----------------------------------------Contact Page---*/
+
+.center-form h2 {
+    font-weight: bold;
+    padding: 0;
+    margin: 15px 0;
+    font-size: 1.4em;
 }
