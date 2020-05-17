@@ -81,16 +81,123 @@ This RPOAS Lanarkshire website compliments and improves upon these existing meth
 accessible source of information that is not reliant on users having a Facebook account or having already volunteered their 
 contact details. It is directly operated by the RPOAS Lanarkshire Branch, who can ensure that information remains current and regularly updated.
 
+#### Registering as an RPOAS member
+Prior to this website, members registered by contacting the RPOAS Branch by phone, email, Facebook or in person to request a registration form. A word doc was emailed to the individual to complete and then emailed back to the RPOAS Branch. 
+The member details were then manually copied to a spreadsheet and email details were manually copied to the Branch's Mailchimp account. 
+
+This RPOAS Lanarkshire website provides a much more efficient and accessible way to register as a member. The registration form automatically adds members' details to the Mailchimp mailing list and adds them to the membership database (also 
+stored on the Branch's Mailchimp account).
+
+#### Discovering upcoming events
+
+
+#### Searching historical photo collection
+
+#### Contacting the RPOAS Lanarkshire Branch
+
+### User Stories
+
+### Wireframes
+
 ---
+## Features
 
-## Technology
+#### About 
 
+#### Signup 
+
+#### Gallery 
+
+#### News 
+
+#### Events 
+
+#### Contact 
+
+### Existing Features 
+
+### Future Features 
+
+---
+## Technologies Used
+
+* Gitpod
+* Github
+* HTML and CSS 
+* Javascipt - Google Maps, Contact Form, Signup Page, Gallery
+* JQuery - navbar, Mailchimp form
 * Bootstrap - grid layout, navbar, modal
-* JQuery - navbar
+* Google Fonts
 * Google API - Gallery page
+* Mailchimp - signup form
 * Gallery - Wesbos https://beginnerjavascript.com/
 
+---
+## Testing
+
+---
+## Deployment
+
+---
+## Credits
+
+### Content
+
+### Media
+
+### Acknowledgements
+
 --------------
+
+# MY NOTES/REMINDERS. NOT PART OF FINAL README
+
+## Milestone Project 2 
+
+Project purpose: Presentation of interactive data
+In this project, you'll build an interactive front-end site. The site should respond to the users' actions, 
+allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals.
+
+Value provided:
+Users are able to interact with the site in their particular way, to achieve their personal goals and derive answers to their specific questions.
+The site owner advances their own goals by providing this functionality, potentially by being a regular user themselves.
+
+Mandatory Requirements
+A project violating any of these requirements will FAIL
+
+1. Dynamic Front End Project: Write custom JavaScript, HTML and CSS code to create a front-end web application consisting of one or more HTML pages with significant interactive functionality.
+2. Site Responses: Use JavaScript to have the site produce relevant responses dependent on users' actions.
+3. Information Architecture: Incorporate a main navigation menu (unless irrelevant) and structured layout (you might want to use Bootstrap to accomplish this).
+4. Documentation: Write a README.md file for your project that explains what the project does and the value that it provides to its users.
+5. Version Control: Use Git & GitHub for version control.
+6. Attribution: Maintain clear separation between code written by you and code from external sources (e.g. libraries or tutorials). Attribute any code from external sources to its source via comments above the code and (for larger dependencies) in the README.
+7. Deployment: Deploy the final version of your code to a hosting platform such as GitHub Pages.
+
+Usability and Visual Impact:
+* Project Purpose
+* UX design
+* Suitability for purpose
+* Navigation
+* Ease of use
+* Information Architecture
+* Defensive Design
+Layout and Visual Impact:
+* Responsive Design
+* Image Presentation
+* Colour scheme and typography
+Code Quality:
+* Appropriate use of HTML
+* Appropriate use of CSS
+* Appropriate use of JavaScript
+* Appropriate use of JavaScript APIs
+Software Development practices:
+* Directory Structure and File Naming
+* Version control
+* Testing implementation
+* Testing write-up
+* Readme file
+* Comments
+* Deployment implementation
+* Deployment write-up
 
 ## To Do
 ### Home Page
