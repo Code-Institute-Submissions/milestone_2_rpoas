@@ -85,7 +85,7 @@ contact details. It is directly operated by the RPOAS Lanarkshire Branch, who ca
 Prior to this website, members registered by contacting the RPOAS Branch by phone, email, Facebook or in person to request a registration form. A word doc was emailed to the individual to complete and then emailed back to the RPOAS Branch. 
 The member details were then manually copied to a spreadsheet and email details were manually copied to the Branch's Mailchimp account. 
 
-This RPOAS Lanarkshire website provides a much more efficient and accessible way to register as a member. The registration form automatically adds members' details to the Mailchimp mailing list and adds them to the membership database (also 
+This RPOAS Lanarkshire website provides a much more efficient and accessible way to register as a member. The registration form automatically adds members' details to the Mailchimp mailing list and the membership database (also 
 stored on the Branch's Mailchimp account).
 
 #### Discovering upcoming events

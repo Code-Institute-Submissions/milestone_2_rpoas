@@ -1,3 +1,5 @@
+/*--JS for embedded Mailchimp form--*/
+
 function($) {
     window.fnames = new Array(); 
     window.ftypes = new Array();
