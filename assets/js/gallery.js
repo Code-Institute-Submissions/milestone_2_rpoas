@@ -9,7 +9,7 @@ function Modal(gallery) {
     function showImage(el) {
         console.log(el);
         modal.querySelector("img").src = el.src;
-        modal.querySelector("h5").textContent = el.alt;
+        modal.querySelector("h3").textContent = el.alt;
         modal.querySelector("figcaption p").textContent = el.dataset.caption;
         currentImage = el;
     }

@@ -214,6 +214,8 @@ x Link to database (Mailchimp?)
 - Style modal
 - Style photos (hover)
 - search function (by location and date)
+
+### Events
 - Change the lnglats of markers to match with towns
 
 ### Contact
@@ -229,5 +231,8 @@ x Add button to upload photos
 x How do I link contact form with Mailchimp?
 - How can the Gallery be operated by keyboard?
 - Why are there red crosses next to some of my github pushes?
+- How do I connect file upload to contact form?
+- How can I get the contact form to clear when send button is pressed?
+- Why is banner on events page bold?
 
 
