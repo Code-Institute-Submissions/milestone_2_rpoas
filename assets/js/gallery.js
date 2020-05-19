@@ -1,3 +1,12 @@
+/*------------------------------------------------------operates the modal--*/
+
+const photos = [
+
+]
+
+/*------------------------------------------------------operates the modal--*/
+/*------------took inspiration from https://wesbos.com/beginner-javascript--*/
+
 function Modal(gallery) {
     const images = Array.from(gallery.querySelectorAll("img"));
     const body = document.querySelector("body")
