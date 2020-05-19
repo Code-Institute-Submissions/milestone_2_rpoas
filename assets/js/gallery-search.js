@@ -1,3 +1,6 @@
+/*------------------------------------------------------search photos by location--*/
+/*------------took inspiration from https://www.includehelp.com/code-snippets/search-from-array-of-objects-javascript%20.aspx--*/
+
 const photos = [
     {
         title: "Biggar Gala Day (1975)",
@@ -36,12 +39,16 @@ const photos = [
     },
 ];
 
+
+
 function search(input) {
-    const searchResults = document.querySelector(".search-results-container");
+    const searchResultsContainer = document.querySelector(".search-results-container");
     const photo = photos.find(function(objectPhoto) {
-        return objectPhoto.location.toLowerCase() === input.toLowerCase();
+        for (i = 0; i < photos.length; i++) {
+            return objectPhoto.location.toLowerCase() === input.toLowerCase();
+        }
     });
-    searchResults.innerHTML = `<img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">`;
+    searchResultsContainer.insertAdjacentHTML("beforeend", `<img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">`);
     return photo;
 };
 
