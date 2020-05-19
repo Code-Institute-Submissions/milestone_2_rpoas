@@ -36,11 +36,22 @@ const photos = [
     },
 ];
 
-const search = function(photoArray, value) {
-    const position = photoArray.find(function(objectPhoto) {
-        return objectPhoto.location.toLowerCase() === value.toLowerCase()
-    })
-    return position
-}
+function search(input) {
+    const searchResults = document.querySelector(".search-results-container");
+    const photo = photos.find(function(objectPhoto) {
+        return objectPhoto.location.toLowerCase() === input.toLowerCase();
+    });
+    searchResults.innerHTML = `<img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">`;
+    return photo;
+};
 
-console.log(search(photos, "Biggar"))
+console.log(search("Uddingston"));
+
+
+
+
+
+
+
+
+
