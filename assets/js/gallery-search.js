@@ -44,20 +44,33 @@ const photos = [
 function search() {
     const noResultsContainer = document.querySelector(".no-results-container");
     const searchResultsContainer = document.querySelector(".search-results-container");
-    const input = document.querySelector("#photo-location").value;
+    const inputLocation = document.querySelector("#photo-location").value;
+    const inputYear = document.querySelector("#photo-year");
 
-    photos.forEach((photo) => {
-        if (!photo.location.toLowerCase().includes(input.toLowerCase())) {
-            console.log("no results");
-        } else if (photo.location.toLowerCase().includes(input.toLowerCase())) {
+    const locationSearch = photos.forEach((photo) => {
+        if (!photo.location.toLowerCase().includes(inputLocation.toLowerCase())) {
+            console.log("no results by location");
+        } else if (photo.location.toLowerCase().includes(inputLocation.toLowerCase())) {
             console.log(photo);
             searchResultsContainer.insertAdjacentHTML("beforeend", `
                 <div class="col-2 gallery-photo-container">
                     <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`);
-            return photo;
         };
     });
+
+    const yearSearch = photos.forEach((photo) => {
+        if (!photo.year === inputYear) {
+            console.log("no results by year");
+        } else if (photo.year === inputYear) {
+            console.log(photo);
+            searchResultsContainer.insertAdjacentHTML("beforeend", `
+                <div class="col-2 gallery-photo-container">
+                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
+                </div>`);           
+        };
+    });
+
 };
 
 document.addEventListener("load", search(" "))
