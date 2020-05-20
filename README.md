@@ -209,14 +209,17 @@ x Link to database (Mailchimp?)
 - Paypal link?
 
 ### Gallery
-- Change the icons on the map
 - Operate Gallery with keyboard
 - Style modal
 - Style photos (hover)
-- search function (by location and date)
+x search by location
+- search by year
+- fix modal to work with search function
 
 ### Events
 - Change the lnglats of markers to match with towns
+- Change the icons on the map
+- add events
 
 ### Contact
 x Form
@@ -230,7 +233,7 @@ x Add button to upload photos
 ## Problems/Questions
 x How do I link contact form with Mailchimp?
 - How can the Gallery be operated by keyboard?
-- Why are there red crosses next to some of my github pushes?
+x Why are there red crosses next to some of my github pushes?
 - How do I connect file upload to contact form?
 - How can I get the contact form to clear when send button is pressed?
 - Why is banner on events page bold?

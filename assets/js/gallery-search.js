@@ -42,6 +42,7 @@ const photos = [
 /*--Function only shows first result. Why does loop not fix this???--*/
 
 function search() {
+    const noResultsContainer = document.querySelector(".no-results-container");
     const searchResultsContainer = document.querySelector(".search-results-container");
     const input = document.querySelector("#photo-location").value;
 
@@ -58,3 +59,5 @@ function search() {
         };
     });
 };
+
+document.addEventListener("load", search(" "))
