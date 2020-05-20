@@ -1,7 +1,8 @@
 /*------------------------------------------------------operates the modal--*/
 /*------------took inspiration from https://wesbos.com/beginner-javascript--*/
 
-function Modal(gallery) {
+
+async function Modal(gallery) {
     const images = Array.from(gallery.querySelectorAll("img"));
     const body = document.querySelector("body")
     const modal = document.querySelector(".modal");
@@ -17,7 +18,7 @@ function Modal(gallery) {
         currentImage = el;
     }
     
-    function handleImageClick(event) {
+    await function handleImageClick(event) {
         showImage(event.currentTarget);
     }
 
