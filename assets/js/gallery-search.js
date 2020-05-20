@@ -39,26 +39,20 @@ const photos = [
     },
 ];
 
+/*--Function only shows first result. Why does loop not fix this???--*/
 
-
-function search(input) {
+function search() {
     const searchResultsContainer = document.querySelector(".search-results-container");
-    const photo = photos.find(function(objectPhoto) {
-        for (i = 0; i < photos.length; i++) {
-            return objectPhoto.location.toLowerCase() === input.toLowerCase();
-        }
-    });
-    searchResultsContainer.insertAdjacentHTML("beforeend", `<img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">`);
-    return photo;
-};
+    const input = document.querySelector("#photo-location").value;
 
-console.log(search("Uddingston"));
-
-
-
-
-
-
-
-
-
+    for (i=0; i<photos.length; i++) {
+        if (!photos[i].location.toLowerCase().includes(input.toLowerCase())) {
+            console.log("no results");
+            searchResultsContainer.innerHTML = `Sorry, no results match ${input}`;
+            return;
+        }   else {
+            console.log("results");
+            searchResultsContainer.insertAdjacentHTML("beforeend", `<img class="gallery-photo" src="${photos[i].src}" alt="${photos[i].title}" data-caption="${photos[i].caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">`);
+            return;
+        };
+    }}
