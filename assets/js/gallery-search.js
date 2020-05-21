@@ -75,7 +75,7 @@ const photos = [
     {
         title: "Eastkilbride (1973)",
         src: "/assets/images/gallery/eastkilbride-1973-min.jpg",
-        location: "Eastkilbride",
+        location: "Uddingston",
         caption: " ",
         year: 1973
     },
@@ -100,6 +100,8 @@ function search() {
     const searchResultsContainer = document.querySelector(".search-results-container");
     const inputLocation = document.querySelector("#photo-location").value.toLowerCase();
     const inputYear = document.querySelector("#photo-year").value;
+
+    searchResultsContainer.innerHTML = "";
 
     photos.forEach((photo) => {
         const photoLocation = photo.location.toLowerCase();
