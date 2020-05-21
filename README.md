@@ -213,7 +213,9 @@ x Link to database (Mailchimp?)
 - Style modal
 - Style photos (hover)
 x search by location
-- search by year
+x search by year
+- search by location and year at same time
+- clear search results with each form submit
 - fix modal to work with search function
 
 ### Events

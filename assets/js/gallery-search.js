@@ -1,4 +1,4 @@
-/*------------------------------------------------------search photos by location--*/
+/*------------------------------------------------------search photos by location and year--*/
 /*------------took inspiration from https://www.includehelp.com/code-snippets/search-from-array-of-objects-javascript%20.aspx--*/
 
 const photos = [
@@ -37,40 +37,96 @@ const photos = [
         caption: " ",
         year: 1987
     },
+    {
+        title: "Control Room, Motherwell (1985)",
+        src: "/assets/images/gallery/controlroom-motherwell-1985-min.jpg",
+        location: "Motherwell",
+        caption: " ",
+        year: 1985
+    },
+    {
+        title: "Crash (1974)",
+        src: "/assets/images/gallery/crash-1974-min.jpg",
+        location: " ",
+        caption: " ",
+        year: 1974
+    },
+    {
+        title: "Cumbernauld (1997)",
+        src: "/assets/images/gallery/cumbernauld-1997-min.jpg",
+        location: "Cumbernauld",
+        caption: " ",
+        year: 1997
+    },
+    {
+        title: "Dogs, Low Moss (1985)",
+        src: "/assets/images/gallery/dog-lowmoss-1985-min.jpg",
+        location: "Bishopbriggs",
+        caption: " ",
+        year: 1985
+    },
+    {
+        title: "Dog Branch, Pollok (1999)",
+        src: "/assets/images/gallery/dogbranch-pollok-1999-min.jpg",
+        location: "Pollok",
+        caption: " ",
+        year: 1999
+    },
+    {
+        title: "Eastkilbride (1973)",
+        src: "/assets/images/gallery/eastkilbride-1973-min.jpg",
+        location: "Eastkilbride",
+        caption: " ",
+        year: 1973
+    },
 ];
 
-/*--Function only shows first result. Why does loop not fix this???--*/
+/*--
+
+if (no locationMatch and no yearMatch) {
+    display "No results"
+} else if (locationMatch and yearMatch) {
+    display results
+} else if (locationMatch or yearMatch) {
+    display results
+} else {
+
+}
+
+--*/
 
 function search() {
-    const noResultsContainer = document.querySelector(".no-results-container");
+    const images = document.querySelectorAll("img");
     const searchResultsContainer = document.querySelector(".search-results-container");
-    const inputLocation = document.querySelector("#photo-location").value;
-    const inputYear = document.querySelector("#photo-year");
+    const inputLocation = document.querySelector("#photo-location").value.toLowerCase();
+    const inputYear = document.querySelector("#photo-year").value;
 
-    const locationSearch = photos.forEach((photo) => {
-        if (!photo.location.toLowerCase().includes(inputLocation.toLowerCase())) {
-            console.log("no results by location");
-        } else if (photo.location.toLowerCase().includes(inputLocation.toLowerCase())) {
+    photos.forEach((photo) => {
+        const photoLocation = photo.location.toLowerCase();
+        const photoYear = photo.year;
+
+        if (inputLocation == photoLocation && inputYear == photoYear) {
             console.log(photo);
             searchResultsContainer.insertAdjacentHTML("beforeend", `
                 <div class="col-2 gallery-photo-container">
                     <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`);
-        };
-    });
-
-    const yearSearch = photos.forEach((photo) => {
-        if (!photo.year === inputYear) {
-            console.log("no results by year");
-        } else if (photo.year === inputYear) {
+        } else if (inputLocation == photoLocation && inputYear == "") {
             console.log(photo);
             searchResultsContainer.insertAdjacentHTML("beforeend", `
                 <div class="col-2 gallery-photo-container">
                     <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
-                </div>`);           
+                </div>`);
+        } else if (inputLocation == "" && inputYear == photoYear) {
+            console.log(photo);
+            searchResultsContainer.insertAdjacentHTML("beforeend", `
+                <div class="col-2 gallery-photo-container">
+                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
+                </div>`);            
+        }
+        else {
+            console.log(`no results for ${inputLocation} ${inputYear}`);
         };
     });
-
 };
 
-document.addEventListener("load", search(" "))
