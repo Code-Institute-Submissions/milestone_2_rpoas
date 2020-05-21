@@ -3,13 +3,6 @@
 
 const photos = [
     {
-        title: "Bishopbriggs (1971)",
-        src: "/assets/images/gallery/bishopbriggs-1971-min.jpg",
-        location: "Bishopbriggs",
-        caption: " ",
-        year: 1971
-    },
-    {
         title: "Biggar Gala Day (1975)",
         src: "/assets/images/gallery/biggar-galaday-1975-min.jpg",
         location: "Biggar",
@@ -75,29 +68,24 @@ const photos = [
     {
         title: "Eastkilbride (1973)",
         src: "/assets/images/gallery/eastkilbride-1973-min.jpg",
-        location: "Uddingston",
+        location: "Eastkilbride",
         caption: " ",
         year: 1973
     },
+    {
+        title: "Bishopbriggs (1971)",
+        src: "/assets/images/gallery/bishopbriggs-1971-min.jpg",
+        location: "Bishopbriggs",
+        caption: " ",
+        year: 1971
+    },
 ];
 
-/*--
-
-if (no locationMatch and no yearMatch) {
-    display "No results"
-} else if (locationMatch and yearMatch) {
-    display results
-} else if (locationMatch or yearMatch) {
-    display results
-} else {
-
-}
-
---*/
+const searchResultsContainer = document.querySelector(".search-results-container");
 
 function allPhotos() {
     photos.forEach((photo) => {
-        document.querySelector(".search-results-container").insertAdjacentHTML("beforeend", `
+        searchResultsContainer.insertAdjacentHTML("beforeend", `
             <div class="col-2 gallery-photo-container">
                 <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
             </div>`)      
@@ -106,7 +94,6 @@ function allPhotos() {
 
 function search() {
     const images = document.querySelectorAll("img");
-    const searchResultsContainer = document.querySelector(".search-results-container");
     const inputLocation = document.querySelector("#photo-location").value.toLowerCase();
     const inputYear = document.querySelector("#photo-year").value;
 
@@ -142,3 +129,7 @@ function search() {
 };
 
 document.addEventListener("load", allPhotos());
+
+photos.forEach((photo) => {
+    console.log(photo.location);
+})

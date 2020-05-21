@@ -151,7 +151,7 @@ stored on the Branch's Mailchimp account).
 
 # MY NOTES/REMINDERS. NOT PART OF FINAL README
 
-## Milestone Project 2 
+## Milestone Project 2 Marking criteria
 
 Project purpose: Presentation of interactive data
 In this project, you'll build an interactive front-end site. The site should respond to the users' actions, 

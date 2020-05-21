@@ -68,7 +68,17 @@
             <form onsubmit="search(); return false" class="form-section">
                 <div class="row">
                     <div class="col">
-                        <input class="form-control main-text" value="" type="text" name="photo-location" id="photo-location" placeholder="Search by Location or Keyword">
+                        <select oninput="search();" class="form-control main-text" id="photo-location" name="photo-location">
+                            <option value="">Search by Location</option>
+                            <option value="biggar">Biggar</option>
+                            <option value="bishopbriggs">Bishopbriggs</option>
+                            <option value="cambuslang">Cambuslang</option>
+                            <option value="cumbernauld">Cumbernauld</option>
+                            <option value="eastkilbride">East Kilbride</option>
+                            <option value="motherwell">Motherwell</option>
+                            <option value="pollok">Pollok</option>
+                            <option value="uddingston">Uddingston</option>
+                        </select>
                     </div>
                     <div class="col">
                         <input class="form-control main-text" value="" type="number" name="photo-year" id="photo-year" min="1900" maxlength="4" placeholder="Search by Year">
