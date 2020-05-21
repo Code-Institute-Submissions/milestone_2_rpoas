@@ -95,6 +95,15 @@ if (no locationMatch and no yearMatch) {
 
 --*/
 
+function allPhotos() {
+    photos.forEach((photo) => {
+        document.querySelector(".search-results-container").insertAdjacentHTML("beforeend", `
+            <div class="col-2 gallery-photo-container">
+                <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
+            </div>`)      
+    });
+};
+
 function search() {
     const images = document.querySelectorAll("img");
     const searchResultsContainer = document.querySelector(".search-results-container");
@@ -132,3 +141,4 @@ function search() {
     });
 };
 
+document.addEventListener("load", allPhotos());
