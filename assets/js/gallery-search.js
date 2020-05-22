@@ -1,5 +1,4 @@
-/*------------------------------------------------------search photos by location and year--*/
-/*------------took inspiration from https://www.includehelp.com/code-snippets/search-from-array-of-objects-javascript%20.aspx--*/
+
 
 const photos = [
     {
@@ -79,9 +78,67 @@ const photos = [
         caption: " ",
         year: 1971
     },
+    {
+        title: "Eastkilbride Strike (1969)",
+        src: "/assets/images/gallery/eastkilbride-strike-1969-min.jpg",
+        location: "Eastkilbride",
+        caption: " ",
+        year: 1969
+    },
+    {
+        title: "Exercise",
+        src: "/assets/images/gallery/exercise-min.jpg",
+        location: " ",
+        caption: " ",
+        year: " "
+    },
+    {
+        title: "Motherwell & Wishaw Police Football Team (1948)",
+        src: "/assets/images/gallery/football-motherwell-wishaw-1948-min.jpg",
+        location: "Motherwell",
+        caption: " ",
+        year: 1948
+    },
+    {
+        title: "Francie & Josie (1990)",
+        src: "/assets/images/gallery/franciejosie-1990-min.jpg",
+        location: " ",
+        caption: " ",
+        year: 1990
+    },
+    {
+        title: "Bagpipers at Hamilton Sheriff Court",
+        src: "/assets/images/gallery/hamiltonsheriffcourt-bagpipes-min.jpg",
+        location: "Hamilton",
+        caption: " ",
+        year: " "
+    },
+    {
+        title: "Lanarkshire HQ (1941)",
+        src: "/assets/images/gallery/lanarkshirehq-hamilton-1941-min.jpg",
+        location: "Hamilton",
+        caption: " ",
+        year: 1941
+    },
+    {
+        title: "Lanarkshire Police Rugby Club (1962)",
+        src: "/assets/images/gallery/lanarkshirerugby-1962-min.jpg",
+        location: " ",
+        caption: " ",
+        year: 1962
+    },
+    {
+        title: "Lanarkshire WPCs (1970)",
+        src: "/assets/images/gallery/lanarkshirewpc-1970-min.jpg",
+        location: " ",
+        caption: " ",
+        year: 1970
+    },
 ];
 
 const searchResultsContainer = document.querySelector(".search-results-container");
+
+/*------------------------------------------------------display all photos--*/
 
 function allPhotos() {
     photos.forEach((photo) => {
@@ -91,6 +148,9 @@ function allPhotos() {
             </div>`)      
     });
 };
+
+/*------------------------------------------------------search photos by location and year--*/
+/*------------took inspiration from https://www.includehelp.com/code-snippets/search-from-array-of-objects-javascript%20.aspx--*/
 
 function search() {
     const images = document.querySelectorAll("img");
@@ -133,3 +193,58 @@ document.addEventListener("load", allPhotos());
 photos.forEach((photo) => {
     console.log(photo.location);
 })
+
+/*------------------------------------------------------operates the modal--*/
+/*------------took inspiration from https://wesbos.com/beginner-javascript--*/
+
+function Modal(gallery) {
+    const images = Array.from(gallery.querySelectorAll("img"));
+    const body = document.querySelector("body")
+    const modal = document.querySelector(".modal");
+    const prevButton = modal.querySelector(".previous");
+    const nextButton = modal.querySelector(".next");
+    let currentImage;
+    
+    function showImage(el) {
+        console.log(el);
+        modal.querySelector("img").src = el.src;
+        modal.querySelector(".modal-title").textContent = el.alt;
+        modal.querySelector("figcaption p").textContent = el.dataset.caption;
+        currentImage = el;
+    }
+    
+    function handleImageClick(event) {
+        showImage(event.currentTarget);
+    }
+
+    function showNextImage() {
+        showImage(currentImage.parentElement.nextElementSibling.firstElementChild);
+    }
+
+    function showPrevImage() {
+        showImage(currentImage.parentElement.previousElementSibling.firstElementChild);
+    }
+
+    function arrowKeys(event) {
+        if (event.key === "ArrowRight") showNextImage();
+        if (event.key === "ArrowLeft") showPrevImage();
+    }
+
+    photos.forEach(photo => photo.addEventListener("click", handleImageClick));
+
+    /* Why is this not displaying modal when pressing return???
+
+    images.forEach(image => {
+        image.addEventListener("keyup", e => {
+            if (e.key === "Enter") {
+                showImage(e.currentTarget);
+            }
+        });
+    });
+    */
+
+    nextButton.addEventListener("click", showNextImage);
+    prevButton.addEventListener("click", showPrevImage);
+}
+
+const gallery = Modal(document.querySelector(".gallery"));
