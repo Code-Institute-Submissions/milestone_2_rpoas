@@ -162,6 +162,7 @@ function search() {
     const noResults = document.querySelector(".no-results")
 
     searchResultsContainer.innerHTML = "";
+    noResults.innerHTML = "";
 
     photos.forEach((photo) => {
         const photoLocation = photo.location.toLowerCase();
@@ -234,7 +235,7 @@ function Modal(searchResultsContainer) {
 
     images.forEach(image => image.addEventListener("click", handleImageClick));
 
-    /* Why is this not displaying modal when pressing return???*/
+    /* Why is this not displaying modal when pressing return???
 
     images.forEach(image => {
         image.addEventListener("keyup", e => {
@@ -243,9 +244,42 @@ function Modal(searchResultsContainer) {
             }
         });
     });
-    
+
+    */
 
     nextButton.addEventListener("click", showNextImage);
     prevButton.addEventListener("click", showPrevImage);
 }
 
+/*------------------------------------------------------sort photos by year--*/
+/*--took inspiration from https://www.sitepoint.com/sort-an-array-of-objects-in-javascript/--*/
+
+/*--
+function compareValues(key, order = "asc") {
+    return function innerSort(a, b) {
+        if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
+            return 0;
+        }
+        const varA = (typeof a[key] === "string") ? a[key].toLowerCase() : a[key];
+        const varB = (typeof b[key] === "string") ? b[key].toLowerCase() : b[key];
+        let comparison = 0;
+
+        if (varA > varB) {
+            comparison = 1;
+        } else if (varA < varB) {
+            comparison = -1;
+        }
+        return (
+            (order === "desc") ? (comparison * -1) : comparison
+        );
+    };
+}
+
+function orderSearchResults(order) {
+    const sortedPhotos = photos.sort(compareValues("year", order));
+    function search(sortPhotos);
+}
+
+console.log(orderSearchResults("asc"))
+
+--*/
