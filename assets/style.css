@@ -17,7 +17,7 @@ body {
 }
 
 .main-text {
-    color: #006a94;
+    color: #00387b;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
 }
@@ -52,9 +52,9 @@ button {
 }
 
 button:hover {
-    background-color: #BAA571;
-    color: #006a94;
-    border-color: #006a94
+    background-image: linear-gradient( rgb(216, 190, 129) 0%, #BAA571 100%);
+    color: #00387b;
+    border-color: #00387b;
 }
 
 .gold-hover:hover,
