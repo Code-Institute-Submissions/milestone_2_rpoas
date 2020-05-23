@@ -152,6 +152,7 @@ function allPhotos() {
 
 document.addEventListener("load", allPhotos());
 
+
 /*------------------------------------------------------search photos by location and year--*/
 /*------------took inspiration from https://www.includehelp.com/code-snippets/search-from-array-of-objects-javascript%20.aspx--*/
 
@@ -162,7 +163,7 @@ function search() {
     const noResults = document.querySelector(".no-results")
 
     searchResultsContainer.innerHTML = "";
-    noResults.innerHTML = "";
+    noResults.innerHTML = ""
 
     photos.forEach((photo) => {
         const photoLocation = photo.location.toLowerCase();
@@ -170,18 +171,21 @@ function search() {
 
         if (inputLocation == photoLocation && inputYear == photoYear) {
             console.log(photo);
+            noResults.innerHTML = "";
             searchResultsContainer.insertAdjacentHTML("beforeend", `
                 <div class="col-2 gallery-photo-container">
                     <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`);
         } else if (inputLocation == photoLocation && inputYear == "") {
             console.log(photo);
+            noResults.innerHTML = "";
             searchResultsContainer.insertAdjacentHTML("beforeend", `
                 <div class="col-2 gallery-photo-container">
                     <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`);
         } else if (inputLocation == "" && inputYear == photoYear) {
             console.log(photo);
+            noResults.innerHTML = "";
             searchResultsContainer.insertAdjacentHTML("beforeend", `
                 <div class="col-2 gallery-photo-container">
                     <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
@@ -254,8 +258,8 @@ function Modal(searchResultsContainer) {
 /*------------------------------------------------------sort photos by year--*/
 /*--took inspiration from https://www.sitepoint.com/sort-an-array-of-objects-in-javascript/--*/
 
-/*--
-function compareValues(key, order = "asc") {
+
+function sortPhotos(key, order = "asc") {
     return function innerSort(a, b) {
         if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
             return 0;
@@ -275,11 +279,7 @@ function compareValues(key, order = "asc") {
     };
 }
 
-function orderSearchResults(order) {
-    const sortedPhotos = photos.sort(compareValues("year", order));
-    function search(sortPhotos);
-}
+newPhotoArray = photos.sort(sortPhotos("year", "asc"));
 
-console.log(orderSearchResults("asc"))
+console.log(newPhotoArray)
 
---*/

@@ -212,11 +212,12 @@ x Link to database (Mailchimp?)
 - Operate Gallery with keyboard
 - Style modal
 - Style photos (hover)
+- Fix bug, no results message clear with each new search 
 x search by location
 x search by year
-- search by location and year at same time
-- clear search results with each form submit
-- fix modal to work with search function
+x search by location and year at same time
+x clear search results with each form submit
+x fix modal to work with search function
 
 ### Events
 - Change the lnglats of markers to match with towns
