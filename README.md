@@ -212,7 +212,8 @@ x Link to database (Mailchimp?)
 - Operate Gallery with keyboard
 - Style modal
 - Style photos (hover)
-- Fix bug, no results message clear with each new search 
+- How do I show photos that don't have year/location info?
+x Fix bug, no results message clear with each new search 
 x search by location
 x search by year
 x search by location and year at same time

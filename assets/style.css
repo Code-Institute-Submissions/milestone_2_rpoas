@@ -201,11 +201,24 @@ footer {
 
 .gallery-photo {
     width: 100%;
+    position: relative;
 }
 
 .modal img {
     height: 100%;
     width: 100%;
+}
+
+.previous {
+    position: absolute;
+    left: 0px;
+    bottom: 50%;
+}
+
+.next {
+    position: absolute;
+    right: 0px;
+    bottom: 50%;
 }
 
 /*----------------------------------------Contact Page---*/
