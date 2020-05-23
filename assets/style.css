@@ -11,7 +11,7 @@ body {
 }
 
 .header-footer-text {
-    color: #ffffff;
+    color: #eaeaea;
     font-family: "Titillium Web", sans-serif;
     font-weight: 300;
 }
@@ -209,16 +209,18 @@ footer {
     width: 100%;
 }
 
-.previous {
+.arrow {
     position: absolute;
-    left: 20px;
     bottom: 50%;
+    opacity: 50%;
+}
+
+.previous {
+    left: 20px;
 }
 
 .next {
-    position: absolute;
     right: 20px;
-    bottom: 50%;
 }
 
 .close {
