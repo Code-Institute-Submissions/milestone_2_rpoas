@@ -103,10 +103,10 @@
                         </select>
                     </div>                 
                     <div class="col-12 col-md-6 col-lg-4">
-                        <select class="form-control main-text" name="sort-year" id="sort-year">
+                        <select oninput="sortYear(`${value}`);" class="form-control main-text" name="sort-year" id="sort-year">
                             <option value="">Sort by Year</option>
-                            <option oninput="" value="asc">Ascending</option>
-                            <option oninput="" value="desc">Descending</option>
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
                         </select>
                     </div>
                 </div>

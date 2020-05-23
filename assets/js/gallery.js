@@ -160,7 +160,7 @@ function search() {
     const images = document.querySelectorAll("img");
     const inputLocation = document.querySelector("#photo-location").value.toLowerCase();
     const inputYear = document.querySelector("#photo-year").value;
-    const noResults = document.querySelector(".no-results")
+    const noResults = document.querySelector(".no-results");
 
     searchResultsContainer.innerHTML = "";
     noResults.innerHTML = ""
@@ -279,7 +279,14 @@ function sortPhotos(key, order = "asc") {
     };
 }
 
-newPhotoArray = photos.sort(sortPhotos("year", "asc"));
+function sortYear(order) {
+    newPhotoArray = photos.sort(sortPhotos("year", order));
+    console.log(newPhotoArray);
 
-console.log(newPhotoArray)
+    search(newPhotoArray);
+}
+
+
+
+
 
