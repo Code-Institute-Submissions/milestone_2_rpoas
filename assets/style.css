@@ -52,7 +52,7 @@ button {
 }
 
 button:hover {
-    background-image: linear-gradient( rgb(216, 190, 129) 0%, #BAA571 100%);
+    background-image: linear-gradient( #f7d994 0%, #BAA571 100%);
     color: #00387b;
     border-color: #00387b;
 }
@@ -171,7 +171,7 @@ footer {
 /*--------------------------------Banner---*/
 
 .banner {
-    background-image: linear-gradient( rgb(216, 190, 129) 0%, #BAA571 100%);
+    background-image: linear-gradient( #f7d994 0%, #BAA571 100%);
     text-align: center;
     padding: 3vh 1vw;
 }
