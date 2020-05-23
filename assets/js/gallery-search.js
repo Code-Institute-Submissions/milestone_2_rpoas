@@ -197,8 +197,8 @@ photos.forEach((photo) => {
 /*------------------------------------------------------operates the modal--*/
 /*------------took inspiration from https://wesbos.com/beginner-javascript--*/
 
-function Modal(gallery) {
-    const images = Array.from(gallery.querySelectorAll("img"));
+function Modal(searchResultsContainer) {
+    const images = Array.from(searchResultsContainer.querySelectorAll("img"));
     const body = document.querySelector("body")
     const modal = document.querySelector(".modal");
     const prevButton = modal.querySelector(".previous");
@@ -230,7 +230,7 @@ function Modal(gallery) {
         if (event.key === "ArrowLeft") showPrevImage();
     }
 
-    photos.forEach(photo => photo.addEventListener("click", handleImageClick));
+    images.forEach(image => image.addEventListener("click", handleImageClick));
 
     /* Why is this not displaying modal when pressing return???
 
@@ -247,4 +247,4 @@ function Modal(gallery) {
     prevButton.addEventListener("click", showPrevImage);
 }
 
-const gallery = Modal(document.querySelector(".gallery"));
+const gallery = Modal(document.querySelector(".search-results-container"));
