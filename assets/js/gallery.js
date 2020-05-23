@@ -279,6 +279,8 @@ function sortPhotos(key, order = "asc") {
     };
 }
 
+/*--Works once search is done, doesn't work when there are no filters--*/
+
 function sortYear(order) {
     newPhotoArray = photos.sort(sortPhotos("year", order));
     console.log(newPhotoArray);
