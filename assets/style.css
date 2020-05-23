@@ -193,7 +193,7 @@ footer {
 }
 
 .gallery-photo-container {
-    height: 115px;
+    max-height: 115px;
     overflow: hidden;
     margin: 2vh 1vw;
     padding: 0;

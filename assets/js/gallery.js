@@ -143,7 +143,7 @@ const searchResultsContainer = document.querySelector(".search-results-container
 function allPhotos() {
     photos.forEach((photo) => {
         searchResultsContainer.insertAdjacentHTML("beforeend", `
-            <div class="col-2 gallery-photo-container" tabindex="0">
+            <div class="col-12 col-md-3 col-lg-2 gallery-photo-container" tabindex="0">
                 <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal">
             </div>`)      
     });
@@ -173,21 +173,21 @@ function search() {
             console.log(photo);
             noResults.innerHTML = "";
             searchResultsContainer.insertAdjacentHTML("beforeend", `
-                <div class="col-2 gallery-photo-container">
+                <div class="col-12 col-md-3 col-lg-2 gallery-photo-container">
                     <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`);
         } else if (inputLocation == photoLocation && inputYear == "") {
             console.log(photo);
             noResults.innerHTML = "";
             searchResultsContainer.insertAdjacentHTML("beforeend", `
-                <div class="col-2 gallery-photo-container">
+                <div class="col-12 col-md-3 col-lg-2 gallery-photo-container">
                     <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`);
         } else if (inputLocation == "" && inputYear == photoYear) {
             console.log(photo);
             noResults.innerHTML = "";
             searchResultsContainer.insertAdjacentHTML("beforeend", `
-                <div class="col-2 gallery-photo-container">
+                <div class="col-12 col-md-3 col-lg-2 gallery-photo-container">
                     <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`);            
         } else if (!inputLocation == photoLocation && !inputYear == photoYear) {
