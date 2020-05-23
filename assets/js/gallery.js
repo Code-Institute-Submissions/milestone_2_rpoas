@@ -143,8 +143,8 @@ const searchResultsContainer = document.querySelector(".search-results-container
 function allPhotos() {
     photos.forEach((photo) => {
         searchResultsContainer.insertAdjacentHTML("beforeend", `
-            <div class="col-2 gallery-photo-container">
-                <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
+            <div class="col-2 gallery-photo-container"  tabindex="0">
+                <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal">
             </div>`)      
     });
     const gallery = Modal(document.querySelector(".search-results-container"));
@@ -234,7 +234,7 @@ function Modal(searchResultsContainer) {
 
     images.forEach(image => image.addEventListener("click", handleImageClick));
 
-    /* Why is this not displaying modal when pressing return???
+    /* Why is this not displaying modal when pressing return???*/
 
     images.forEach(image => {
         image.addEventListener("keyup", e => {
@@ -243,7 +243,7 @@ function Modal(searchResultsContainer) {
             }
         });
     });
-    */
+    
 
     nextButton.addEventListener("click", showNextImage);
     prevButton.addEventListener("click", showPrevImage);
