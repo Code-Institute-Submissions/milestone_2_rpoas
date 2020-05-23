@@ -211,14 +211,18 @@ footer {
 
 .previous {
     position: absolute;
-    left: 0px;
+    left: 20px;
     bottom: 50%;
 }
 
 .next {
     position: absolute;
-    right: 0px;
+    right: 20px;
     bottom: 50%;
+}
+
+.close {
+    height: 2.7vh;
 }
 
 /*----------------------------------------Contact Page---*/
