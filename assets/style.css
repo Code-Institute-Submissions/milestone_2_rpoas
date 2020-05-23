@@ -63,8 +63,9 @@ button:hover {
     text-decoration: none;
 }
 
-.white-hover:hover {
-    color: #eaeaea;
+.shadow-hover:hover {
+    color: #BAA571;
+    text-shadow: 2px 2px #00387b;
     text-decoration: none;
 }
 
