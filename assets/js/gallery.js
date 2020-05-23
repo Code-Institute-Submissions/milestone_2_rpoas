@@ -1,4 +1,4 @@
-
+/*------------------------------------------------------array of photo objects--*/
 
 const photos = [
     {
@@ -150,6 +150,8 @@ function allPhotos() {
     const gallery = Modal(document.querySelector(".search-results-container"));
 };
 
+document.addEventListener("load", allPhotos());
+
 /*------------------------------------------------------search photos by location and year--*/
 /*------------took inspiration from https://www.includehelp.com/code-snippets/search-from-array-of-objects-javascript%20.aspx--*/
 
@@ -193,12 +195,6 @@ function search() {
     });
     const gallery = Modal(document.querySelector(".search-results-container"));
 };
-
-document.addEventListener("load", allPhotos());
-
-photos.forEach((photo) => {
-    console.log(photo.location);
-})
 
 /*------------------------------------------------------operates the modal--*/
 /*------------took inspiration from https://wesbos.com/beginner-javascript--*/
@@ -252,3 +248,4 @@ function Modal(searchResultsContainer) {
     nextButton.addEventListener("click", showNextImage);
     prevButton.addEventListener("click", showPrevImage);
 }
+
