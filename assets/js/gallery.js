@@ -147,6 +147,7 @@ function allPhotos() {
                 <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
             </div>`)      
     });
+    const gallery = Modal(document.querySelector(".search-results-container"));
 };
 
 /*------------------------------------------------------search photos by location and year--*/
@@ -186,6 +187,7 @@ function search() {
             console.log(`no results for ${inputLocation} ${inputYear}`);
         };
     });
+    const gallery = Modal(document.querySelector(".search-results-container"));
 };
 
 document.addEventListener("load", allPhotos());
@@ -246,5 +248,3 @@ function Modal(searchResultsContainer) {
     nextButton.addEventListener("click", showNextImage);
     prevButton.addEventListener("click", showPrevImage);
 }
-
-const gallery = Modal(document.querySelector(".search-results-container"));
