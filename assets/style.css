@@ -207,15 +207,23 @@ footer {
 
 /*----------------------------------------Modal---*/
 
-.modal-content {
+.modal-body {
+    padding: 0;
     text-align: center;
     background-color: #eaeaea;
 }
 
 .modal img {
-    height: 100%;
     width: 100%;
-    border-radius: .3rem;
+}
+
+.modal-caption {
+    padding: 1.5vh 1vw;
+    font-weight: 700;  
+}
+
+.modal i {
+    padding: 0vh 0.5vw;
 }
 
 .arrow {
