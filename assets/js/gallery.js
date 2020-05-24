@@ -5,7 +5,8 @@ const photos = [
         title: "Biggar Gala Day (1975)",
         src: "/assets/images/gallery/biggar-galaday-1975-min.jpg",
         location: "Biggar",
-        caption: " ",
+        caption: `The local 'Bobby' makes a capture, with the help of a few 'Deputies'. Willie Stewart, 
+        is the arresting officer.`,
         year: 1975
     },
     {
@@ -19,59 +20,65 @@ const photos = [
         year: 1974
     },
     {
-        title: "Cambuslang (1964)",
+        title: "Cambuslang Police Office (1964)",
         src: "/assets/images/gallery/cambuslang-1964-min.jpg",
         location: "Cambuslang",
-        caption: " ",
+        caption: `Can you name the two Officers with the Sunbeam Rapier Convertible?`,
         year: 1964
     },
     {
         title: "Caterpillar Workers Strike (1987)",
         src: "/assets/images/gallery/caterpillarworkerstrike-oldeclub-1987-min.jpg",
         location: "Uddingston",
-        caption: " ",
+        caption: `Many will remember the Caterpillar Plant, Tannochside, Uddingston, which 
+        operated there for over 30 decades, from 1956 to 1987, producing giant bulldozers with their 
+        distinctive tank-style wheel tracks. A proud workforce with a community spirit perhaps accounts 
+        for the Police being able to man the picket lines dressed only in their normal uniforms, with their 
+        backs to the crowds.`,
         year: 1987
     },
     {
-        title: "Control Room, Motherwell (1985)",
+        title: "Lanarkshire Control Room (1985)",
         src: "/assets/images/gallery/controlroom-motherwell-1985-min.jpg",
         location: "Motherwell",
-        caption: " ",
+        caption: `Brian Dixon using 'State of the Art' equipment - not.`,
         year: 1985
     },
     {
-        title: "Crash (1974)",
+        title: "Road Traffic Accident (1974)",
         src: "/assets/images/gallery/crash-1974-min.jpg",
-        location: " ",
-        caption: " ",
+        location: "Larkhall",
+        caption: `Can you name any of the officers?`,
         year: 1974
     },
     {
-        title: "Cumbernauld (1997)",
+        title: "Cumbernauld 'N' Divison (1997)",
         src: "/assets/images/gallery/cumbernauld-1997-min.jpg",
         location: "Cumbernauld",
-        caption: " ",
+        caption: `Who do you recognise and where are they now?`,
         year: 1997
     },
     {
-        title: "Dogs, Low Moss (1985)",
+        title: "Strathclyde Dog Branch (1985)",
         src: "/assets/images/gallery/dog-lowmoss-1985-min.jpg",
         location: "Bishopbriggs",
-        caption: " ",
+        caption: `Andy Alexander with his dog, Zoltan, at the rear of Low Moss Young Offenders Institute, Bishopbriggs.`,
         year: 1985
     },
     {
         title: "Dog Branch, Pollok (1999)",
         src: "/assets/images/gallery/dogbranch-pollok-1999-min.jpg",
         location: "Pollok",
-        caption: " ",
+        caption: `Lanarkshire Ladies enjoy a visit to the Dog Branch at Pollok. Smartly dressed o
+        fficers with beautiful dogs and great weather made for a memorable day. Thanks to member 
+        Meg McLean for these memories.`,
         year: 1999
     },
     {
-        title: "Eastkilbride (1973)",
+        title: "East Kilbride Police Office (1973)",
         src: "/assets/images/gallery/eastkilbride-1973-min.jpg",
         location: "Eastkilbride",
-        caption: " ",
+        caption: `A happy shift. Who do you remember?`,
         year: 1973
     },
     {
@@ -82,24 +89,27 @@ const photos = [
         year: 1971
     },
     {
-        title: "Eastkilbride Strike (1969)",
+        title: "BSR Workers Strike (1969)",
         src: "/assets/images/gallery/eastkilbride-strike-1969-min.jpg",
         location: "Eastkilbride",
-        caption: " ",
+        caption: `October 1969, some 1,000 members of the Amalgamated Union of 
+        Engineering and Foundry Workers employed by B.S.R. Ltd., (British Sound Recorder) 
+        East Kilbride, went on official strike over the company's refusal to recognise the 
+        trade union. Do you recognise anyone in this photo?`,
         year: 1969
     },
     {
         title: "Exercise",
         src: "/assets/images/gallery/exercise-min.jpg",
         location: " ",
-        caption: " ",
+        caption: `Do you recognise faces or location? What year was this?`,
         year: " "
     },
     {
-        title: "Motherwell & Wishaw Police Football Team (1948)",
+        title: "Motherwell & Wishaw Burgh Police Football Team (1948)",
         src: "/assets/images/gallery/football-motherwell-wishaw-1948-min.jpg",
         location: "Motherwell Wishaw",
-        caption: " ",
+        caption: `Can you name anyone?`,
         year: 1948
     },
     {
@@ -113,28 +123,30 @@ const photos = [
         title: "Bagpipers at Hamilton Sheriff Court",
         src: "/assets/images/gallery/hamiltonsheriffcourt-bagpipes-min.jpg",
         location: "Hamilton",
-        caption: " ",
+        caption: `Motherwell & Wishaw Police Pipe Band outside Hamilton Sheriff Court. Do you know what year this was taken?`,
         year: " "
     },
     {
         title: "Lanarkshire HQ (1941)",
         src: "/assets/images/gallery/lanarkshirehq-hamilton-1941-min.jpg",
         location: "Hamilton",
-        caption: " ",
+        caption: `Lanarkshire HQ, which is now Hamilton Sheriff Court. One Sergeant and the Chief Constable a
+        re wearing diced cap bands. Do you recognise anyone, or have any more info on the uniforms/cap badges?`,
         year: 1941
     },
     {
-        title: "Lanarkshire Police Rugby Club (1962)",
-        src: "/assets/images/gallery/lanarkshirerugby-1962-min.jpg",
-        location: " ",
-        caption: " ",
+        title: "Lanarkshire Police Football Club (1962)",
+        src: "/assets/images/gallery/lanarkshirefootball-1962-min.jpg",
+        location: "Aberdeen",
+        caption: `Scottish Police Cup Final at Pittodrie, Aberdeen on 16 April 1962. Lanarkshire Constabulary v Aberdeen City Police. 
+        Prior to the game Denis Law attended. John Clark (left), Jim Shaw (2nd from right). Do you recognise anyone else?`,
         year: 1962
     },
     {
         title: "Lanarkshire WPCs (1970)",
         src: "/assets/images/gallery/lanarkshirewpc-1970-min.jpg",
         location: " ",
-        caption: " ",
+        caption: `Can you name anyone?`,
         year: 1970
     },
     {
@@ -158,35 +170,37 @@ const photos = [
         title: "Nelson Mandela Visits Glasgow (1993)",
         src: "/assets/images/gallery/mandela-glasgowcitychambers-1993-min.jpg",
         location: "Glasgow",
-        caption: " ",
+        caption: `A historic occasion at Glasgow City Chambers on 9 October 1993. 
+        Do you recognise one of our members? `,
         year: 1993
     },
     {
         title: "Motherwell (1926)",
         src: "/assets/images/gallery/motherwell-1926-min.jpg",
         location: "Motherwell",
-        caption: " ",
+        caption: `One for the historians, trophy winners in the Burgh days, believed to be in the former Motherwell 
+        Police Office.`,
         year: 1926
     },
     {
         title: "Motherwell and Wishaw Band (1928)",
         src: "/assets/images/gallery/motherwell-wishaw-band-1928-min.jpg",
         location: "Motherwell Wishaw",
-        caption: " ",
+        caption: `Can you recognise the former Police Office in the background?`,
         year: 1928
     },
     {
         title: "Motherwell and Wishaw Pipe Band (1968)",
         src: "/assets/images/gallery/motherwell-wishaw-pipeband-1968-min.jpg",
         location: "Motherwell Wishaw",
-        caption: " ",
+        caption: ``,
         year: 1968
     },
     {
         title: "Penguin Pete (1998)",
         src: "/assets/images/gallery/penguinpete-coatbridge-1998-min.jpg",
         location: "Coatbridge",
-        caption: " ",
+        caption: `School Event in Airdrie/Coatbridge.`,
         year: 1998
     },
     {
@@ -214,14 +228,19 @@ const photos = [
         title: "Ravenscraig Strike (1984)",
         src: "/assets/images/gallery/strike-ravenscraig-1984-min.jpg",
         location: "Motherwell",
-        caption: " ",
+        caption: `In May 1984, Ravenscraig Steelworks was at the epicentre of an industrial strike 
+        of seismic proportions in Scotland. The police were caught between a rock and a hard place, 
+        with many having family, relations and friends amongst the pickets, not a good situation for anyone. 
+        Group 2, Wishaw, in the photo were nightshift on this 1st day and were held on to cover The Craig, 
+        before reverting back to 12 hour nightshifts for several weeks from that night. Can you name the policemen 
+        in this photo?`,
         year: 1984
     },
     {
         title: "Traffic Police (1971)",
         src: "/assets/images/gallery/traffic-1971-min.jpg",
         location: " ",
-        caption: " ",
+        caption: `AJA (left) and Jack Paterson (right) of Lanarkshire Constabulary Traffic Dept.`,
         year: 1971
     },
     {
@@ -235,14 +254,14 @@ const photos = [
         title: "Traffic Instructor Course (1983)",
         src: "/assets/images/gallery/trafficinstructorscourse-tulliallan-1983-min.jpg",
         location: "Tulliallan",
-        caption: " ",
+        caption: `At Scottish Police College, Tulliallan. Who do you recognise?`,
         year: 1983
     },
     {
         title: "Tulliallan (1974)",
         src: "/assets/images/gallery/tulliallan-1974-min.jpg",
         location: "Tulliallan",
-        caption: " ",
+        caption: `Scottish Police College, Tulliallan. Potential Instructors Course No.27. Who do you recognise?`,
         year: 1974
     },
     {
@@ -256,9 +275,30 @@ const photos = [
         title: "Wishaw (1959)",
         src: "/assets/images/gallery/wishaw-1959-min.jpg",
         location: "Wishaw",
-        caption: " ",
+        caption: `Check the shine on the Cops' boots, all that for points duty. 
+        The wee laddie has skint knee and his gutties are on the wrong feet. 
+        Perhaps someone will recognise the shoulder number?`,
         year: 1959
     },
+    {
+        title: "Rolling Stones in Hamilton (1964)",
+        src: " ",
+        location: "Hamilton",
+        caption: `On 18 May 1964, The Rolling Stones and their army of fans rolled into Hamilton - 
+        and the town had never seen anything like it before. As 2000 people crammed into the ballroom at the 
+        Chantinghall Hotel, another 1000 mobbed the streets outside because of a forgery scam.
+        A queue snaked its way all the way to Peacock Cross, and the police had to send for reinforcements from 
+        Motherwell and Wishaw. Youngsters who succumbed to the heat or hysteria tried to recover in a make-shift 
+        ambulance room in the hotel’s foyer, while in the ballroom a few scraps broke out.`,
+        year: 1964
+    },
+    {
+        title: "Drill",
+        src: " ",
+        location: "Hamilton",
+        caption: `Remember when this was part of the drill at the SPC. "Stop Traffic from the Front and Rear." Check out the cap badges, looks like a Lanarkshire man? Thanks to Tam Eadie for this memory.`,
+        year: 1964
+    },    
 ];
 
 const searchResultsContainer = document.querySelector(".search-results-container");
@@ -341,7 +381,7 @@ function Modal(searchResultsContainer) {
         console.log(el);
         modal.querySelector("img").src = el.src;
         modal.querySelector(".modal-title").textContent = el.alt;
-        modal.querySelector("figcaption p").textContent = el.dataset.caption;
+        modal.querySelector(".modal-caption").textContent = el.dataset.caption;
         currentImage = el;
     }
     

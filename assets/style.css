@@ -205,6 +205,13 @@ footer {
     position: relative;
 }
 
+/*----------------------------------------Modal---*/
+
+.modal-content {
+    text-align: center;
+    background-color: #eaeaea;
+}
+
 .modal img {
     height: 100%;
     width: 100%;
