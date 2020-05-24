@@ -9,10 +9,13 @@ const photos = [
         year: 1975
     },
     {
-        title: "Bikes (1974)",
+        title: "Police Motorcycle Course (1974)",
         src: "/assets/images/gallery/bikes-1974-min.jpg",
-        location: " ",
-        caption: " ",
+        location: "Inverness",
+        caption: `Motorcycle course held on 7th August 1974 at Inverness Castle, which was then the Inverness Constabulary HQ. 
+        Two riders are from the City of Glasgow Police, identifiable by the twin blue beacons on their 
+        machines (RGD568M and 572M). The remaining 4 officers are from the home force, on force bikes WST296L and 297L 
+        and (I think), CST87M and 86M. Thanks to Dave Connor for the information.`,
         year: 1974
     },
     {
@@ -95,7 +98,7 @@ const photos = [
     {
         title: "Motherwell & Wishaw Police Football Team (1948)",
         src: "/assets/images/gallery/football-motherwell-wishaw-1948-min.jpg",
-        location: "Motherwell",
+        location: "Motherwell Wishaw",
         caption: " ",
         year: 1948
     },
@@ -133,6 +136,128 @@ const photos = [
         location: " ",
         caption: " ",
         year: 1970
+    },
+    {
+        title: "Lanimer Day Lanark (1950)",
+        src: "/assets/images/gallery/lanimerday-lanark-1950-min.jpg",
+        location: "Lanark",
+        caption: `Every June the town of Lanark holds its Lanimer Day celebrations. The festivities reach a 
+        high point on the Thursday of Lanimer week, when the town's schoolchildren parade 
+        in fancy dress with decorated vehicles, pipe bands, and a Lanimer Queen and her Court, 
+        who have been elected from local schools. One of the police offficers is Elizabeth Paul. Do you know her colleague?`,
+        year: 1950
+    },
+    {
+        title: "Large Group Photo",
+        src: "/assets/images/gallery/largegroupphoto-min.jpg",
+        location: " ",
+        caption: " ",
+        year: " "
+    },
+    {
+        title: "Nelson Mandela Visits Glasgow (1993)",
+        src: "/assets/images/gallery/mandela-glasgowcitychambers-1993-min.jpg",
+        location: "Glasgow",
+        caption: " ",
+        year: 1993
+    },
+    {
+        title: "Motherwell (1926)",
+        src: "/assets/images/gallery/motherwell-1926-min.jpg",
+        location: "Motherwell",
+        caption: " ",
+        year: 1926
+    },
+    {
+        title: "Motherwell and Wishaw Band (1928)",
+        src: "/assets/images/gallery/motherwell-wishaw-band-1928-min.jpg",
+        location: "Motherwell Wishaw",
+        caption: " ",
+        year: 1928
+    },
+    {
+        title: "Motherwell and Wishaw Pipe Band (1968)",
+        src: "/assets/images/gallery/motherwell-wishaw-pipeband-1968-min.jpg",
+        location: "Motherwell Wishaw",
+        caption: " ",
+        year: 1968
+    },
+    {
+        title: "Penguin Pete (1998)",
+        src: "/assets/images/gallery/penguinpete-coatbridge-1998-min.jpg",
+        location: "Coatbridge",
+        caption: " ",
+        year: 1998
+    },
+    {
+        title: "Pipe Band (1996)",
+        src: "/assets/images/gallery/pipeband-1996-min.jpg",
+        location: " ",
+        caption: " ",
+        year: 1996
+    },
+    {
+        title: "Policeman",
+        src: "/assets/images/gallery/policeman-min.jpg",
+        location: " ",
+        caption: " ",
+        year: " "
+    },
+    {
+        title: "Strathaven Gala Day (1997)",
+        src: "/assets/images/gallery/strathaven-galaday-1997-min.jpg",
+        location: "Strathaven",
+        caption: " ",
+        year: 1997
+    },
+    {
+        title: "Ravenscraig Strike (1984)",
+        src: "/assets/images/gallery/strike-ravenscraig-1984-min.jpg",
+        location: "Motherwell",
+        caption: " ",
+        year: 1984
+    },
+    {
+        title: "Traffic Police (1971)",
+        src: "/assets/images/gallery/traffic-1971-min.jpg",
+        location: " ",
+        caption: " ",
+        year: 1971
+    },
+    {
+        title: "Lanarkshire Constabulary Traffic Department (1972)",
+        src: "/assets/images/gallery/traffic-1972-min.jpg",
+        location: "None",
+        caption: "Two stalwarts of the Lanarkshire Constabulary Traffic Department, Charlie Young (left) and Willie Docherty (right).",
+        year: 1972
+    },
+    {
+        title: "Traffic Instructor Course (1983)",
+        src: "/assets/images/gallery/trafficinstructorscourse-tulliallan-1983-min.jpg",
+        location: "Tulliallan",
+        caption: " ",
+        year: 1983
+    },
+    {
+        title: "Tulliallan (1974)",
+        src: "/assets/images/gallery/tulliallan-1974-min.jpg",
+        location: "Tulliallan",
+        caption: " ",
+        year: 1974
+    },
+    {
+        title: "Tulliallan (1982)",
+        src: "/assets/images/gallery/tulliallan-1982-min.jpg",
+        location: "Tulliallan",
+        caption: " ",
+        year: 1982
+    },
+    {
+        title: "Wishaw (1959)",
+        src: "/assets/images/gallery/wishaw-1959-min.jpg",
+        location: "Wishaw",
+        caption: " ",
+        year: 1959
     },
 ];
 

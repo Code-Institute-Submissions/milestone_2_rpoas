@@ -236,3 +236,13 @@ footer {
     margin: 15px 0;
     font-size: 1.4em;
 }
+
+/*----------------------------------------Media Queries---*/
+
+@media(max-width: 420px) {
+    .gallery-photo-container {
+        display: contents;
+        margin: 0;
+        padding: 0;
+    }
+}

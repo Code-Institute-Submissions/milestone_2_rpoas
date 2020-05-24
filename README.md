@@ -210,9 +210,11 @@ x Link to database (Mailchimp?)
 
 ### Gallery
 - Operate Gallery with keyboard
-- Style modal
 - Style photos (hover)
 - How do I show photos that don't have year/location info?
+- How do I search when there's more than one location?
+- Can select list be creating automatically?
+x Style modal
 x Fix bug, no results message clear with each new search 
 x search by location
 x search by year
