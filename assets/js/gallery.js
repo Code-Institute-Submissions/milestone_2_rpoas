@@ -328,7 +328,7 @@ function search() {
     const noResults = document.querySelector(".no-results");
 
     searchResultsContainer.innerHTML = "";
-    noResults.innerHTML = ""
+    noResults.innerHTML = "";
 
     photos.forEach((photo) => {
         const photoLocation = photo.location.toLowerCase();
@@ -371,7 +371,6 @@ function search() {
 
 function Modal(searchResultsContainer) {
     const images = Array.from(searchResultsContainer.querySelectorAll("img"));
-    console.log(Array.from(images));
     const body = document.querySelector("body")
     const modal = document.querySelector(".modal");
     const prevButton = modal.querySelector(".previous");
