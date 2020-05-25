@@ -371,6 +371,7 @@ function search() {
 
 function Modal(searchResultsContainer) {
     const images = Array.from(searchResultsContainer.querySelectorAll("img"));
+    console.log(Array.from(images));
     const body = document.querySelector("body")
     const modal = document.querySelector(".modal");
     const prevButton = modal.querySelector(".previous");
