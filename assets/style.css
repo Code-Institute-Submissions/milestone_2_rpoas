@@ -253,6 +253,15 @@ footer {
     padding: 2vh 2vw;
 }
 
+.events-list {
+    padding: 0;
+}
+
+.events-list li {
+    list-style: none; 
+    padding-left: 1.5vw;
+}
+
 /*----------------------------------------Contact Page---*/
 
 .center-form h2 {
