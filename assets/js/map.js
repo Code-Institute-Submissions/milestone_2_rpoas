@@ -61,7 +61,11 @@ function setMarkers(map) {
             title: event.title
         });
         let windowContent = `
-        ${event.title}`;
+        <div class="form-section">
+            <h3>${event.title}</h3>
+            <h4>${event.datetime}</h4>
+            <h5>${event.location}</h5>
+        </div>`;
         let infoWindow = new google.maps.InfoWindow({
             content: windowContent
         });
@@ -76,13 +80,6 @@ function setMarkers(map) {
             infoWindow.open(map, marker);
         });
     });
-};
-
-
-
-function filter(events) {
-    console.log("click");
-
 };
 
 
