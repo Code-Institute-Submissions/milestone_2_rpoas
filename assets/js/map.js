@@ -83,24 +83,26 @@ function setMarkers(map) {
             content: windowContent
         });
         eventsList.insertAdjacentHTML("beforeend", `
-        <div class="form-section main-text">
-            <div id="heading${event.number}" class="row">
-                <div class="col" data-toggle="collapse" data-target="#collapse${event.number}" aria-expanded="false" aria-controls="collapse${event.number}">
-                    <h3>${event.title}</h3>
-                    <h4>${event.datetime}</h4>
-                    <h5>${event.location}</h5>
+        <div class="form-section main-text row">
+            <div class="col">
+                <div id="heading${event.number}" class="row">
+                    <div class="col-10" data-toggle="collapse" data-target="#collapse${event.number}" aria-expanded="false" aria-controls="collapse${event.number}">
+                        <h3>${event.title}</h3>
+                        <h4>${event.datetime}</h4>
+                        <h5>${event.location}</h5>
+                    </div>
+                    <div class="col-2">
+                        <h3><i class="fas fa-calendar-check"></i></h3>
+                    </div>
                 </div>
-                <div class="col">
-                    <i class="fas fa-calendar-check"></i>
-                </div>
-            </div>
-            <div id="collapse${event.number}" class="collapse" aria-labelledby="heading${event.number}" data-parent="#accordian">
-                <div class="main-text">
-                    ${event.description}
-                    <h5 class="main-text">Book your place now
-                    <a class="main-text gold-hover" href="/contact.html" target="_blank"><i class="fas fa-envelope"></i></a>
-                    <a class="main-text gold-hover" href="https://www.facebook.com/rpoas.lanarkshire" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                    </h5>
+                <div id="collapse${event.number}" class="collapse row" aria-labelledby="heading${event.number}" data-parent="#accordian">
+                    <div class="main-text col">
+                        ${event.description}
+                        <h5 class="main-text">Book your place now
+                        <a class="main-text gold-hover" href="/contact.html" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a class="main-text gold-hover" href="https://www.facebook.com/rpoas.lanarkshire" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        </h5>
+                    </div>
                 </div>
             </div>
         </div>
