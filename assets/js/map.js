@@ -60,6 +60,11 @@ function setMarkers(map) {
             position: {lat: event.lat, lng: event.lng},
             title: event.title
         });
+        let windowContent = `
+        ${event.title}`;
+        let infoWindow = new google.maps.InfoWindow({
+            content: windowContent
+        });
         eventsList.insertAdjacentHTML("beforeend", `
         <li class="form-section">
             <h3>${event.title}</h3>
@@ -67,14 +72,17 @@ function setMarkers(map) {
             <h5>${event.location}</h5>
         </li>
         `);
-        marker.addListener("click", action(event.title));
+        marker.addListener("click", function() {
+            infoWindow.open(map, marker);
+        });
     });
 };
 
 
 
-function action(events) {
+function filter(events) {
     console.log("click");
+
 };
 
 
