@@ -84,16 +84,23 @@ function setMarkers(map) {
         });
         eventsList.insertAdjacentHTML("beforeend", `
         <div class="form-section main-text">
-            <div id="heading${event.number}">
-                <div data-toggle="collapse" data-target="#collapse${event.number}" aria-expanded="false" aria-controls="collapse${event.number}">
+            <div id="heading${event.number}" class="row">
+                <div class="col" data-toggle="collapse" data-target="#collapse${event.number}" aria-expanded="false" aria-controls="collapse${event.number}">
                     <h3>${event.title}</h3>
                     <h4>${event.datetime}</h4>
                     <h5>${event.location}</h5>
+                </div>
+                <div class="col">
+                    <i class="fas fa-calendar-check"></i>
                 </div>
             </div>
             <div id="collapse${event.number}" class="collapse" aria-labelledby="heading${event.number}" data-parent="#accordian">
                 <div class="main-text">
                     ${event.description}
+                    <h5 class="main-text">Book your place now
+                    <a class="main-text gold-hover" href="/contact.html" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a class="main-text gold-hover" href="https://www.facebook.com/rpoas.lanarkshire" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    </h5>
                 </div>
             </div>
         </div>
