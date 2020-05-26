@@ -66,8 +66,15 @@ function setMarkers(map) {
             <h4>${event.datetime}</h4>
             <h5>${event.location}</h5>
         </li>
-        `)
+        `);
+        marker.addListener("click", action(event.title));
     });
+};
+
+
+
+function action(events) {
+    console.log("click");
 };
 
 
