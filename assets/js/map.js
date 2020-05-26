@@ -25,7 +25,8 @@ const events = [
         lat: 55.8604836,
         lng: -4.0542339,
         datetime: "2020-07-30 19:00",
-        description: ``
+        description: ``,
+        number: "Three"
     },
     {
         title: "RPOAS Lunch",
@@ -33,7 +34,8 @@ const events = [
         lat: 55.820283,
         lng: -4.0835657,
         datetime: "2020-08-09 13:00",
-        description: ``
+        description: ``,
+        number: "Four"
     },
     {
         title: "Quiz Night",
@@ -41,7 +43,8 @@ const events = [
         lat: 55.8006031,
         lng: -3.9837373,
         datetime: "2020-09-02 20:30",
-        description: ``
+        description: ``,
+        number: "Five"
     },
     {
         title: "Annual General Meeting",
@@ -49,7 +52,8 @@ const events = [
         lat: 55.7753011,
         lng: -4.0311063,
         datetime: "2020-10-01 14:00",
-        description: ``
+        description: ``,
+        number: "Six"
     },
 ];
 
@@ -107,8 +111,10 @@ function setMarkers(map) {
             </div>
         </div>
         `);
-        marker.addListener("click", function() {
+        marker.addListener("click", filter);
+        
+        function filter() {
             infoWindow.open(map, marker);
-        });
+        }
     });
 };
