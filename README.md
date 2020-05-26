@@ -201,7 +201,8 @@ Software Development practices:
 
 ## To Do
 ### Home Page
-- Add Gallery of committee members
+x Add Gallery of committee members
+- Hover over/Click on faces for more info
 
 ### Sign Up
 x Form
@@ -209,11 +210,6 @@ x Link to database (Mailchimp?)
 - Paypal link?
 
 ### Gallery
-- Operate Gallery with keyboard
-- Style photos (hover)
-- How do I show photos that don't have year/location info?
-- How do I search when there's more than one location?
-- Can select list be creating automatically?
 x Style modal
 x Fix bug, no results message clear with each new search 
 x search by location
@@ -221,11 +217,17 @@ x search by year
 x search by location and year at same time
 x clear search results with each form submit
 x fix modal to work with search function
+- Operate Gallery with keyboard
+- Style photos (hover)
+- How do I show photos that don't have year/location info?
+- How do I search when there's more than one location?
+- Can select list be creating automatically?
 
 ### Events
-- Change the lnglats of markers to match with towns
+x Change the lnglats of markers to match with towns
+x add events
 - Change the icons on the map
-- add events
+
 
 ### Contact
 x Form
@@ -238,8 +240,8 @@ x Add button to upload photos
 
 ## Problems/Questions
 x How do I link contact form with Mailchimp?
-- How can the Gallery be operated by keyboard?
 x Why are there red crosses next to some of my github pushes?
+- How can the Gallery be operated by keyboard?
 - How do I connect file upload to contact form?
 - How can I get the contact form to clear when send button is pressed?
 - Why is banner on events page bold?

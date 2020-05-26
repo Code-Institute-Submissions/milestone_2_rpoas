@@ -75,7 +75,8 @@ function setMarkers(map) {
         let marker = new google.maps.Marker({
             map: map,
             position: {lat: event.lat, lng: event.lng},
-            title: event.title
+            title: event.title,
+            number: event.number
         });
         let windowContent = `
         <div class="form-section">
@@ -86,7 +87,7 @@ function setMarkers(map) {
         let infoWindow = new google.maps.InfoWindow({
             content: windowContent
         });
-        eventsList.insertAdjacentHTML("beforeend", `
+        let eventListContent = `
         <div class="form-section main-text row">
             <div class="col">
                 <div id="heading${event.number}" class="row">
@@ -110,11 +111,14 @@ function setMarkers(map) {
                 </div>
             </div>
         </div>
-        `);
+        `;
+        eventsList.insertAdjacentHTML("beforeend", eventListContent);
         marker.addListener("click", filter);
         
         function filter() {
             infoWindow.open(map, marker);
+            $(".form-section").remove();
+            eventsList.insertAdjacentHTML("beforeend", eventListContent);
         }
     });
 };
