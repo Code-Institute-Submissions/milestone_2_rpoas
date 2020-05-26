@@ -70,6 +70,7 @@ function initMap() {
 
 function setMarkers(map) {
     const eventsList = document.querySelector(".events-list");
+    const filterResults = document.querySelector("#filter-results")
 
     events.forEach((event) => {
         let marker = new google.maps.Marker({
@@ -117,8 +118,7 @@ function setMarkers(map) {
         
         function filter() {
             infoWindow.open(map, marker);
-            $(".form-section").remove();
-            eventsList.insertAdjacentHTML("beforeend", eventListContent);
+            eventsList.insertAdjacentHTML("afterbegin", eventListContent);
         }
     });
 };

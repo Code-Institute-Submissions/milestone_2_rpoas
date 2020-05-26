@@ -226,8 +226,9 @@ x fix modal to work with search function
 ### Events
 x Change the lnglats of markers to match with towns
 x add events
-- Change the icons on the map
-
+- Expand events list when marker clicked
+- Close infowindow when another is clicked
+- Don't delete info window content when another is clicked
 
 ### Contact
 x Form
