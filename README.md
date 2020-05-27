@@ -218,9 +218,9 @@ x search by location and year at same time
 x clear search results with each form submit
 x fix modal to work with search function
 x Order by asc/desc year
+x How do I show photos that don't have year/location info?
 - Operate Gallery with keyboard
 - Style photos (hover)
-- How do I show photos that don't have year/location info?
 - How do I search when there's more than one location?
 - Can select list be creating automatically?
 
@@ -246,5 +246,6 @@ x How do I connect file upload to contact form? (can't do with paying emailjs su
 x How can I get the contact form to clear when send button is pressed?
 - How can the Gallery be operated by keyboard?
 - Why is banner on events page bold?
+- Why are photos taking so long to load? Starting happening after asc/desc js was fixed
 
 
