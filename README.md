@@ -217,6 +217,7 @@ x search by year
 x search by location and year at same time
 x clear search results with each form submit
 x fix modal to work with search function
+x Order by asc/desc year
 - Operate Gallery with keyboard
 - Style photos (hover)
 - How do I show photos that don't have year/location info?
@@ -236,14 +237,14 @@ x link to dad's email
 x Add button to upload photos
 x Fix bug that won't include attachments on emails (can't do without paying emailjs subscription)
 x Clear form once email is sent
-- Expand free text section
+x Expand free text section
 
 ## Problems/Questions
 x How do I link contact form with Mailchimp?
 x Why are there red crosses next to some of my github pushes?
+x How do I connect file upload to contact form? (can't do with paying emailjs subscription)
+x How can I get the contact form to clear when send button is pressed?
 - How can the Gallery be operated by keyboard?
-- How do I connect file upload to contact form?
-- How can I get the contact form to clear when send button is pressed?
 - Why is banner on events page bold?
 
 

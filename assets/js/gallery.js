@@ -101,9 +101,9 @@ const photos = [
     {
         title: "Exercise",
         src: "/assets/images/gallery/exercise-min.jpg",
-        location: " ",
+        location: "notAvailable",
         caption: `Do you recognise faces or location? What year was this?`,
-        year: " "
+        year: "notAvailable"
     },
     {
         title: "Motherwell & Wishaw Burgh Police Football Team (1948)",
@@ -115,7 +115,7 @@ const photos = [
     {
         title: "Francie & Josie (1990)",
         src: "/assets/images/gallery/franciejosie-1990-min.jpg",
-        location: " ",
+        location: "notAvailable",
         caption: " ",
         year: 1990
     },
@@ -124,7 +124,7 @@ const photos = [
         src: "/assets/images/gallery/hamiltonsheriffcourt-bagpipes-min.jpg",
         location: "Hamilton",
         caption: `Motherwell & Wishaw Police Pipe Band outside Hamilton Sheriff Court. Do you know what year this was taken?`,
-        year: " "
+        year: "notAvailable"
     },
     {
         title: "Lanarkshire HQ (1941)",
@@ -145,7 +145,7 @@ const photos = [
     {
         title: "Lanarkshire WPCs (1970)",
         src: "/assets/images/gallery/lanarkshirewpc-1970-min.jpg",
-        location: " ",
+        location: "notAvailable",
         caption: `Can you name anyone?`,
         year: 1970
     },
@@ -162,9 +162,9 @@ const photos = [
     {
         title: "Large Group Photo",
         src: "/assets/images/gallery/largegroupphoto-min.jpg",
-        location: " ",
+        location: "notAvailable",
         caption: " ",
-        year: " "
+        year: "notAvailable"
     },
     {
         title: "Nelson Mandela Visits Glasgow (1993)",
@@ -206,16 +206,16 @@ const photos = [
     {
         title: "Pipe Band (1996)",
         src: "/assets/images/gallery/pipeband-1996-min.jpg",
-        location: " ",
+        location: "notAvailable",
         caption: " ",
         year: 1996
     },
     {
         title: "Policeman",
         src: "/assets/images/gallery/policeman-min.jpg",
-        location: " ",
+        location: "notAvailable",
         caption: " ",
-        year: " "
+        year: "notAvailable"
     },
     {
         title: "Strathaven Gala Day (1997)",
@@ -239,14 +239,14 @@ const photos = [
     {
         title: "Traffic Police (1971)",
         src: "/assets/images/gallery/traffic-1971-min.jpg",
-        location: " ",
+        location: "notAvailable",
         caption: `AJA (left) and Jack Paterson (right) of Lanarkshire Constabulary Traffic Dept.`,
         year: 1971
     },
     {
         title: "Lanarkshire Constabulary Traffic Department (1972)",
         src: "/assets/images/gallery/traffic-1972-min.jpg",
-        location: "None",
+        location: "notAvailable",
         caption: "Two stalwarts of the Lanarkshire Constabulary Traffic Department, Charlie Young (left) and Willie Docherty (right).",
         year: 1972
     },
@@ -305,7 +305,7 @@ const searchResultsContainer = document.querySelector(".search-results-container
 
 /*------------------------------------------------------display all photos--*/
 
-function allPhotos() {
+function allPhotos(array) {
     photos.forEach((photo) => {
         searchResultsContainer.insertAdjacentHTML("beforeend", `
             <div class="col-12 col-md-3 col-lg-2 gallery-photo-container" tabindex="0">
@@ -358,6 +358,12 @@ function search() {
         } else if (!inputLocation == photoLocation && !inputYear == photoYear) {
             console.log(`no results for ${inputLocation} ${inputYear}`);
             noResults.innerHTML = `no results for ${inputLocation} ${inputYear}`;
+        } else if (inputLocation == "" && inputYear == "") {
+            console.log(`no location or input chosen. Images must be ordered by year`);
+            searchResultsContainer.insertAdjacentHTML("beforeend", `
+                <div class="col-12 col-md-3 col-lg-2 gallery-photo-container">
+                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
+                </div>`);  
         }
         else {
             console.log("error");
@@ -444,11 +450,10 @@ function sortPhotos(key, order = "asc") {
     };
 }
 
-/*--Works once search is done, doesn't work when there are no filters--*/
-
 function sortYear(order) {
     newPhotoArray = photos.sort(sortPhotos("year", order));
     console.log(newPhotoArray);
+    document.addEventListener("load", allPhotos(newPhotoArray));
 
     search(newPhotoArray);
 }
