@@ -282,7 +282,7 @@ const photos = [
     },
     {
         title: "Rolling Stones in Hamilton (1964)",
-        src: " ",
+        src: "/assets/images/gallery/rollingstones-hamilton-1964-min.jpg",
         location: "Hamilton",
         caption: `On 18 May 1964, The Rolling Stones and their army of fans rolled into Hamilton - 
         and the town had never seen anything like it before. As 2000 people crammed into the ballroom at the 
@@ -294,7 +294,7 @@ const photos = [
     },
     {
         title: "Drill",
-        src: " ",
+        src: "/assets/images/gallery/drill-min.jpg",
         location: "Hamilton",
         caption: `Remember when this was part of the drill at the SPC. "Stop Traffic from the Front and Rear." Check out the cap badges, looks like a Lanarkshire man? Thanks to Tam Eadie for this memory.`,
         year: 1964
