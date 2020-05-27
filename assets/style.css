@@ -173,7 +173,7 @@ footer {
 
 #mc_embed_signup button,
 .center-form button {
-    margin: auto;
+    margin: 1vh auto;
     font-size: 3vh;
 }
 
@@ -268,12 +268,15 @@ footer {
     font-weight: bold;
     padding: 0;
     margin: 15px 0;
-    font-size: 1.4em;
 }
 
 .email-message {
     text-align: center;
     margin-top: 2vh;
+}
+
+#query {
+    max-height: 20vh;
 }
 
 /*----------------------------------------Media Queries---*/
