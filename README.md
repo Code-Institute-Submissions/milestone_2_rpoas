@@ -234,10 +234,9 @@ x add events
 x Form
 x link to dad's email
 x Add button to upload photos
-- Fix bug that won't include attachments on emails
-- Clear form once email is sent
+x Fix bug that won't include attachments on emails (can't do without paying emailjs subscription)
+x Clear form once email is sent
 - Expand free text section
-- Style choose file button
 
 ## Problems/Questions
 x How do I link contact form with Mailchimp?
