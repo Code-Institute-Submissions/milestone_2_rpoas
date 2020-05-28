@@ -92,7 +92,7 @@ function setMarkers(map) {
         <div class="form-section main-text row">
             <div class="col">
                 <div id="heading${event.number}" class="row">
-                    <div class="col-10" data-toggle="collapse" data-target="#collapse${event.number}" aria-expanded="false" aria-controls="collapse${event.number}">
+                    <div class="col-10 event-heading" data-toggle="collapse" data-target="#collapse${event.number}" aria-expanded="false" aria-controls="collapse${event.number}">
                         <h3>${event.title}</h3>
                         <h4>${event.datetime}</h4>
                         <h5>${event.location}</h5>

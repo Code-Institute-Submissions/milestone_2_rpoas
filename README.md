@@ -20,6 +20,11 @@ of historical photos.
 The website features member testimonials, details of past and upcoming events, a gallery of historical photos related
 to the police force in Lanarkshire, details of member benefits, a sign up form and a contact page.
 
+The client requested this website to address a number of issues with current methods of recruitment and communication. 
+* [RPOAS Lanarkshire Facebook page](https://www.facebook.com/rpoas.lanarkshire), which is only accessible to those with a Facebook account. 
+* Mass emails, which the RPOAS Lanarkshire branch sends using [MailChimp](https://mailchimp.com/). The mailing list consists of RPOAS Lanarkshire members and potential members who have provided their contact details at recruitment events.
+* A central [RPOAS website](https://www.rpoas.org.uk/wp/), with separate pages for each branch. This site is maintained centrally and rarely updated. Most information is only available with login details.
+
 The business goals of this website are:
 * Build awareness of the RPOAS amongst retired police officers.
 * Promote the benefits of RPOAS membership.
@@ -64,38 +69,21 @@ There are several possible user journeys to the website:
 Users visit this website because they want:
 * To find out about what the RPOAS can offer members.
 * A quick and easy way to register as an RPOAS member.
+* A way to reminisce about their career and find out more about the history of Lanarkshire Police Force.
 * To discover what events are upcoming in their area.
-* An easily searchable way to look through the historical photos.
 * To contact the RPOAS branch with a question or suggestion.
 * To contribute to the collection of historical photos.
 
-### Improving The User Experience
-
-#### Finding out what the RPOAS can offer
-Prior to the creation of this website, the methods of communication with RPOAS members and potential members were:
-* [RPOAS Lanarkshire Facebook page](https://www.facebook.com/rpoas.lanarkshire), which is only accessible to those with a Facebook account. 
-* Mass emails, which the RPOAS Lanarkshire branch sends using [MailChimp](https://mailchimp.com/). The mailing list consists of RPOAS Lanarkshire members and potential members who have provided their contact details at recruitment events.
-* A central [RPOAS website](https://www.rpoas.org.uk/wp/), with separate pages for each branch. This site is maintained centrally and rarely updated. Most information is only available with login details.
-
-This RPOAS Lanarkshire website compliments and improves upon these existing methods of communication by providing an easily 
-accessible source of information that is not reliant on users having a Facebook account or having already volunteered their 
-contact details. It is directly operated by the RPOAS Lanarkshire Branch, who can ensure that information remains current and regularly updated.
-
-#### Registering as an RPOAS member
-Prior to this website, members registered by contacting the RPOAS Branch by phone, email, Facebook or in person to request a registration form. A word doc was emailed to the individual to complete and then emailed back to the RPOAS Branch. 
-The member details were then manually copied to a spreadsheet and email details were manually copied to the Branch's Mailchimp account. 
-
-This RPOAS Lanarkshire website provides a much more efficient and accessible way to register as a member. The registration form automatically adds members' details to the Mailchimp mailing list and the membership database (also 
-stored on the Branch's Mailchimp account).
-
-#### Discovering upcoming events
-
-
-#### Searching historical photo collection
-
-#### Contacting the RPOAS Lanarkshire Branch
+This website helps them achieve these goals by providing:
+* A reliable and regularly updated source of information that is not reliant on login or contact details.
+* A straight forward registration form that automatically adds user details to the RPOAS Lanarkshire mailing list.
+* An informative gallery of historical photos that can be filtered by location and/or year.
+* An interactive map that links to details of upcoming events.
+* An easy way to get in touch with the RPOAS Lanarkshire Branch Committee with any questions or suggestions.
 
 ### User Stories
+
+
 
 ### Wireframes
 
