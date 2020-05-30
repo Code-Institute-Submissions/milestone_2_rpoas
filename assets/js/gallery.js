@@ -312,8 +312,7 @@ function allPhotos(array) {
         searchResultsContainer.insertAdjacentHTML("beforeend", `
             <div class="col-12 col-md-3 col-lg-2 gallery-photo-container" tabindex="0">
                 <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal">
-            </div>`); 
-        console.log(photo.location);
+            </div>`);
     });
     const gallery = Modal(document.querySelector(".search-results-container"));
 };
@@ -336,37 +335,29 @@ function search() {
     photos.forEach((photo) => {
         const photoLocation = photo.location.toLowerCase();
         const photoYear = photo.year;     
+        const photoHTML = `
+                <div class="col-12 col-md-3 col-lg-2 gallery-photo-container">
+                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
+                </div>`;
 
         if (inputLocation == photoLocation && inputYear == photoYear) {
             console.log(photo);
             noResults.innerHTML = "";
-            searchResultsContainer.insertAdjacentHTML("beforeend", `
-                <div class="col-12 col-md-3 col-lg-2 gallery-photo-container">
-                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
-                </div>`);
+            searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);
         } else if (inputLocation == photoLocation && inputYear == "") {
             console.log(photo);
             noResults.innerHTML = "";
-            searchResultsContainer.insertAdjacentHTML("beforeend", `
-                <div class="col-12 col-md-3 col-lg-2 gallery-photo-container">
-                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
-                </div>`);
+            searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);
         } else if (inputLocation == "" && inputYear == photoYear) {
             console.log(photo);
             noResults.innerHTML = "";
-            searchResultsContainer.insertAdjacentHTML("beforeend", `
-                <div class="col-12 col-md-3 col-lg-2 gallery-photo-container">
-                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
-                </div>`);            
+            searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);            
         } else if (!inputLocation == photoLocation && !inputYear == photoYear) {
             console.log(`no results for ${inputLocation} ${inputYear}`);
             noResults.innerHTML = `no results for ${inputLocation} ${inputYear}`;
         } else if (inputLocation == "" && inputYear == "") {
             console.log(`no location or input chosen`);
-            searchResultsContainer.insertAdjacentHTML("beforeend", `
-                <div class="col-12 col-md-3 col-lg-2 gallery-photo-container">
-                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
-                </div>`);  
+            searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);  
         }
         else {
             console.log("error");
@@ -411,9 +402,13 @@ function Modal(searchResultsContainer) {
         if (event.key === "ArrowLeft") showPrevImage();
     }
 
-    images.forEach(image => image.addEventListener("click", handleImageClick));
+    /* 
+    images.forEach(image => {
+        image.addEventListener("click", handleImageClick));
+        image.addEventListener("keypress")
+    }
 
-    /* Why is this not displaying modal when pressing return???
+    Why is this not displaying modal when pressing return???
 
     images.forEach(image => {
         image.addEventListener("keyup", e => {
