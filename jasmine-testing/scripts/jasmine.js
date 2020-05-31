@@ -41,7 +41,7 @@ const searchResultsContainer = document.querySelector(".search-results-container
 const yearOption = document.querySelector(".filtered-years");
 const locationOption = document.querySelector(".filtered-locations");
 
-search = function() {
+function search(inputLocation, inputYear) {
     const images = document.querySelectorAll("img");
     const inputLocation = document.querySelector("#photo-location").value.toLowerCase();
     const inputYear = document.querySelector("#photo-year").value;

@@ -401,13 +401,15 @@ function Modal(searchResultsContainer) {
         if (event.key === "ArrowRight") showNextImage();
         if (event.key === "ArrowLeft") showPrevImage();
     }
-
-    /* 
+/*
+    images.forEach(image => image.addEventListener("click", handleImageClick));
+*/
+    
     images.forEach(image => {
-        image.addEventListener("click", handleImageClick));
-        image.addEventListener("keypress")
-    }
-
+        image.addEventListener("click", handleImageClick);
+        image.addEventListener("keypress", handleImageClick);
+    });
+/* 
     Why is this not displaying modal when pressing return???
 
     images.forEach(image => {
