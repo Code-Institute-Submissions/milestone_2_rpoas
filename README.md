@@ -95,7 +95,7 @@ This website helps them achieve these goals by providing:
 ### Wireframes
 
 * [About]("")
-* [Sign Up]("/wireframes/milestone2_signup.png")
+* [Sign Up]("")
 * [Gallery]("")
 * [Events]("")
 * [Contact]("")

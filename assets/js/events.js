@@ -73,23 +73,24 @@ function setMarkers(map) {
     const filterResults = document.querySelector("#filter-results")
 
     events.forEach((event) => {
-        let marker = new google.maps.Marker({
+        const marker = new google.maps.Marker({
             map: map,
             position: {lat: event.lat, lng: event.lng},
             title: event.title,
             number: event.number
         });
-        let windowContent = `
+        const windowContent = `
         <div class="form-section">
             <h3>${event.title}</h3>
             <h4>${event.datetime}</h4>
             <h4>${event.location}</h4>
         </div>`;
-        let infoWindow = new google.maps.InfoWindow({
-            content: windowContent
+        const infoWindow = new google.maps.InfoWindow({
+            content: windowContent,
+            number: event.number
         });
-        let eventListContent = `
-        <div class="form-section main-text row">
+        const eventListContent = `
+        <div class="form-section main-text row" id="accordian${event.number}">
             <div class="col">
                 <div id="heading${event.number}" class="row">
                     <div class="col-10 event-heading" data-toggle="collapse" data-target="#collapse${event.number}" aria-expanded="false" aria-controls="collapse${event.number}">
@@ -117,8 +118,12 @@ function setMarkers(map) {
         marker.addListener("click", filter);
         
         function filter() {
+            const accordian = document.querySelector(`#accordian${event.number}`)
+
             infoWindow.open(map, marker);
+            accordian.remove();
             eventsList.insertAdjacentHTML("afterbegin", eventListContent);
+            $(`#collapse${event.number}`).collapse();
         }
     });
 };
