@@ -25,7 +25,7 @@ const events = [
         lat: 55.8604836,
         lng: -4.0542339,
         datetime: "2020-07-30 19:00",
-        description: ``,
+        description: `Slap up meal with old friends.`,
         number: "Three"
     },
     {
@@ -34,7 +34,7 @@ const events = [
         lat: 55.820283,
         lng: -4.0835657,
         datetime: "2020-08-09 13:00",
-        description: ``,
+        description: `Tea and a natter`,
         number: "Four"
     },
     {
@@ -43,7 +43,7 @@ const events = [
         lat: 55.8006031,
         lng: -3.9837373,
         datetime: "2020-09-02 20:30",
-        description: ``,
+        description: `Can you and your team mates take on the reigning champions for the coveted RPOAS trophy?`,
         number: "Five"
     },
     {
@@ -52,7 +52,7 @@ const events = [
         lat: 55.7753011,
         lng: -4.0311063,
         datetime: "2020-10-01 14:00",
-        description: ``,
+        description: `Your vote counts for the election of the RPOAS Committee 2020-2021`,
         number: "Six"
     },
 ];
@@ -104,7 +104,7 @@ function setMarkers(map) {
                 </div>
                 <div id="collapse${event.number}" class="collapse row" aria-labelledby="heading${event.number}" data-parent="#accordian">
                     <div class="main-text col">
-                        ${event.description}
+                        <h4>${event.description}</h4>
                         <h5 class="main-text">Book your place now
                         <a class="main-text gold-hover" href="/contact.html" target="_blank"><i class="fas fa-envelope"></i></a>
                         <a class="main-text gold-hover" href="https://www.facebook.com/rpoas.lanarkshire" target="_blank"><i class="fab fa-facebook-square"></i></a>
@@ -114,16 +114,22 @@ function setMarkers(map) {
             </div>
         </div>
         `;
-        eventsList.insertAdjacentHTML("beforeend", eventListContent);
-        marker.addListener("click", filter);
         
         function filter() {
-            const accordian = document.querySelector(`#accordian${event.number}`)
+            const currentAccordian = document.querySelector(`#accordian${event.number}`)
+
+            currentAccordian.remove();
+            eventsList.insertAdjacentElement("afterbegin", currentAccordian);
+            $(`#collapse${event.number}`).collapse("show");
 
             infoWindow.open(map, marker);
-            accordian.remove();
-            eventsList.insertAdjacentHTML("afterbegin", eventListContent);
-            $(`#collapse${event.number}`).collapse();
-        }
+        };
+
+        eventsList.insertAdjacentHTML("beforeend", eventListContent);
+        marker.addListener("click", filter);
+        google.maps.event.addListener(map, "click", function() {
+            infoWindow.close();
+        });
+
     });
 };
