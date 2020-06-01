@@ -83,9 +83,22 @@ This website helps them achieve these goals by providing:
 
 ### User Stories
 
-
+1. As a new visitor to the website, I want to find out what RPOAS Lanarkshire is.
+2. As a new visitor to the website, I want an easy way to contact RPOAS Lanarkshire with my questions.
+3. As a potential member, I want to find out what the RPOAS has to offer members.
+4. As a potential member, I want an efficient way to register with the RPOAS.
+5. As a current RPOAS member, I want to find out about events are happening in my area.
+6. As a current RPOAS member, I enjoy looking through old photos from my time at each police station.
+7. As a current RPOAS member, I like to contribute information on the photos.
+8. As a family member of a retired Lanarkshire police officer, I want to reminisce about their time in the police force.
 
 ### Wireframes
+
+* [About]("")
+* [Sign Up]("https://github.com/H4RP3RK/milestone_2_rpoas/blob/9d9e782b58c7e212a6b4615807f2ff1198ebf1bd/assets/wireframes/Milestone2_signup.png")
+* [Gallery]("")
+* [Events]("")
+* [Contact]("")
 
 ---
 ## Features
