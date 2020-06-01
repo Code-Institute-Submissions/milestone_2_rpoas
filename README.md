@@ -95,7 +95,7 @@ This website helps them achieve these goals by providing:
 ### Wireframes
 
 * [About]("")
-* [Sign Up]("https://github.com/H4RP3RK/milestone_2_rpoas/blob/9d9e782b58c7e212a6b4615807f2ff1198ebf1bd/assets/wireframes/Milestone2_signup.png")
+* [Sign Up]("/wireframes/milestone2_signup.png")
 * [Gallery]("")
 * [Events]("")
 * [Contact]("")
@@ -201,6 +201,10 @@ Software Development practices:
 * Deployment write-up
 
 ## To Do
+### Readme
+- Home Wireframe
+- Fix links to wireframes
+
 ### Home Page
 x Add Gallery of committee members
 - Hover over/Click on faces for more info
