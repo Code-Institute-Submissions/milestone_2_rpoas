@@ -115,13 +115,15 @@ function setMarkers(map) {
         `;
         
         function filter() {
-            const currentAccordian = document.querySelector(`#accordian${event.number}`)
+            const currentAccordian = document.querySelector(`#accordian${event.number}`);
+            const allAccordians = document.querySelectorAll(".accordian");
 
             currentAccordian.remove();
             eventsList.insertAdjacentElement("afterbegin", currentAccordian);
             $(`#collapse${event.number}`).collapse("show");
+            currentAccordian.classList.add("selected");
 
-           infoWindow.open(map, marker); 
+            infoWindow.open(map, marker); 
         };
 
         eventsList.insertAdjacentHTML("beforeend", eventListContent);
