@@ -145,8 +145,11 @@ footer {
 /*----------------------------------------About Page---*/
 
 .welcome-container {
-    position: relative;
     margin-top: 2vh;
+}
+
+.committee-container {
+    position: relative;
 }
 
 .committee-photo {
@@ -159,7 +162,7 @@ footer {
 
 .welcome-text {
     position: absolute;
-    top: 32%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2.5vw;
@@ -174,6 +177,10 @@ footer {
 
 .offers ul {
     list-style-type: none;
+}
+
+.offers li {
+    padding: 1vh 0vw;
 }
 
 /*----------------------------------------Sign Up Page---*/
