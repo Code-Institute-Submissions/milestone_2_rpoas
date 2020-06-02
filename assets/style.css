@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    font-size: 5vh;
+    font-size: 4vh;
 }
 
 h2 {
@@ -172,7 +172,12 @@ footer {
 }
 
 .offers .form-section {
-    margin: 2vh auto;
+    margin: 2.5vh auto;
+}
+
+.offers h2 {
+    margin-bottom: 2vh;
+    font-weight: 900;
 }
 
 .offers h4 {
@@ -337,6 +342,11 @@ footer {
 
 #query {
     max-height: 20vh;
+}
+
+.email-message i {
+    font-size: 10vh;
+    margin: 4vh 4vw;
 }
 
 /*----------------------------------------Media Queries---*/
