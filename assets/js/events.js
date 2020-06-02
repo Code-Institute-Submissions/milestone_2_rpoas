@@ -70,7 +70,6 @@ function initMap() {
 
 function setMarkers(map) {
     const eventsList = document.querySelector(".events-list");
-    const filterResults = document.querySelector("#filter-results")
 
     events.forEach((event) => {
         const marker = new google.maps.Marker({
@@ -112,11 +111,11 @@ function setMarkers(map) {
                 </div>
             </div>
         </div>
-        `;
+        `;        
         
         function filter() {
             const currentAccordian = document.querySelector(`#accordian${event.number}`);
-            const allAccordians = Array.from(document.querySelectorAll(".accordian"));
+            const accordiansArray = Array.from(document.querySelectorAll(".accordian"));
 
             //opens infoWindow
             infoWindow.open(map, marker); 
@@ -126,7 +125,7 @@ function setMarkers(map) {
             //expands relevant event
             $(`#collapse${event.number}`).collapse("show");
             //removes style of previously selected events
-            allAccordians.forEach((accordian) => {
+            accordiansArray.forEach((accordian) => {
                 accordian.classList.remove("selected");
             });
             //changes style of selected event
@@ -138,6 +137,5 @@ function setMarkers(map) {
         google.maps.event.addListener(map, "click", function() {
             infoWindow.close();
         });
-
     });
 };

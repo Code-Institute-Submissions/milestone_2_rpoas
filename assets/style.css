@@ -276,6 +276,15 @@ footer {
     color: #eaeaea;
 }
 
+.search-instructions li {
+    padding: 1vh 0vw;
+}
+
+.search-instructions ol {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
 /*----------------------------------------Contact Page---*/
 
 .center-form h2 {
