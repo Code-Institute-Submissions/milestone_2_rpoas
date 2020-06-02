@@ -175,12 +175,8 @@ footer {
     margin: 2vh auto;
 }
 
-.offers ul {
-    list-style-type: none;
-}
-
-.offers li {
-    padding: 1vh 0vw;
+.offers h4 {
+    padding: 1vh 2vw;
 }
 
 .offers a {
