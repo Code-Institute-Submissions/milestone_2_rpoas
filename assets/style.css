@@ -253,7 +253,7 @@ footer {
 #photoMap {
     width: 100%;
     height: 60vh;
-    margin-left: 2vh auto;
+    margin: auto;
     padding: 2vh 2vw;
 }
 

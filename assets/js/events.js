@@ -117,7 +117,6 @@ function setMarkers(map) {
         function filter() {
             const currentAccordian = document.querySelector(`#accordian${event.number}`);
             const allAccordians = Array.from(document.querySelectorAll(".accordian"));
-            console.log(allAccordians);
 
             //opens infoWindow
             infoWindow.open(map, marker); 
