@@ -144,12 +144,25 @@ footer {
 
 /*----------------------------------------About Page---*/
 
-.about-container .form-section {
+.welcome-container {
+    position: relative;
     text-align: center;
+    margin-top: 2vh;
 }
 
 .committee-photo {
     width: 100%;
+    border: #BAA571 1px solid;
+    border-radius: 10px;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5vw;
+    background-color: rgba(0, 56, 123, 0.3);
 }
 
 /*----------------------------------------Sign Up Page---*/
