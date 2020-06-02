@@ -112,7 +112,7 @@ function setMarkers(map) {
             </div>
         </div>
         `;        
-        
+
         function filter() {
             const currentAccordian = document.querySelector(`#accordian${event.number}`);
             const accordiansArray = Array.from(document.querySelectorAll(".accordian"));
@@ -139,3 +139,21 @@ function setMarkers(map) {
         });
     });
 };
+
+/*
+
+function clickAccordian() {
+    const accordiansArray = Array.from(document.querySelectorAll(".accordian"));
+
+    accordiansArray.forEach((accordian) => {
+        accordian.addEventListener("click", addSelected);
+    });
+
+    function addSelected() {
+        if (accordian.aria-expanded == "true") {
+            accordian.classList.remove("selected");
+        };
+    };
+};
+
+*/

@@ -82,7 +82,7 @@ button:hover {
 }
 
 .logo img {
-    height: 30vh;
+    height: 25vh;
     padding: 2vh;
 }
 
@@ -144,8 +144,8 @@ footer {
 
 /*----------------------------------------About Page---*/
 
-.about-container {
-    display: ;
+.about-container .form-section {
+    text-align: center;
 }
 
 .committee-photo {
@@ -186,11 +186,11 @@ footer {
 .banner {
     background-image: linear-gradient( #f7d994 0%, #BAA571 100%);
     text-align: center;
-    padding: 3vh 1vw;
+    padding: 1.5vh 1vw;
 }
 
-.banner h1 {
-    padding-bottom: 2vh;
+.banner h2 {
+    padding: 0vh 0vw;
 }
 
 
