@@ -80,17 +80,16 @@ function setMarkers(map) {
             number: event.number
         });
         const windowContent = `
-        <div class="form-section">
-            <h3>${event.title}</h3>
-            <h4>${event.datetime}</h4>
-            <h4>${event.location}</h4>
-        </div>`;
+            <h4>${event.title}</h4>
+            <h5>${event.location}</h5>
+            <h6>More info at top of events list</h6>
+            `;
         const infoWindow = new google.maps.InfoWindow({
             content: windowContent,
             number: event.number
         });
         const eventListContent = `
-        <div class="form-section main-text row" id="accordian${event.number}">
+        <div class="form-section main-text row accordian" id="accordian${event.number}">
             <div class="col">
                 <div id="heading${event.number}" class="row">
                     <div class="col-10 event-heading" data-toggle="collapse" data-target="#collapse${event.number}" aria-expanded="false" aria-controls="collapse${event.number}">
@@ -103,7 +102,7 @@ function setMarkers(map) {
                     </div>
                 </div>
                 <div id="collapse${event.number}" class="collapse row" aria-labelledby="heading${event.number}" data-parent="#accordian">
-                    <div class="main-text col">
+                    <div class="header-footer-text col">
                         <h4>${event.description}</h4>
                         <h5 class="main-text">Book your place now
                         <a class="main-text gold-hover" href="/contact.html" target="_blank"><i class="fas fa-envelope"></i></a>
@@ -122,7 +121,7 @@ function setMarkers(map) {
             eventsList.insertAdjacentElement("afterbegin", currentAccordian);
             $(`#collapse${event.number}`).collapse("show");
 
-            infoWindow.open(map, marker);
+           infoWindow.open(map, marker); 
         };
 
         eventsList.insertAdjacentHTML("beforeend", eventListContent);
