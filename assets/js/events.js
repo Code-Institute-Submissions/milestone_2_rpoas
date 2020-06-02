@@ -116,14 +116,22 @@ function setMarkers(map) {
         
         function filter() {
             const currentAccordian = document.querySelector(`#accordian${event.number}`);
-            const allAccordians = document.querySelectorAll(".accordian");
+            const allAccordians = Array.from(document.querySelectorAll(".accordian"));
+            console.log(allAccordians);
 
+//opens infoWindow
+            infoWindow.open(map, marker); 
+//moves event to top of list
             currentAccordian.remove();
             eventsList.insertAdjacentElement("afterbegin", currentAccordian);
+//expands relevant event
             $(`#collapse${event.number}`).collapse("show");
+//removes style of previously selected events
+            allAccordians.forEach((accordian) => {
+                accordian.classList.remove("selected");
+            });
+//changes style of selected event
             currentAccordian.classList.add("selected");
-
-            infoWindow.open(map, marker); 
         };
 
         eventsList.insertAdjacentHTML("beforeend", eventListContent);
