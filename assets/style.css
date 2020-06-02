@@ -183,6 +183,16 @@ footer {
     padding: 1vh 0vw;
 }
 
+.offers a {
+    text-decoration: none;
+    color: #00387b;
+    font-weight: 700;
+}
+
+.offers a:hover {
+    text-shadow: 1px 1px #BAA571;
+}
+
 /*----------------------------------------Sign Up Page---*/
 
 .form-section {
