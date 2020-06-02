@@ -95,10 +95,10 @@ This website helps them achieve these goals by providing:
 ### Wireframes
 
 * [About]("")
-* [Sign Up]("")
-* [Gallery]("")
-* [Events]("")
-* [Contact]("")
+* [Sign Up](https://github.com/H4RP3RK/milestone_2_rpoas/blob/5fe86959594042f716711f5e8a1b37adf504ab97/wireframes/milestone2_signup.png)
+* [Gallery](https://github.com/H4RP3RK/milestone_2_rpoas/blob/5fe86959594042f716711f5e8a1b37adf504ab97/wireframes/milestone2_gallery.png)
+* [Events](https://github.com/H4RP3RK/milestone_2_rpoas/blob/5fe86959594042f716711f5e8a1b37adf504ab97/wireframes/milestone2_events.png)
+* [Contact](https://github.com/H4RP3RK/milestone_2_rpoas/blob/5fe86959594042f716711f5e8a1b37adf504ab97/wireframes/milestone2_contact.png)
 
 ---
 ## Features
@@ -118,6 +118,10 @@ This website helps them achieve these goals by providing:
 ### Existing Features 
 
 ### Future Features 
+
+* 
+* Link the events page with an API, such as Event Brite. This would allow members to sign up and pay for events in advance.
+* Add a file upload option to the contact page, which would allow members to send in photos to add to the gallery. This option was explored but is only available through subscription to Emailjs.
 
 ---
 ## Technologies Used
@@ -202,8 +206,9 @@ Software Development practices:
 
 ## To Do
 ### Readme
+x Fix links to wireframes
 - Home Wireframe
-- Fix links to wireframes
+
 
 ### Home Page
 x Add Gallery of committee members
@@ -212,7 +217,7 @@ x Add Gallery of committee members
 ### Sign Up
 x Form
 x Link to database (Mailchimp?)
-- Paypal link?
+x Paypal link?
 
 ### Gallery
 x Style modal
@@ -230,11 +235,13 @@ x How do I show photos that don't have year/location info?
 - Can select list be creating automatically?
 
 ### Events
-x Change the lnglats of markers to match with towns
+x change the lnglats of markers to match with towns
 x add events
-- Expand events list when marker clicked
-- Close infowindow when another is clicked
-- Don't delete info window content when another is clicked
+x expand events list when marker clicked
+x don't delete info window content when another is clicked
+- close infowindow when another is clicked
+- style accordians
+
 
 ### Contact
 x Form
