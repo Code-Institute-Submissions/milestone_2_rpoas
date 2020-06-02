@@ -63,7 +63,7 @@ const events = [
 function initMap() {
     const map = new google.maps.Map(document.querySelector("#photoMap"), {
         zoom: 9,
-        center: {lat: 55.8617792, lng: -4.0054024}
+        center: {lat: 55.8617792, lng: -3.7054024}
     });
     setMarkers(map);
 };
@@ -119,18 +119,18 @@ function setMarkers(map) {
             const allAccordians = Array.from(document.querySelectorAll(".accordian"));
             console.log(allAccordians);
 
-//opens infoWindow
+            //opens infoWindow
             infoWindow.open(map, marker); 
-//moves event to top of list
+            //moves event to top of list
             currentAccordian.remove();
             eventsList.insertAdjacentElement("afterbegin", currentAccordian);
-//expands relevant event
+            //expands relevant event
             $(`#collapse${event.number}`).collapse("show");
-//removes style of previously selected events
+            //removes style of previously selected events
             allAccordians.forEach((accordian) => {
                 accordian.classList.remove("selected");
             });
-//changes style of selected event
+            //changes style of selected event
             currentAccordian.classList.add("selected");
         };
 
