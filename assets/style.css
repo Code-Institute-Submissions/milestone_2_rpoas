@@ -146,23 +146,34 @@ footer {
 
 .welcome-container {
     position: relative;
-    text-align: center;
     margin-top: 2vh;
 }
 
 .committee-photo {
     width: 100%;
+    height: 100%;
     border: #BAA571 1px solid;
     border-radius: 10px;
+    opacity: 75%;
 }
 
 .welcome-text {
     position: absolute;
-    top: 45%;
+    top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2.5vw;
-    background-color: rgba(0, 56, 123, 0.3);
+    background-color: rgba(0, 56, 123, 0.5);
+    z-index: 2;
+    text-align: center;
+}
+
+.offers .form-section {
+    margin: 2vh auto;
+}
+
+.offers ul {
+    list-style-type: none;
 }
 
 /*----------------------------------------Sign Up Page---*/
