@@ -244,11 +244,21 @@ footer {
     overflow: hidden;
     margin: 2vh 1vw;
     padding: 0;
+    border-radius: 10px;
 }
 
 .gallery-photo {
     width: 100%;
     position: relative;
+}
+
+.gallery-photo-container:hover {
+    border: #BAA571 2px solid;
+    
+}
+
+.gallery-search {
+    text-align: center;
 }
 
 /*----------------------------------------Modal---*/
