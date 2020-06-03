@@ -131,17 +131,28 @@ On clicking each photo, a large modal appears with a larger full dimension versi
 The responsive grid design presents one column of full width and length photos on smaller screens. On medium size screens, a photos are shown in a three-column grid of equal width and height. On larger screens, this increases to a five-column grid. The rounded-border styling of the photos on medium and large screens envokes a nostalgic feeling. 
 
 #### Events 
+A Google Map with clear instructions on how the markers can be used to search for events. As each marker is clicked, the relevant event rises to the top of the list and expands to present more information and instructions on how to sign up to the event.
 
+The responsive grid design presents as one single column in smaller screens and two columns in larger screens.
 
 #### Contact 
 A concise form with a clear invitation to get in touch. The text input section provides further suggestions as to what the visitor may wish to get in touch about. Consistent with the signup page, the asterix denotes the required sections. A friendly message, that references the visitor's name, appears when the email has been successfully sent. The thumbs up symbol is inkeeping with the rest of the website.
 
-### Existing Features 
+### Existing Features
 
-### Future Features 
+* Header Logo - on every page. Acts as a navigation link back to the About page.
+* Navigation bar - on every page. Allows users to easily identify the website pages and navigate to the area of their choosing.
+* Banner - on every page. Call to action for visitors to join the RPOAS and an easily accessible way to navigate to the signup page.
+* Footer links - on every page. Identifies related sites and provides accessible links to each.
+* Sign Up Form - an embedded MailChimp form that automatically sends the user's information to the RPOAS Lanarkshire's existing MailChimp account. Those who sign up are automatically added to the mailing list and their details are stored on a database.
+* Gallery - allows users to browse through photos, filter by location and/or year and order by year. By clicking on each photo, a modal provides a larger version of the photo with further information about its history. Visitors are invited to get in touch with more info.
+* Events - users can either browse through events list or search for an event in a specific area using the Google Maps API. Each event is represented by an accordian that can be expanded to show further information and details on how to sign up.
+* Contact - an Emailjs API is used to link with the RPOAS Lanarkshire email account. Users can easily email the RPOAS with any questions, suggestions or information they may have.
 
-* A news section that provides updates on policing and pension matters.
-* Link the events page with an API, such as Event Brite. This would allow members to sign up and pay for events in advance.
+### Features Left to Implement
+
+* A news section that provides updates on policing and pension matters. This was not seen as relevant to this milestone project as interactivity would be minimal.
+* Link the events page with an API, such as Event Brite. This would allow members to sign up and pay for events in advance. Would require RPOAS Lanarkshire to sign up for an EventBrite account.
 * Add a file upload option to the contact page, which would allow members to send in photos to add to the gallery. This option was explored but is only available through subscription to Emailjs.
 
 ---
@@ -152,11 +163,11 @@ A concise form with a clear invitation to get in touch. The text input section p
 * HTML and CSS 
 * Javascipt - Google Maps, Contact Form, Signup Page, Gallery
 * JQuery - navbar, Mailchimp form
-* Bootstrap - grid layout, navbar, modal
+* Emailjs API - Contact page
+* Google API - Events page
+* Mailchimp - embedded signup form
+* Bootstrap - grid layout, navbar, modal, signup, contact and gallery search forms
 * Google Fonts
-* Google API - Gallery page
-* Mailchimp - signup form
-* Gallery - Wesbos https://beginnerjavascript.com/
 
 ---
 ## Testing
@@ -166,6 +177,8 @@ A concise form with a clear invitation to get in touch. The text input section p
 
 ---
 ## Credits
+
+* Gallery - Wesbos https://beginnerjavascript.com/
 
 ### Content
 
@@ -251,8 +264,8 @@ x fix modal to work with search function
 x Order by asc/desc year
 x How do I show photos that don't have year/location info?
 x Style photos (hover)
+x How do I search when there's more than one location?
 - Operate Gallery with keyboard
-- How do I search when there's more than one location?
 - Can select list be creating automatically?
 
 ### Events
@@ -271,6 +284,7 @@ x Add button to upload photos
 x Fix bug that won't include attachments on emails (can't do without paying emailjs subscription)
 x Clear form once email is sent
 x Expand free text section
+- Fit footer to bottom when success message is displayed
 
 ## Problems/Questions
 x How do I link contact form with Mailchimp?

@@ -101,7 +101,7 @@ function setMarkers(map) {
                     </div>
                 </div>
                 <div id="collapse${event.number}" class="collapse row" aria-labelledby="heading${event.number}" data-parent="#accordian">
-                    <div class="header-footer-text col">
+                    <div class="main-text col">
                         <h4>${event.description}</h4>
                         <h5 class="main-text">Book your place now
                         <a class="main-text gold-hover" href="/contact.html" target="_blank"><i class="fas fa-envelope"></i></a>
@@ -116,6 +116,7 @@ function setMarkers(map) {
         function filter() {
             const currentAccordian = document.querySelector(`#accordian${event.number}`);
             const accordiansArray = Array.from(document.querySelectorAll(".accordian"));
+            console.log(accordiansArray);
 
             //opens infoWindow
             infoWindow.open(map, marker); 
@@ -128,8 +129,9 @@ function setMarkers(map) {
             accordiansArray.forEach((accordian) => {
                 accordian.classList.remove("selected");
             });
-            //changes style of selected event
+            /*/changes style of selected event
             currentAccordian.classList.add("selected");
+            */
         };
 
         eventsList.insertAdjacentHTML("beforeend", eventListContent);
