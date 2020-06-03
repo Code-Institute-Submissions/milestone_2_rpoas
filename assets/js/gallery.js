@@ -108,7 +108,7 @@ const photos = [
     {
         title: "Motherwell & Wishaw Burgh Police Football Team (1948)",
         src: "/assets/images/gallery/football-motherwell-wishaw-1948-min.jpg",
-        location: "Motherwell Wishaw",
+        location: "Motherwell",
         caption: `Can you name anyone?`,
         year: 1948
     },
@@ -185,14 +185,14 @@ const photos = [
     {
         title: "Motherwell and Wishaw Band (1928)",
         src: "/assets/images/gallery/motherwell-wishaw-band-1928-min.jpg",
-        location: "Motherwell Wishaw",
+        location: "Motherwell",
         caption: `Can you recognise the former Police Office in the background?`,
         year: 1928
     },
     {
         title: "Motherwell and Wishaw Pipe Band (1968)",
         src: "/assets/images/gallery/motherwell-wishaw-pipeband-1968-min.jpg",
-        location: "Motherwell Wishaw",
+        location: "Motherwell",
         caption: ``,
         year: 1968
     },

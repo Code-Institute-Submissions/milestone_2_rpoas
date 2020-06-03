@@ -223,6 +223,10 @@ footer {
     font-size: 3vh;
 }
 
+#mc_embed_signup h4 {
+    text-align: center;
+}
+
 /*--------------------------------Banner---*/
 
 .banner {

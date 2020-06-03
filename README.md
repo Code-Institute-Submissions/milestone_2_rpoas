@@ -25,7 +25,7 @@ The client requested this website to address a number of issues with current met
 * Mass emails, which the RPOAS Lanarkshire branch sends using [MailChimp](https://mailchimp.com/). The mailing list consists of RPOAS Lanarkshire members and potential members who have provided their contact details at recruitment events.
 * A central [RPOAS website](https://www.rpoas.org.uk/wp/), with separate pages for each branch. This site is maintained centrally and rarely updated. Most information is only available with login details.
 
-The business goals of this website are:
+The business goals of this website are to:
 * Build awareness of the RPOAS amongst retired police officers.
 * Promote the benefits of RPOAS membership.
 * Encourage engagement in the RPOAS community.
@@ -94,7 +94,7 @@ This website helps them achieve these goals by providing:
 
 ### Wireframes
 
-* [About]("")
+* [About]()
 * [Sign Up](https://github.com/H4RP3RK/milestone_2_rpoas/blob/5fe86959594042f716711f5e8a1b37adf504ab97/wireframes/milestone2_signup.png)
 * [Gallery](https://github.com/H4RP3RK/milestone_2_rpoas/blob/5fe86959594042f716711f5e8a1b37adf504ab97/wireframes/milestone2_gallery.png)
 * [Events](https://github.com/H4RP3RK/milestone_2_rpoas/blob/5fe86959594042f716711f5e8a1b37adf504ab97/wireframes/milestone2_events.png)
@@ -103,23 +103,44 @@ This website helps them achieve these goals by providing:
 ---
 ## Features
 
+Every page has a consistent layout and design, which features:
+* Headers and footers coloured blue and off-white, in line with the Police Scotland brand. The gold accents are in keeping with the RPOAS logo.
+* The RPOAS logo takes pride of place in the centre of the header, drawing the visitor's attention.
+* The responsive navigation bar is also placed centre, directly underneath the logo. The active navigation link is highlighted in gold. On mobile screens, the navigation bar is reduced to a burger in order to utilise screen space.
+* The footer features links to related sites - the RPOAS central website, the RPOAS Lanarkshire Facebook page, an internal link to the contact page and the Lanarkshire Police Historical Society.
+* A banner provides a clear call to action for visitors to join the RPOAS. It provides a link to the signup page, which is highlighted with the banner's gold colour and finger point symbols.
+* Consistent and simple styling of the gold rounded-border boxes breaks each web page's information into easily digestible chunks. 
+
 #### About 
+Welcomes the visitor with a photo of the RPOAS Lanarkshire Committee. The [thin blue line](https://en.wikipedia.org/wiki/Thin_blue_line) across the photograph invokes the police force symbolism. An explanation is provided as to the target audience and what the RPOAS provides. Links are provided to each of the features of the website and also to the RPOAS 
+Lanarkshire Facebook page. These links are highlighted with the finger point symbols. 
+
+The responsive grid design shows one column in smaller screens and two columns in larger screens.
 
 #### Signup 
+Provides a simple form, broken down into three clear sections. Required sections are denoted with an asterix. The banner reiterates the reasons for signing up, which have previously been explained to the user on the about page.
+The large submit button draws the user's attention. On pressing submission, a clear explanation is given on whether the submission was successful or required sections are missing. If successful, the user is informed that an email with further details will be sent to them shortly.
+The thumbs up symbol continues the imagery used in the banner and elsewhere on the website.
+
+The responsive grid design increases the size of the form as the screen size increases. Some input sections are moved onto the one line on larger screens.
 
 #### Gallery 
+A simple search form is presented at the top of the screen. Each search input provides clear and concise instructions on the way in which the photos can be searched. The search form invites the user to click on each picture for more information and the hover styling on each photo highlights that they can be clicked. 
+On clicking each photo, a large modal appears with a larger full dimension version of the photo, a heading that includes the year the photo was taken, a paragraph explaining the history of the photo and a footer that invites the user to get in touch if they have any further information on the photo.
 
-#### News 
+The responsive grid design presents one column of full width and length photos on smaller screens. On medium size screens, a photos are shown in a three-column grid of equal width and height. On larger screens, this increases to a five-column grid. The rounded-border styling of the photos on medium and large screens envokes a nostalgic feeling. 
 
 #### Events 
 
+
 #### Contact 
+A concise form with a clear invitation to get in touch. The text input section provides further suggestions as to what the visitor may wish to get in touch about. Consistent with the signup page, the asterix denotes the required sections. A friendly message, that references the visitor's name, appears when the email has been successfully sent. The thumbs up symbol is inkeeping with the rest of the website.
 
 ### Existing Features 
 
 ### Future Features 
 
-* 
+* A news section that provides updates on policing and pension matters.
 * Link the events page with an API, such as Event Brite. This would allow members to sign up and pay for events in advance.
 * Add a file upload option to the contact page, which would allow members to send in photos to add to the gallery. This option was explored but is only available through subscription to Emailjs.
 
@@ -229,8 +250,8 @@ x clear search results with each form submit
 x fix modal to work with search function
 x Order by asc/desc year
 x How do I show photos that don't have year/location info?
+x Style photos (hover)
 - Operate Gallery with keyboard
-- Style photos (hover)
 - How do I search when there's more than one location?
 - Can select list be creating automatically?
 
@@ -239,7 +260,7 @@ x change the lnglats of markers to match with towns
 x add events
 x expand events list when marker clicked
 x don't delete info window content when another is clicked
-- close infowindow when another is clicked
+x close infowindow when another is clicked
 - style accordians
 
 
