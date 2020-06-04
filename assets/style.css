@@ -340,6 +340,10 @@ footer {
     font-weight: 100;
 }
 
+.accordian img {
+    border-radius: 10px;
+}
+
 /*----------------------------------------Contact Page---*/
 
 .center-form h2 {

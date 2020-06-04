@@ -8,7 +8,8 @@ const events = [
         lng: -3.9906829,
         datetime: "2020-06-29 20:00",
         description: `Get your thinking caps on for the quiz night. Bring family and friends, the more the merrier. The winners will be crowned Lanarkshire Branch Champions and win a top prize.`,
-        number: "One"
+        number: "One",
+        photo: "/assets/images/events/afternoontea.jpg"
     },
     {
         title: "Gin Trip in Auld Reekie",
@@ -17,7 +18,8 @@ const events = [
         lng: -3.1927411,
         datetime: "2020-07-13 19:30",
         description: `Join us for a gin tasting at the beautiful National Museum of Scotland followed by dinner.`,
-        number: "Two"
+        number: "Two",
+        photo: "/assets/images/events/afternoontea.jpg"
     },
     {
         title: "Drumpellier Police Dinner",
@@ -26,7 +28,8 @@ const events = [
         lng: -4.0542339,
         datetime: "2020-07-30 19:00",
         description: `Slap up meal with old friends.`,
-        number: "Three"
+        number: "Three",
+        photo: "/assets/images/events/afternoontea.jpg"
     },
     {
         title: "RPOAS Lunch",
@@ -35,7 +38,8 @@ const events = [
         lng: -4.0835657,
         datetime: "2020-08-09 13:00",
         description: `Tea and a natter`,
-        number: "Four"
+        number: "Four",
+        photo: "/assets/images/events/afternoontea.jpg"
     },
     {
         title: "Quiz Night",
@@ -44,7 +48,8 @@ const events = [
         lng: -3.9837373,
         datetime: "2020-09-02 20:30",
         description: `Can you and your team mates take on the reigning champions for the coveted RPOAS trophy?`,
-        number: "Five"
+        number: "Five",
+        photo: "/assets/images/events/afternoontea.jpg"
     },
     {
         title: "Annual General Meeting",
@@ -53,7 +58,8 @@ const events = [
         lng: -4.0311063,
         datetime: "2020-10-01 14:00",
         description: `Your vote counts for the election of the RPOAS Committee 2020-2021`,
-        number: "Six"
+        number: "Six",
+        photo: "/assets/images/events/afternoontea.jpg"
     },
 ];
 
@@ -107,6 +113,7 @@ function setMarkers(map) {
                         <a class="main-text" href="/contact.html" target="_blank"><i class="fas fa-envelope"></i></a>
                         <a class="main-text" href="https://www.facebook.com/rpoas.lanarkshire" target="_blank"><i class="fab fa-facebook-square"></i></a>
                         </h5>
+                        <img src="${event.photo}">
                     </div>
                 </div>
             </div>
