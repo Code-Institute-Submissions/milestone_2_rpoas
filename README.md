@@ -172,8 +172,47 @@ A concise form with a clear invitation to get in touch. The text input section p
 ---
 ## Testing
 
+* Header (for all pages)
+    1. Click on the RPOAS logo and RPOAS Lanarkshire title to verify that it links to the About page.
+    2. Hover over the title and navigation bar to check that the text-colour changes to gold.
+    3. Click on each link on the navigation bar to ensure it links to the appropriate web page.
+    4. Change the screen size to ensure that the navigation bar is a burger on smaller screens and fully expanded on medium to large screens.
+
+* Footer (for all pages)
+    1. Hover over each link to check that the text changes to gold.
+    2. Click on each link to ensure it links to the appropriate web page. External pages should load from a new tab.
+
+* Banner (for all pages, except Sign Up)
+    1. Hover over the link to check that the text changes to gold.
+    2. Click on the link to make sure it leads to the Sign Up page.
+
+* Text and Images (for all pages)
+    1. Change the screen resolution to check that the images and font-size adjusts in line with the screen dimensions.
+
+* About Page
+    1. Hover over each link to ensure that a shadow appears.
+    2. Click on each link to check that they lead to the appropriate page. External links should load from a new tab.
+    3. Change the screen resolution to verify that the responsive grid design works. The "who should join" and "what we have to offer" boxes should be one column on small to medium screens and side-by-side on two columns on a large screen.
+
+* Sign Up Page
+    1. Press submit button without completing any field.
+    2. Press submit without completing all required fields.
+    3. Press submit after entering an email input that does not include @.
+    4. Press submit with an email address that is already on the mailing list. A message should appear to inform user that the email address is already on the list and a link option for an email to the sent to the address to allow the user to update their details.
+    5. Attempt to enter letters in the number fields.
+    6. Press submit after completing all required fields and entering a new email address. A message should appear to thank the user for subscribing.
+
+
+* Contact 
+    1. Try to submit an empty form.
+    2. Try to submit a form with some but not all fields empty.
+    3. Try to submit a form without an @ in the email field.
+    4. Try to submit a form with all fields filled in appropriately.
+
 ---
 ## Deployment
+
+
 
 ---
 ## Credits

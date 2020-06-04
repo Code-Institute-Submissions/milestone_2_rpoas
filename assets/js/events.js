@@ -39,7 +39,7 @@ const events = [
         datetime: "2020-08-09 13:00",
         description: `Tea and a natter`,
         number: "Four",
-        photo: "/milestone_2_rpoas/assets/images/events/afternoontea.jpg"
+        photo: "/milestone_2_rpoas/assets/images/events/afternoontea-min.jpg"
     },
     {
         title: "Quiz Night",

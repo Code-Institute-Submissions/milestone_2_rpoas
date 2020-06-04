@@ -227,6 +227,10 @@ footer {
     text-align: center;
 }
 
+#mce-responses .response {
+    text-align: center;
+}
+
 /*--------------------------------Banner---*/
 
 .banner {
@@ -323,7 +327,7 @@ footer {
 }
 
 .collapse img {
-    width: 100%;
+    width: inherit;
 }
 
 .accordian:hover {
