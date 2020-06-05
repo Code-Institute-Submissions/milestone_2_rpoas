@@ -9,7 +9,7 @@ const events = [
         datetime: "2020-06-29 20:00",
         description: `Get your thinking caps on for the quiz night. Bring family and friends, the more the merrier. The winners will be crowned Lanarkshire Branch Champions and win a top prize.`,
         number: "One",
-        photo: "/assets/images/events/quiznight-min.jpg"
+        photo: "assets/images/events/quiznight-min.jpg"
     },
     {
         title: "Gin Trip in Auld Reekie",
@@ -19,7 +19,7 @@ const events = [
         datetime: "2020-07-13 19:30",
         description: `Join us for a gin tasting at the beautiful National Museum of Scotland followed by dinner.`,
         number: "Two",
-        photo: "/assets/images/events/outdoors-min.jpg"
+        photo: "assets/images/events/outdoors-min.jpg"
     },
     {
         title: "Drumpellier Police Dinner",
@@ -29,7 +29,7 @@ const events = [
         datetime: "2020-07-30 19:00",
         description: `Slap up meal with old friends.`,
         number: "Three",
-        photo: "/assets/images/events/drumpellier-min.jpg"
+        photo: "assets/images/events/drumpellier-min.jpg"
     },
     {
         title: "RPOAS Lunch",
@@ -39,7 +39,7 @@ const events = [
         datetime: "2020-08-09 13:00",
         description: `Tea and a natter`,
         number: "Four",
-        photo: "/assets/images/events/afternoontea-min.jpg"
+        photo: "assets/images/events/afternoontea-min.jpg"
     },
     {
         title: "Quiz Night",
@@ -49,7 +49,7 @@ const events = [
         datetime: "2020-09-02 20:30",
         description: `Can you and your team mates take on the reigning champions for the coveted RPOAS trophy?`,
         number: "Five",
-        photo: "/assets/images/events/quiz-min.jpg"
+        photo: "assets/images/events/quiz-min.jpg"
     },
     {
         title: "Annual General Meeting",
@@ -59,7 +59,7 @@ const events = [
         datetime: "2020-10-01 14:00",
         description: `Your vote counts for the election of the RPOAS Committee 2020-2021`,
         number: "Six",
-        photo: "/assets/images/events/reunion-min.jpg"
+        photo: "assets/images/events/reunion-min.jpg"
     },
 ];
 
