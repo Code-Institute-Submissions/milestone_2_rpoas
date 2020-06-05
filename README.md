@@ -172,42 +172,98 @@ A concise form with a clear invitation to get in touch. The text input section p
 ---
 ## Testing
 
-* Header (for all pages)
+### All Pages
+
+* Header
     1. Click on the RPOAS logo and RPOAS Lanarkshire title to verify that it links to the About page.
     2. Hover over the title and navigation bar to check that the text-colour changes to gold.
     3. Click on each link on the navigation bar to ensure it links to the appropriate web page.
     4. Change the screen size to ensure that the navigation bar is a burger on smaller screens and fully expanded on medium to large screens.
 
-* Footer (for all pages)
+* Footer
     1. Hover over each link to check that the text changes to gold.
     2. Click on each link to ensure it links to the appropriate web page. External pages should load from a new tab.
 
-* Banner (for all pages, except Sign Up)
+* Banner
     1. Hover over the link to check that the text changes to gold.
     2. Click on the link to make sure it leads to the Sign Up page.
 
-* Text and Images (for all pages)
+* Text and Images
     1. Change the screen resolution to check that the images and font-size adjusts in line with the screen dimensions.
 
-* About Page
+### About Page
+
+* Links
     1. Hover over each link to ensure that a shadow appears.
     2. Click on each link to check that they lead to the appropriate page. External links should load from a new tab.
+
+* Responsive Grid
     3. Change the screen resolution to verify that the responsive grid design works. The "who should join" and "what we have to offer" boxes should be one column on small to medium screens and side-by-side on two columns on a large screen.
 
-* Sign Up Page
+### Sign Up Page
+
+* Sign Up Form
     1. Press submit button without completing any field.
     2. Press submit without completing all required fields.
     3. Press submit after entering an email input that does not include @.
     4. Press submit with an email address that is already on the mailing list. A message should appear to inform user that the email address is already on the list and a link option for an email to the sent to the address to allow the user to update their details.
     5. Attempt to enter letters in the number fields.
-    6. Press submit after completing all required fields and entering a new email address. A message should appear to thank the user for subscribing.
+    6. Press submit after completing all required fields and entering a new email address. A message should appear to thank the user for subscribing. An email should be sent to the email address provided in the form.
 
+* Responsive Grid
+    1. Change screen resolution to check that fields are mainly in one/two columns in small screens and increase to two/three columns on bigger screens.
 
-* Contact 
-    1. Try to submit an empty form.
-    2. Try to submit a form with some but not all fields empty.
-    3. Try to submit a form without an @ in the email field.
-    4. Try to submit a form with all fields filled in appropriately.
+### Gallery Page
+
+* Search Functions
+    1. In the search by location input, choose each location in turn to verify that the corresponding photos appear. Ensure that all other search inputs have no selection.
+    2. Do the same as above for the search by year tab.
+    3. In the sort by year input, choose ascending and descending to check that the photos are ordered appropriately.
+    4. Choose a combination of location and year to check that only the relevant photos appear.
+    5. Check that the ascending and descending selections work on filtered photo results.
+
+* Photos/Modal
+    1. Hover over each photo to check that a gold border appears.
+    2. Click on each photo to verify that a modal appears with a larger version of the same photo and corresponding information on that photo.
+    3. Click on the email and Facebook links on each modal to ensure that they link to the appropriate pages. Facebook should load in a new tab.
+    4. Click on the left and right arrows to ensure that they lead to the previous/next photos.
+    5. Click on the X in the top right of the modal to close it.
+    6. Click anywhere outside the modal to close it.
+    7. Check that the modal presents the relevant information when photos are filtered and/or reordered. 
+    8. Check that the modal arrow keys move to the relevant photos when photos are filtered and/or reordered.
+
+* Responsive Grid
+    1. Change the screen resolution to check that the responsive grid works as intended. On small screens, the photos should appear on one column with no margins.
+    2. On medium screens, the photos should appear in a uniform three column grid with margins.
+    3. On large screens, the photos should appear in a uniform five column grid with margins.
+
+### Events Page
+
+* Google Map API
+    1. Double click on the map to zoom in.
+    2. Scroll or pinch the touch pad to zoom out.
+    3. Check that the zoom buttons work appropriately.
+    3. Click on each marker to check that it presents the relevant info window.
+    4. Click anywhere on the map to close all open info windows.
+    5. Click on each marker to ensure that it brings the relevant event to the top of the events list.
+
+* Events List 
+    1. Check that the relevant event rises to the top of the event list and expands when the appropriate marker is clicked.
+    2. Hover over each event to check that the background changes to gold.
+    3. Click on each event to expand the accordian.
+    4. Click on each expanded accordian to ensure that it closes again.
+    5. Click on the email and Facebook symbols to ensure that they lead to the appropriate pages. The Facebook page should open in a new window.
+
+* Responsive Grid
+    1. Change the screen resolution to check that the boxes present in a single column on small to medium screens and in two columns side-by-side on a large screen.
+
+### Contact Page
+
+* Contact Form
+    1. Press submit button without completing any field.
+    2. Press submit once completed some but not all required fields.
+    3. Press submit without an @ in the email field.
+    4. Press submit when all fields filled in appropriately. The email form should be replaced by a message thanking the user for getting in touch.
 
 ---
 ## Deployment
@@ -313,7 +369,7 @@ x add events
 x expand events list when marker clicked
 x don't delete info window content when another is clicked
 x close infowindow when another is clicked
-- style accordians
+x style accordians
 
 
 ### Contact
