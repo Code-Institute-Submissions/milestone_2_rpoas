@@ -8,7 +8,7 @@ describe("Search", function() {
 
             //arrange
             
-            expect(inputLocation("1974").toEqual(photo.location("1974")));
+            expect(inputYear("1974").toEqual(photo.year("1974")));
         });
     }
 })

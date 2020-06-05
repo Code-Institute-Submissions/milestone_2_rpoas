@@ -336,7 +336,7 @@ function search() {
         const photoLocation = photo.location.toLowerCase();
         const photoYear = photo.year;     
         const photoHTML = `
-                <div class="col-12 col-md-3 col-lg-2 gallery-photo-container">
+                <div class="col-12 col-md-3 col-lg-2 gallery-photo-container" tabindex="0">
                     <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`;
 
