@@ -128,7 +128,7 @@ The responsive grid design increases the size of the form as the screen size inc
 
 #### Gallery 
 A simple search form is presented at the top of the screen. Each search input provides clear and concise instructions on the way in which the photos can be searched. The search form invites the user to click on each picture for more information and the hover styling on each photo highlights that they can be clicked. 
-On clicking each photo, a large modal appears with a larger full dimension version of the photo, a heading that includes the year the photo was taken, a paragraph explaining the history of the photo and a footer that invites the user to get in touch if they have any further information on the photo.
+On clicking each photo, a large modal appears with a larger full dimension version of the photo, a heading that includes the year the photo was taken, a paragraph explaining the history of the photo and a footer that invites the user to get in touch if they have any further information on the photo. All photos were set to an appropriate size and compressed to minimise loading time.
 
 The responsive grid design presents one column of full width and length photos on smaller screens. On medium size screens, a photos are shown in a three-column grid of equal width and height. On larger screens, this increases to a five-column grid. The rounded-border styling of the photos on medium and large screens envokes a nostalgic feeling. 
 
@@ -223,6 +223,7 @@ The following tools were used to test the website code and layout throughout the
     4. Press submit with an email address that is already on the mailing list. A message should appear to inform user that the email address is already on the list and a link option for an email to the sent to the address to allow the user to update their details.
     5. Attempt to enter letters in the number fields.
     6. Press submit after completing all required fields and entering a new email address. A message should appear to thank the user for subscribing. An email should be sent to the email address provided in the form.
+    7. Client checks MailChimp account to ensure that relevant information is transferred to database is expected format when form is successfully completed.
 
 * Responsive Grid
     1. Change screen resolution to check that fields are mainly in one/two columns in small screens and increase to two/three columns on bigger screens.
@@ -279,6 +280,13 @@ The following tools were used to test the website code and layout throughout the
     3. Press submit without an @ in the email field.
     4. Press submit when all fields filled in appropriately. The email form should be replaced by a message thanking the user for getting in touch.
     5. Check that successfully submitting the contact form sends an email with all the relevant information to the RPOAS email address 
+
+### User Feedback
+
+Users tested the site on mobile phones, tablets, laptops and desktops. This highlighted a formatting issue that was not detectable using the Google Developers device toolbar. 
+Gallery images were stretched on mobile screens. The max height of the container was changed to "min-content", which corrected the issue.
+
+Users tested the site using different bandwidths to ensure that the there were no significant loading time lags, particularly with the gallery and events page. 
 
 ---
 ## Deployment
