@@ -372,6 +372,6 @@ footer {
     .gallery-photo-container {
         margin: 0;
         padding: 0;
-        max-height: fit-content;
+        max-height: min-content;
     }
 }
