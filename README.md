@@ -278,6 +278,7 @@ The following tools were used to test the website code and layout throughout the
     2. Press submit once completed some but not all required fields.
     3. Press submit without an @ in the email field.
     4. Press submit when all fields filled in appropriately. The email form should be replaced by a message thanking the user for getting in touch.
+    5. Check that successfully submitting the contact form sends an email with all the relevant information to the RPOAS email address 
 
 ---
 ## Deployment
