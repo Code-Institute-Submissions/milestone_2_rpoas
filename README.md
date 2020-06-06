@@ -110,6 +110,8 @@ Every page has a consistent layout and design, which features:
 * The footer features links to related sites - the RPOAS central website, the RPOAS Lanarkshire Facebook page, an internal link to the contact page and the Lanarkshire Police Historical Society.
 * A banner provides a clear call to action for visitors to join the RPOAS. It provides a link to the signup page, which is highlighted with the banner's gold colour and finger point symbols.
 * Consistent and simple styling of the gold rounded-border boxes breaks each web page's information into easily digestible chunks. 
+* A responsive grid design ensures that the content is organised in an aesthetically pleasing and practical format on all screen sizes.
+* All texts-sizes are in relative vh/vw units to ensure that the font is easily readable and well placed on all screen sizes.
 
 #### About 
 Welcomes the visitor with a photo of the RPOAS Lanarkshire Committee. The [thin blue line](https://en.wikipedia.org/wiki/Thin_blue_line) across the photograph invokes the police force symbolism. An explanation is provided as to the target audience and what the RPOAS provides. Links are provided to each of the features of the website and also to the RPOAS 
@@ -172,7 +174,19 @@ A concise form with a clear invitation to get in touch. The text input section p
 ---
 ## Testing
 
-### All Pages
+### Tools
+
+The following tools were used to test the website code and layout throughout the development.
+* [Google Chrome Developer Tool](https://developers.google.com/web/tools/chrome-devtools/) - used throughout the project to test code and scalability.
+* [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) - used throughout the project to resolve layout issues with web pages.
+* [Contrast Ratio](https://contrast-ratio.com/) - used to ensure that colours meet readability guidelines.
+* [Optimizilla](https://imagecompressor.com/) - used to compress image file sizes to improve loading speed.
+* [W3C Markup Validation](https://developers.google.com/web/tools/chrome-devtools/) - used to validate HTML code.
+* [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) - used to validate CSS code.
+
+### User Testing
+
+#### All Pages
 
 * Header
     1. Click on the RPOAS logo and RPOAS Lanarkshire title to verify that it links to the About page.
@@ -191,7 +205,7 @@ A concise form with a clear invitation to get in touch. The text input section p
 * Text and Images
     1. Change the screen resolution to check that the images and font-size adjusts in line with the screen dimensions.
 
-### About Page
+#### About Page
 
 * Links
     1. Hover over each link to ensure that a shadow appears.
@@ -200,7 +214,7 @@ A concise form with a clear invitation to get in touch. The text input section p
 * Responsive Grid
     3. Change the screen resolution to verify that the responsive grid design works. The "who should join" and "what we have to offer" boxes should be one column on small to medium screens and side-by-side on two columns on a large screen.
 
-### Sign Up Page
+#### Sign Up Page
 
 * Sign Up Form
     1. Press submit button without completing any field.
@@ -213,7 +227,7 @@ A concise form with a clear invitation to get in touch. The text input section p
 * Responsive Grid
     1. Change screen resolution to check that fields are mainly in one/two columns in small screens and increase to two/three columns on bigger screens.
 
-### Gallery Page
+#### Gallery Page
 
 * Search Functions
     1. In the search by location input, choose each location in turn to verify that the corresponding photos appear. Ensure that all other search inputs have no selection.
@@ -237,7 +251,7 @@ A concise form with a clear invitation to get in touch. The text input section p
     2. On medium screens, the photos should appear in a uniform three column grid with margins.
     3. On large screens, the photos should appear in a uniform five column grid with margins.
 
-### Events Page
+#### Events Page
 
 * Google Map API
     1. Double click on the map to zoom in.
@@ -257,7 +271,7 @@ A concise form with a clear invitation to get in touch. The text input section p
 * Responsive Grid
     1. Change the screen resolution to check that the boxes present in a single column on small to medium screens and in two columns side-by-side on a large screen.
 
-### Contact Page
+#### Contact Page
 
 * Contact Form
     1. Press submit button without completing any field.
@@ -268,7 +282,29 @@ A concise form with a clear invitation to get in touch. The text input section p
 ---
 ## Deployment
 
+To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/H4RP3RK/milestone_2_rpoas), the following steps were taken: 
 
+1. From the menu items near the top of the page, select **Settings**.
+2. Scroll down to the **GitHub Pages** section.
+3. Under **Source** click the drop-down menu labelled **None** and select **Master Branch**
+4. On selecting Master Branch the page is automatically refreshed, the website is now deployed. 
+5. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website.
+ 
+### How to run this project locally
+
+To clone this project from GitHub:
+
+1. Under the repository name, click "Clone or download".
+2. In the Clone with HTTPs section, copy the clone URL for the repository. 
+3. In your local IDE open Git Bash.
+4. Change the current working directory to the location where you want the cloned directory to be made.
+5. Type ```git clone```, and then paste the URL you copied in Step 3.
+```console
+git clone https://github.com/H4RP3RK/milestone_2_rpoas.git
+```
+6. Press Enter. Your local clone will be created.
+
+Further reading and troubleshooting on cloning a repository from GitHub [here](https://help.github.com/en/articles/cloning-a-repository).
 
 ---
 ## Credits
@@ -338,10 +374,10 @@ Software Development practices:
 x Fix links to wireframes
 x Home Wireframe
 
-
 ### Home Page
 x Add Gallery of committee members
 x Hover over/Click on faces for more info
+- Call to action signup
 
 ### Sign Up
 x Form
