@@ -287,6 +287,7 @@ Users tested the site on mobile phones, tablets, laptops and desktops. This high
 Gallery images were stretched on mobile screens. The max height of the container was changed to "min-content", which corrected the issue.
 
 Users tested the site using different bandwidths to ensure that the there were no significant loading time lags, particularly with the gallery and events page. 
+Image height/width was set to an appropriate size and file sizes were compressed in order to minimise loading time.
 
 ---
 ## Deployment
@@ -319,6 +320,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 ## Credits
 
 * Gallery - Wesbos https://beginnerjavascript.com/
+
 
 ### Content
 

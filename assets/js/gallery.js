@@ -340,18 +340,9 @@ function search() {
                     <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`;
 
-        if (inputLocation == photoLocation && inputYear == photoYear) {
+        if ((inputLocation == photoLocation && inputYear == photoYear) || (inputLocation == photoLocation && inputYear == "") || (inputLocation == "" && inputYear == photoYear)) {
             console.log(photo);
-            noResults.innerHTML = "";
             searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);
-        } else if (inputLocation == photoLocation && inputYear == "") {
-            console.log(photo);
-            noResults.innerHTML = "";
-            searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);
-        } else if (inputLocation == "" && inputYear == photoYear) {
-            console.log(photo);
-            noResults.innerHTML = "";
-            searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);            
         } else if (!inputLocation == photoLocation && !inputYear == photoYear) {
             console.log(`no results for ${inputLocation} ${inputYear}`);
             noResults.innerHTML = `no results for ${inputLocation} ${inputYear}`;
@@ -359,9 +350,7 @@ function search() {
             console.log(`no location or input chosen`);
             searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);  
         }
-        else {
-            console.log("error");
-        };
+
     });
     const gallery = Modal(document.querySelector(".search-results-container"));
 };
