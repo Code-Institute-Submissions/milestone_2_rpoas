@@ -94,11 +94,11 @@ This website helps them achieve these goals by providing:
 
 ### Wireframes
 
-* [About]()
-* [Sign Up](https://github.com/H4RP3RK/milestone_2_rpoas/blob/5fe86959594042f716711f5e8a1b37adf504ab97/wireframes/milestone2_signup.png)
-* [Gallery](https://github.com/H4RP3RK/milestone_2_rpoas/blob/5fe86959594042f716711f5e8a1b37adf504ab97/wireframes/milestone2_gallery.png)
-* [Events](https://github.com/H4RP3RK/milestone_2_rpoas/blob/5fe86959594042f716711f5e8a1b37adf504ab97/wireframes/milestone2_events.png)
-* [Contact](https://github.com/H4RP3RK/milestone_2_rpoas/blob/5fe86959594042f716711f5e8a1b37adf504ab97/wireframes/milestone2_contact.png)
+* [About](wireframes/milestone2_about.png)
+* [Sign Up](wireframes/milestone2_signup.png)
+* [Gallery](wireframes/milestone2_gallery.png)
+* [Events](wireframes/milestone2_events.png)
+* [Contact](wireframes/milestone2_contact.png)
 
 ---
 ## Features
@@ -336,12 +336,12 @@ Software Development practices:
 ## To Do
 ### Readme
 x Fix links to wireframes
-- Home Wireframe
+x Home Wireframe
 
 
 ### Home Page
 x Add Gallery of committee members
-- Hover over/Click on faces for more info
+x Hover over/Click on faces for more info
 
 ### Sign Up
 x Form

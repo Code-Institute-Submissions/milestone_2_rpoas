@@ -1,4 +1,5 @@
-/*--JS for embedded Mailchimp form--*/
+/*--This JS is taken from the link below and if an embedded Mailchimp form--*/
+/*--https://mailchimp.com/help/add-a-signup-form-to-your-website/--*/
 
 function($) {
     window.fnames = new Array(); 
