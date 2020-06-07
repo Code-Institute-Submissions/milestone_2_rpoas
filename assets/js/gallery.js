@@ -103,7 +103,7 @@ const photos = [
         src: "assets/images/gallery/exercise-min.jpg",
         location: "notAvailable",
         caption: `Do you recognise faces or location? What year was this?`,
-        year: "notAvailable"
+        year: "Year not available"
     },
     {
         title: "Motherwell & Wishaw Burgh Police Football Team (1948)",
@@ -124,7 +124,7 @@ const photos = [
         src: "assets/images/gallery/hamiltonsheriffcourt-bagpipes-min.jpg",
         location: "Hamilton",
         caption: `Motherwell & Wishaw Police Pipe Band outside Hamilton Sheriff Court. Do you know what year this was taken?`,
-        year: "notAvailable"
+        year: "Year not available"
     },
     {
         title: "Lanarkshire HQ (1941)",
@@ -164,7 +164,7 @@ const photos = [
         src: "assets/images/gallery/largegroupphoto-min.jpg",
         location: "notAvailable",
         caption: " ",
-        year: "notAvailable"
+        year: "Year not available"
     },
     {
         title: "Nelson Mandela Visits Glasgow (1993)",
@@ -215,7 +215,7 @@ const photos = [
         src: "assets/images/gallery/policeman-min.jpg",
         location: "notAvailable",
         caption: " ",
-        year: "notAvailable"
+        year: "Year not available"
     },
     {
         title: "Strathaven Gala Day (1997)",
@@ -303,7 +303,6 @@ const photos = [
 
 const searchResultsContainer = document.querySelector(".search-results-container");
 const locationOption = document.querySelector(".filtered-locations");
-const images = Array.from(searchResultsContainer.querySelectorAll("img"));
 
 /*------------------------------------------------------display all photos--*/
 
@@ -316,7 +315,7 @@ function allPhotos(array) {
     });
     results();
     const gallery = Modal(document.querySelector(".search-results-container"));
-};
+}
 
 document.addEventListener("load", allPhotos());
 
@@ -329,7 +328,6 @@ function search() {
     const inputLocation = document.querySelector("#photo-location").value.toLowerCase();
     const inputYear = document.querySelector("#photo-year").value;
     const noResults = document.querySelector(".no-results");
-    let searchResultsArray = [];
 
     searchResultsContainer.innerHTML = "";
 
@@ -344,34 +342,25 @@ function search() {
         if ((inputLocation === photoLocation && inputYear == photoYear) || (inputLocation === photoLocation && inputYear == "") || (inputLocation === "" && inputYear == photoYear)) {
             console.log(photo);
             searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);
-        } else if (inputLocation !== photoLocation && inputYear !== photoYear) {
-            console.log(`does not match ${inputLocation} ${inputYear}`);
         } else if (inputLocation == "" && inputYear == "") {
             console.log(`no location or input chosen`);
             searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);  
+        } else if (inputLocation !== photoLocation && inputYear !== photoYear) {
+            console.log(`does not match ${inputLocation} ${inputYear}`);
         } else {
             console.log("error");
-        };
+        }
     });
-
-    /*
-    console.log(searchResultsArray);
-    console.log(photos);
-    photos.forEach((photo) => {
-        console.log(newArray.title);
-    });
-    */
-    
     results();
     const gallery = Modal(document.querySelector(".search-results-container"));
-};
+}
 
 /*------------------------------------------------------shows number of photos in search result--*/
+
 
 function results() {
     const numberImages = Array.from(searchResultsContainer.querySelectorAll("img"));
     const comment = document.querySelector(".results-comment");
-    const yearOption = document.querySelector(".filtered-years");
 
     if ((numberImages.length > 1) || (numberImages.length == 0)) {
         comment.innerHTML = `
@@ -382,23 +371,35 @@ function results() {
     };
 };
 
+function filterYear() {
+    const yearSelect = document.querySelector("#photo-year");
+    const galleryPhotos = document.querySelectorAll(".gallery-photo");
+    let array = [];
+    let i;
 
+    for (i=0; i < galleryPhotos.length; i++) {
+        let photoYear = galleryPhotos[i].dataset.year;
+        console.log(photoYear);
+        array.push(photoYear);
+    }
 
-/*
-function yearSearch() {
-    const searchResults = Array.from(searchResultsContainer.querySelectorAll("img"));
+    yearSelect.options.length = 0;
+    yearSelect.options[yearSelect.options.length] = new Option("Search by Year", "");
 
-    searchResults.forEach((searchResult) => {
-        yearOption.innerHTML = `
-        <option value="${searchResult.year}">${searchResult.year}</option>`
-    });
-};
+    array.forEach((year) => {
+        var option = document.createElement("option");
+        option.text = year;
+        yearSelect.add(option, yearSelect[0]);
+    })
+}
+
 
 /*------------------------------------------------------operates the modal--*/
 /*------------took inspiration from https://wesbos.com/beginner-javascript--*/
 
 function Modal(searchResultsContainer) {
-    const body = document.querySelector("body")
+    const images = Array.from(searchResultsContainer.querySelectorAll("img"));
+    const body = document.querySelector("body");
     const modal = document.querySelector(".modal");
     const prevButton = modal.querySelector(".previous");
     const nextButton = modal.querySelector(".next");
@@ -483,8 +484,3 @@ function sortYear(order) {
 
     search(sortedPhotoArray);
 }
-
-
-
-
-
