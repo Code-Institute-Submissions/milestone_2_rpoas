@@ -302,7 +302,6 @@ const photos = [
 ];
 
 const searchResultsContainer = document.querySelector(".search-results-container");
-const yearOption = document.querySelector(".filtered-years");
 const locationOption = document.querySelector(".filtered-locations");
 
 /*------------------------------------------------------display all photos--*/
@@ -314,6 +313,7 @@ function allPhotos(array) {
                 <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-toggle="modal" data-target="#galleryModal">
             </div>`);
     });
+    results();
     const gallery = Modal(document.querySelector(".search-results-container"));
 };
 
@@ -331,7 +331,6 @@ function search() {
     let searchResultsArray = [];
 
     searchResultsContainer.innerHTML = "";
-    noResults.innerHTML = "";
 
     photos.forEach((photo) => {
         const photoLocation = photo.location.toLowerCase();
@@ -341,7 +340,7 @@ function search() {
                     <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`;
 
-        if ((inputLocation === photoLocation && inputYear === photoYear) || (inputLocation === photoLocation && inputYear === "") || (inputLocation === "" && inputYear === photoYear)) {
+        if ((inputLocation === photoLocation && inputYear == photoYear) || (inputLocation === photoLocation && inputYear == "") || (inputLocation === "" && inputYear == photoYear)) {
             console.log(photo);
             searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);
         } else if (inputLocation !== photoLocation && inputYear !== photoYear) {
@@ -354,9 +353,6 @@ function search() {
         };
     });
 
-    function results() {
-        
-    }
     /*
     console.log(searchResultsArray);
     console.log(photos);
@@ -364,8 +360,24 @@ function search() {
         console.log(newArray.title);
     });
     */
+    
+    results();
     const gallery = Modal(document.querySelector(".search-results-container"));
 };
+
+/*------------------------------------------------------shows number of photos in search result--*/
+
+function results() {
+    const numberImages = Array.from(searchResultsContainer.querySelectorAll("img"));
+    const comment = document.querySelector(".results-comment");
+    const yearOption = document.querySelector(".filtered-years");
+
+    comment.innerHTML = `
+    <h2 class="main-text">Showing ${numberImages.length} photos</h2>`
+
+    
+};
+
 /*
 function yearSearch() {
     const searchResults = Array.from(searchResultsContainer.querySelectorAll("img"));

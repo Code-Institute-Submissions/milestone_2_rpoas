@@ -285,13 +285,14 @@ The following tools were used to test the website code and layout throughout the
 
 ### User Feedback
 
-Friends, family and colleagues were enlisted to test the site on mobile phones, tablets, laptops and desktops. This highlighted a formatting issue that was not detectable using the Google Developers device toolbar. 
-Gallery image dimensions were distorted on mobile screens. The max height of the container was changed to "min-content", which corrected the issue.
+Friends, family and colleagues were enlisted to test the site on mobile phones, tablets, laptops and desktops. They also tested the site using different 
+bandwidths to ensure that the there were no significant loading time lags, particularly with the gallery and events page.
 
-Feedback received was that some of the font was too small on mobile devices so this was corrected by slightly increasing the font size.
-
-Users tested the site using different bandwidths to ensure that the there were no significant loading time lags, particularly with the gallery and events page. 
-Image height/width was set to an appropriate size and file sizes were compressed in order to minimise loading time.
+The following changes were made in response to user feedback:
+* Images could take longer to load with smaller bandwidth, therefore, image height/width was set to an appropriate size and file sizes were compressed in order to minimise loading time.
+* Gallery image dimensions were distorted on mobile screens (this was not detected by Google Developers). The max height of the image container was changed to "min-content", which corrected the issue.
+* Some font was too small on mobile devices, which could be an issue for the older demographic likely to use the site. Font sizes were adjusted accordingly.
+* On smaller screens, it was not always clear that the gallery search had been completed. A message stating how many photos were in the search result was added to make it clearer that the search had completed.
 
 ### Problem Solving
 
