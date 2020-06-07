@@ -1,14 +1,13 @@
+Hello
+
 describe("Search", function() {
     describe("Year search"), function() {
-        it("should return photos with photos.year = 1974", function() {
-            // arrange
-            const 
+        it("should return photos with data-year = 1974", function() {
+            const photoYear = document.querySelector("#photo-year");
+            const searchResultYear = document.querySelector(".gallery-photo").dataset.year;
 
-            // act
-
-            //arrange
-            
-            expect(inputYear("1974").toEqual(photo.year("1974")));
+            select(photoYear).option("1974");
+            expect(searchResultYear).toContain("1974");
         });
-    }
-})
+    };
+});

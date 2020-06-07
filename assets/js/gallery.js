@@ -311,7 +311,7 @@ function allPhotos(array) {
     photos.forEach((photo) => {
         searchResultsContainer.insertAdjacentHTML("beforeend", `
             <div class="col-12 col-md-3 col-lg-2 gallery-photo-container" tabindex="0">
-                <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal">
+                <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-toggle="modal" data-target="#galleryModal">
             </div>`);
     });
     const gallery = Modal(document.querySelector(".search-results-container"));
@@ -328,6 +328,7 @@ function search() {
     const inputLocation = document.querySelector("#photo-location").value.toLowerCase();
     const inputYear = document.querySelector("#photo-year").value;
     const noResults = document.querySelector(".no-results");
+    let searchResultsArray = [];
 
     searchResultsContainer.innerHTML = "";
     noResults.innerHTML = "";
@@ -337,7 +338,7 @@ function search() {
         const photoYear = photo.year;     
         const photoHTML = `
                 <div class="col-12 col-md-3 col-lg-2 gallery-photo-container" tabindex="0">
-                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
+                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`;
 
         if ((inputLocation == photoLocation && inputYear == photoYear) || (inputLocation == photoLocation && inputYear == "") || (inputLocation == "" && inputYear == photoYear)) {
@@ -349,10 +350,25 @@ function search() {
         } else if (inputLocation == "" && inputYear == "") {
             console.log(`no location or input chosen`);
             searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);  
-        }
-
+        };
     });
+    /*
+    console.log(searchResultsArray);
+    console.log(photos);
+    photos.forEach((photo) => {
+        console.log(newArray.title);
+    });
+    */
     const gallery = Modal(document.querySelector(".search-results-container"));
+};
+/*
+function yearSearch() {
+    const searchResults = Array.from(searchResultsContainer.querySelectorAll("img"));
+
+    searchResults.forEach((searchResult) => {
+        yearOption.innerHTML = `
+        <option value="${searchResult.year}">${searchResult.year}</option>`
+    });
 };
 
 /*------------------------------------------------------operates the modal--*/
@@ -440,11 +456,11 @@ function sortPhotos(key, order = "asc") {
 }
 
 function sortYear(order) {
-    newPhotoArray = photos.sort(sortPhotos("year", order));
+    sortedPhotoArray = photos.sort(sortPhotos("year", order));
     console.log(newPhotoArray);
     document.addEventListener("load", allPhotos(newPhotoArray));
 
-    search(newPhotoArray);
+    search(sortedPhotoArray);
 }
 
 

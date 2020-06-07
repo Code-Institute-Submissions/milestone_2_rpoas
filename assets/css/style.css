@@ -390,4 +390,7 @@ footer {
         padding: 0;
         max-height: min-content;
     }
+
+    .committee-photo {
+    border-radius: 0;
 }

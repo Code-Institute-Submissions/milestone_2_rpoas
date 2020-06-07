@@ -20,22 +20,25 @@ of historical photos.
 The website features member testimonials, details of past and upcoming events, a gallery of historical photos related
 to the police force in Lanarkshire, details of member benefits, a sign up form and a contact page.
 
-The client requested this website to address a number of issues with current methods of recruitment and communication. 
-* [RPOAS Lanarkshire Facebook page](https://www.facebook.com/rpoas.lanarkshire), which is only accessible to those with a Facebook account. 
-* Mass emails, which the RPOAS Lanarkshire branch sends using [MailChimp](https://mailchimp.com/). The mailing list consists of RPOAS Lanarkshire members and potential members who have provided their contact details at recruitment events.
-* A central [RPOAS website](https://www.rpoas.org.uk/wp/), with separate pages for each branch. This site is maintained centrally and rarely updated. Most information is only available with login details.
+The client requested this website to address a number of issues with their current methods of recruitment and communication. Most engagement has been through the [RPOAS Lanarkshire Facebook page](https://www.facebook.com/rpoas.lanarkshire). Although the Facebook page is quite active and generates interest through posting historical Lanarkshire Police photos, 
+it is only accessible to those with a Facebook account. The branch also sends mass emails through a subscription with [MailChimp](https://mailchimp.com/). The MailChimp member database is currently updated manually by the branch. There's also a central [RPOAS website](https://www.rpoas.org.uk/wp/), 
+with separate pages for each branch. This site is maintained centrally and rarely updated. Most information is only available with login details.
 
-The business goals of this website are to:
-* Build awareness of the RPOAS amongst retired police officers.
+The client goals for this website are to:
+* Provide a more accessible way for members to get information about RPOAS Lanarkshire.
+* Increase the audience of potential RPOAS members.
 * Promote the benefits of RPOAS membership.
-* Encourage engagement in the RPOAS community.
-* Rekindle a sense of pride and belonging in the police community.
+* Maintain engagement through building the gallery of historical Lanarkshire police force photographs.
+* Encourage member attendance at RPOAS Lanarkshire events
+* Automatically update the member database and mailing list.
+* Provide an easy way for members to get in touch with the RPOAS committee.
 
-The user goals of this website are:
-* To find out more about what the RPOAS is and what it offers to members.
-* An intuitive sign up process.
-* Easy access to the rest of the RPOAS community.
-* A simple way to search through historical photos.
+The user goals of this website are to:
+* Find out more about what the RPOAS is and what it offers to members.
+* Easily sign up as an RPOAS member.
+* Find out ways to engage with the rest of the RPOAS community.
+* Reminisce, with the help of the historical photos.
+* Get in touch with the RPOAS committee.
 
 ---
 
@@ -47,8 +50,7 @@ The target audience for RPOAS Lanarkshire are:
 * Retired police officers.
 * Likely to have spent at least some of their career in Lanarkshire (but not a requirement for membership).
 * Likely to live in Scotland (but not a requirement for membership).
-* Aged between 50 to 90 years old.
-* Not necessarily very experienced with navigating the internet.
+* Aged between 50 to 85 years old.
 
 A secondary audience are family and friends of retired police officers, particularly those who have passed away.
 The RPOAS provides a way for family/friends to stay connected with the police community and reminisce about their 
@@ -62,7 +64,7 @@ There are several possible user journeys to the website:
 * Visited the RPOAS Lanarkshire Facebook page.
 * Been referred by a current RPOAS member.
 * Used a search engine.
-* Current RPOAS members who have been informed about the website by email or Facebook.
+* They are current RPOAS members who have been informed about the website by email or Facebook.
 
 ### User Aim
 
@@ -115,7 +117,7 @@ Every page has a consistent layout and design, which features:
 
 #### About 
 Welcomes the visitor with a photo of the RPOAS Lanarkshire Committee. The [thin blue line](https://en.wikipedia.org/wiki/Thin_blue_line) across the photograph invokes the police force symbolism. An explanation is provided as to the target audience and what the RPOAS provides. Links are provided to each of the features of the website and also to the RPOAS 
-Lanarkshire Facebook page. These links are highlighted with the finger point symbols. 
+Lanarkshire Facebook page. These links are highlighted with the finger point symbols. A call to action button encourages the member to join and links them to the sign up page.
 
 The responsive grid design shows one column in smaller screens and two columns in larger screens.
 
@@ -388,7 +390,8 @@ x Home Wireframe
 ### Home Page
 x Add Gallery of committee members
 x Hover over/Click on faces for more info
-- Call to action signup
+x Call to action signup
+- change grid for photo
 
 ### Sign Up
 x Form
@@ -436,5 +439,6 @@ x How can I get the contact form to clear when send button is pressed?
 - How can the Gallery be operated by keyboard?
 - Why is banner on events page bold?
 - Why are photos taking so long to load? Starting happening after asc/desc js was fixed
+- change the main-body colour of all pages
 
 
