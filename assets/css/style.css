@@ -26,6 +26,10 @@ body {
     font-weight: 600;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /*--font size--*/
 
 h1 {
@@ -94,10 +98,6 @@ button:hover,
     padding: 2vh 1vw;
 }
 
-.form-section h2 {
-    text-align: center;
-}
-
 .form-section label {
     padding-top: 1vh;
 }
@@ -111,10 +111,6 @@ button:hover,
 /*--HEADER STYLES--*/
 
 /*--logo--*/
-
-.logo {
-    text-align: center;
-}
 
 .logo img {
     height: 25vh;
@@ -155,7 +151,6 @@ button:hover,
 
 .banner {
     background-image: linear-gradient( #f7d994 0%, #BAA571 100%);
-    text-align: center;
     padding: 1.5vh 1vw;
 }
 
@@ -180,7 +175,6 @@ footer {
 
 .sister-sites {
     padding-top: 2vh;
-    text-align: center;
 }
 
 .sister-sites img {
@@ -216,7 +210,6 @@ footer {
     font-size: 3.5vw;
     background-color: rgba(0, 56, 123, 0.5);
     z-index: 2;
-    text-align: center;
 }
 
 /*--about page text--*/
@@ -257,10 +250,6 @@ footer {
     font-size: 3vh;
 }
 
-#mc_embed_signup h4 {
-    text-align: center;
-}
-
 /*--GALLERY PAGE--*/
 
 .gallery-photo-container {
@@ -281,15 +270,10 @@ footer {
     
 }
 
-.gallery-search {
-    text-align: center;
-}
-
 /*--modal--*/
 
 .modal-body {
     padding: 0;
-    text-align: center;
     background-color: #eaeaea;
 }
 
@@ -352,7 +336,6 @@ footer {
 
 .search-instructions h4 {
     font-weight: 100;
-    text-align: center;
     padding-bottom: 2vh;
 }
 
@@ -373,7 +356,6 @@ footer {
 }
 
 .email-message {
-    text-align: center;
     margin-top: 2vh;
 }
 
