@@ -344,7 +344,7 @@ function search() {
         if ((inputLocation == photoLocation && inputYear == photoYear) || (inputLocation == photoLocation && inputYear == "") || (inputLocation == "" && inputYear == photoYear)) {
             console.log(photo);
             searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);
-        } else if (!inputLocation == photoLocation && !inputYear == photoYear) {
+        } else if (!inputLocation === photoLocation && !inputYear === photoYear) {
             console.log(`no results for ${inputLocation} ${inputYear}`);
             noResults.innerHTML = `no results for ${inputLocation} ${inputYear}`;
         } else if (inputLocation == "" && inputYear == "") {

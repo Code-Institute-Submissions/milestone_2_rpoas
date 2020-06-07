@@ -162,16 +162,16 @@ A concise form with a clear invitation to get in touch. The text input section p
 ---
 ## Technologies Used
 
-* Gitpod
-* Github
+* [Gitpod](https://www.gitpod.io/)
+* [Github](https://github.com/)
 * HTML and CSS 
-* Javascipt - Google Maps, Contact Form, Signup Page, Gallery
-* JQuery - navbar, Mailchimp form
-* Emailjs API - Contact page
-* Google API - Events page
-* Mailchimp - embedded signup form
-* Bootstrap - grid layout, navbar, modal, signup, contact and gallery search forms
-* Google Fonts
+* Javascipt - used for Google Maps, Contact Form, Signup Page and Gallery.
+* [JQuery](https://jquery.com/) - Javascript library used for the navbar and Mailchimp form.
+* [Emailjs API](https://www.emailjs.com/) - API used on the contact page to allow emails to be sent from the user to the RPOAS Lanarkshire email address.
+* [Google Maps API](https://cloud.google.com/maps-platform/) - API used on the Events page that allows markers to indicate upcoming events.
+* [Mailchimp](https://mailchimp.com/help/add-a-signup-form-to-your-website/) - a MailChimp embedded signup form was used on the Sign Up page that will automatically add user information to the RPOAS Lanarkshire MailChimp account and mailing list. The HTML/CSS was modified to meet the requirements of the site.
+* [Bootstrap](https://getbootstrap.com/) - used for the responsive grid layout, navbar, modal and all input form (Sign Up, Gallery Search, Contact). All templates were modified to meet the requirements and styling of the website.
+* [Google Fonts](https://fonts.google.com/) - used to style the website fonts and identify fonts that complement each other. Titillium Web and Roboto fonts were used for this project.
 
 ---
 ## Testing
