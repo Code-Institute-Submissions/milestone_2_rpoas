@@ -303,6 +303,7 @@ const photos = [
 
 const searchResultsContainer = document.querySelector(".search-results-container");
 const locationOption = document.querySelector(".filtered-locations");
+const images = Array.from(searchResultsContainer.querySelectorAll("img"));
 
 /*------------------------------------------------------display all photos--*/
 
@@ -372,11 +373,16 @@ function results() {
     const comment = document.querySelector(".results-comment");
     const yearOption = document.querySelector(".filtered-years");
 
-    comment.innerHTML = `
-    <h2 class="main-text">Showing ${numberImages.length} photos</h2>`
-
-    
+    if ((numberImages.length > 1) || (numberImages.length == 0)) {
+        comment.innerHTML = `
+        <h2 class="main-text">Showing ${numberImages.length} photos</h2>`;
+    } else if (numberImages.length == 1) {
+        comment.innerHTML = `
+        <h2 class="main-text">Showing ${numberImages.length} photo</h2>`;
+    };
 };
+
+
 
 /*
 function yearSearch() {
@@ -392,7 +398,6 @@ function yearSearch() {
 /*------------took inspiration from https://wesbos.com/beginner-javascript--*/
 
 function Modal(searchResultsContainer) {
-    const images = Array.from(searchResultsContainer.querySelectorAll("img"));
     const body = document.querySelector("body")
     const modal = document.querySelector(".modal");
     const prevButton = modal.querySelector(".previous");
