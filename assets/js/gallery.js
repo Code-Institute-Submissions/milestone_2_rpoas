@@ -341,17 +341,22 @@ function search() {
                     <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`;
 
-        if ((inputLocation == photoLocation && inputYear == photoYear) || (inputLocation == photoLocation && inputYear == "") || (inputLocation == "" && inputYear == photoYear)) {
+        if ((inputLocation === photoLocation && inputYear === photoYear) || (inputLocation === photoLocation && inputYear === "") || (inputLocation === "" && inputYear === photoYear)) {
             console.log(photo);
             searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);
-        } else if (!inputLocation === photoLocation && !inputYear === photoYear) {
-            console.log(`no results for ${inputLocation} ${inputYear}`);
-            noResults.innerHTML = `no results for ${inputLocation} ${inputYear}`;
+        } else if (inputLocation !== photoLocation && inputYear !== photoYear) {
+            console.log(`does not match ${inputLocation} ${inputYear}`);
         } else if (inputLocation == "" && inputYear == "") {
             console.log(`no location or input chosen`);
             searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);  
+        } else {
+            console.log("error");
         };
     });
+
+    function results() {
+        
+    }
     /*
     console.log(searchResultsArray);
     console.log(photos);
@@ -457,8 +462,7 @@ function sortPhotos(key, order = "asc") {
 
 function sortYear(order) {
     sortedPhotoArray = photos.sort(sortPhotos("year", order));
-    console.log(newPhotoArray);
-    document.addEventListener("load", allPhotos(newPhotoArray));
+    document.addEventListener("load", allPhotos(sortedPhotoArray));
 
     search(sortedPhotoArray);
 }
