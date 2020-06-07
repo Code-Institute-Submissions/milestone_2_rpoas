@@ -285,7 +285,7 @@ The following tools were used to test the website code and layout throughout the
 
 ### User Feedback
 
-Users tested the site on mobile phones, tablets, laptops and desktops. This highlighted a formatting issue that was not detectable using the Google Developers device toolbar. 
+Friends, family and colleagues were enlisted to test the site on mobile phones, tablets, laptops and desktops. This highlighted a formatting issue that was not detectable using the Google Developers device toolbar. 
 Gallery images were stretched on mobile screens. The max height of the container was changed to "min-content", which corrected the issue.
 
 Users tested the site using different bandwidths to ensure that the there were no significant loading time lags, particularly with the gallery and events page. 
@@ -321,14 +321,22 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 ---
 ## Credits
 
-* Gallery - Wesbos https://beginnerjavascript.com/
-
-
 ### Content
+* The text for the home page is an amalgamation of current RPOAS promotional material.
+* The "What Our Members Say" section of the website contain real testimonials from RPOAS Lanarkshire members.
+* The photo titles and descriptions displayed in the Gallery modals are taken from the RPOAS Lanarkshire Facebook page.
 
 ### Media
+* All photos are part of the RPOAS Lanarkshire collection, built up over time through member contributions.
+
+### Code
+* JS code for the Gallery modal was inspired by a tutorial from the [Wesbos Beginner Javascript Course](https://beginnerjavascript.com/). The code was edited to suit the requirements of the project.
+* The Sign Up form is an embedded [Mailchimp](https://mailchimp.com/help/add-a-signup-form-to-your-website/) form. The JS is taken directly from the website and the HTML has been adapted to meet the needs and styling of the project. 
 
 ### Acknowledgements
+* Thanks to my mentor, Jonathan Munz, for his guidance. 
+* Thanks to the Code Institute tutors for teaching me. 
+* Thanks to my dad, Henry Harper, for all his hard work for RPOAS Lanarkshire and providing me with the inspiration for this project.
 
 --------------
 
