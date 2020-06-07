@@ -291,6 +291,13 @@ Gallery images were stretched on mobile screens. The max height of the container
 Users tested the site using different bandwidths to ensure that the there were no significant loading time lags, particularly with the gallery and events page. 
 Image height/width was set to an appropriate size and file sizes were compressed in order to minimise loading time.
 
+### Problem Solving
+
+User testing was carried out throughout the project, which identified some bugs.
+* The Google Maps API increased the font-weight of all text within the same section. This was corrected by targetting text with a class list to reduce the font-weight.
+* There was initial difficulty in deploying the website through GitHub pages. This was caused due to mistakenly creating a css file rather than a CSS folder. This was corrected by removing the empty CSS file and replacing it with a CSS folder.
+* Deploying through GitHub pages also identified an issue with the paths that linked the HTML pages to the CSS and JS pages. The paths were then corrected to ensure that the website deployed fully.
+
 ---
 ## Deployment
 
