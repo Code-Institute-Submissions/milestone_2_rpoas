@@ -372,6 +372,7 @@ function results() {
 };
 
 /*------------------------------------------------------filters year selection options when location search is carried out--*/
+/*--Took inspiration from https://electrictoolbox.com/javascript-add-options-html-select/--*/
 
 function filterYear() {
     const yearSelect = document.querySelector("#photo-year");
