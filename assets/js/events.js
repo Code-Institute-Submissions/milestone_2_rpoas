@@ -109,10 +109,10 @@ function setMarkers(map) {
                 <div id="collapse${event.number}" class="collapse row" aria-labelledby="heading${event.number}" data-parent="#accordian">
                     <div class="main-text col">
                         <h4>${event.description}</h4>
-                        <h5 class="main-text">Book your place now
+                        <h4 class="main-text">Book your place now
                         <a class="main-text" href="/contact.html" target="_blank"><i class="fas fa-envelope"></i></a>
                         <a class="main-text" href="https://www.facebook.com/rpoas.lanarkshire" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                        </h5>
+                        </h4>
                         <img src="${event.photo}">
                     </div>
                 </div>

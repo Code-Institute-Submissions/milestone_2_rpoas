@@ -352,6 +352,12 @@ footer {
     border-radius: 10px;
 }
 
+.accordian i,
+.modal-contact i {
+    padding-left: 2vw;
+    padding-right: 2vw
+}
+
 /*--CONTACT PAGE--*/
 
 .center-form h2 {

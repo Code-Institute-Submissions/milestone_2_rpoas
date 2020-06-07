@@ -409,7 +409,7 @@ x Home Wireframe
 x Add Gallery of committee members
 x Hover over/Click on faces for more info
 x Call to action signup
-- change grid for photo
+x change grid for photo
 
 ### Sign Up
 x Form
@@ -429,7 +429,7 @@ x How do I show photos that don't have year/location info?
 x Style photos (hover)
 x How do I search when there's more than one location?
 - Operate Gallery with keyboard
-- Can select list be creating automatically?
+x Can select list be creating automatically?
 
 ### Events
 x change the lnglats of markers to match with towns
@@ -457,6 +457,5 @@ x How can I get the contact form to clear when send button is pressed?
 - How can the Gallery be operated by keyboard?
 - Why is banner on events page bold?
 - Why are photos taking so long to load? Starting happening after asc/desc js was fixed
-- change the main-body colour of all pages
 
 
