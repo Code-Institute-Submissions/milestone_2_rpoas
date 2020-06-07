@@ -85,6 +85,29 @@ button:hover,
     text-decoration: none;
 }
 
+/*--forms--*/
+
+.form-section {
+    border: #BAA571 1px solid;
+    border-radius: 10px;
+    margin: 3vh 1vw;
+    padding: 2vh 1vw;
+}
+
+.form-section h2 {
+    text-align: center;
+}
+
+.form-section label {
+    padding-top: 1vh;
+}
+
+.form-control {
+    margin: 0.5vh 0vw;
+    max-height: 5vh;
+    font-size: 2vh;
+}
+
 /*--HEADER STYLES--*/
 
 /*--logo--*/
@@ -190,18 +213,16 @@ footer {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3vw;
+    font-size: 3.5vw;
     background-color: rgba(0, 56, 123, 0.5);
     z-index: 2;
     text-align: center;
 }
 
-.offers .form-section {
-    margin: 2.5vh auto;
-}
+/*--about page text--*/
 
 .offers h2 {
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
     font-weight: 900;
 }
 
@@ -211,11 +232,6 @@ footer {
 
 .offers .testimonials {
     padding-top: 2vh;
-}
-
-.offers i {
-    padding-right: 0;
-    margin-right: 0;
 }
 
 .offers a {
@@ -228,32 +244,12 @@ footer {
     text-shadow: 1px 1px #BAA571;
 }
 
-.btn {
+.sign-up-btn {
     margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 
 /*--SIGN UP PAGE--*/
-
-.form-section {
-    border: #BAA571 1px solid;
-    border-radius: 10px;
-    margin: 3vh 1vw;
-    padding: 2vh 1vw;
-}
-
-.form-section h2 {
-    text-align: center;
-}
-
-.form-section label {
-    padding-top: 1vh;
-}
-
-.form-control {
-    margin: 0.5vh 0vw;
-    max-height: 5vh;
-    font-size: 2vh;
-}
 
 #mc_embed_signup button,
 .center-form button {
