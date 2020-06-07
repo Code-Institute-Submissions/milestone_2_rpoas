@@ -79,7 +79,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <select oninput="search(); filterYear();" class="form-control main-text" id="photo-location" name="photo-location">
                             <option value="">Search by Location</option>
-                            <option value="notAvailable">Location not available</option>
+                            <option value="Location not available">Location not available</option>
                             <div class="filtered-locations">
                                 <option value="aberdeen">Aberdeen</option>
                                 <option value="biggar">Biggar</option>
@@ -103,7 +103,7 @@
                         </select>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <select oninput="search();" class="form-control main-text" id="photo-year" name="photo-year" >
+                        <select oninput="search(); filterLocation();" class="form-control main-text" id="photo-year" name="photo-year" >
                             <option value="">Search by Year</option>
                             <option value="Year not available">Year not available</option>
                             <option value="1926">1926</option>

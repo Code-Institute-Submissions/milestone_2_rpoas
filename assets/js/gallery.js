@@ -101,7 +101,7 @@ const photos = [
     {
         title: "Exercise",
         src: "assets/images/gallery/exercise-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: `Do you recognise faces or location? What year was this?`,
         year: "Year not available"
     },
@@ -115,7 +115,7 @@ const photos = [
     {
         title: "Francie & Josie (1990)",
         src: "assets/images/gallery/franciejosie-1990-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: " ",
         year: 1990
     },
@@ -145,7 +145,7 @@ const photos = [
     {
         title: "Lanarkshire WPCs (1970)",
         src: "assets/images/gallery/lanarkshirewpc-1970-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: `Can you name anyone?`,
         year: 1970
     },
@@ -162,7 +162,7 @@ const photos = [
     {
         title: "Large Group Photo",
         src: "assets/images/gallery/largegroupphoto-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: " ",
         year: "Year not available"
     },
@@ -206,14 +206,14 @@ const photos = [
     {
         title: "Pipe Band (1996)",
         src: "assets/images/gallery/pipeband-1996-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: " ",
         year: 1996
     },
     {
         title: "Policeman",
         src: "assets/images/gallery/policeman-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: " ",
         year: "Year not available"
     },
@@ -239,14 +239,14 @@ const photos = [
     {
         title: "Traffic Police (1971)",
         src: "assets/images/gallery/traffic-1971-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: `AJA (left) and Jack Paterson (right) of Lanarkshire Constabulary Traffic Dept.`,
         year: 1971
     },
     {
         title: "Lanarkshire Constabulary Traffic Department (1972)",
         src: "assets/images/gallery/traffic-1972-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: "Two stalwarts of the Lanarkshire Constabulary Traffic Department, Charlie Young (left) and Willie Docherty (right).",
         year: 1972
     },
@@ -336,7 +336,7 @@ function search() {
         const photoYear = photo.year;     
         const photoHTML = `
                 <div class="col-12 col-md-3 col-lg-2 gallery-photo-container" tabindex="0">
-                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
+                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-location="${photo.location}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`;
 
         if ((inputLocation === photoLocation && inputYear == photoYear) || (inputLocation === photoLocation && inputYear == "") || (inputLocation === "" && inputYear == photoYear)) {
@@ -371,6 +371,8 @@ function results() {
     };
 };
 
+/*------------------------------------------------------filters year selection options when location search is carried out--*/
+
 function filterYear() {
     const yearSelect = document.querySelector("#photo-year");
     const galleryPhotos = document.querySelectorAll(".gallery-photo");
@@ -393,6 +395,29 @@ function filterYear() {
     })
 }
 
+/*------------------------------------------------------filters location selection options when year search is carried out--*/
+
+function filterLocation() {
+    const locationSelect = document.querySelector("#photo-location");
+    const galleryPhotos = document.querySelectorAll(".gallery-photo");
+    let array = [];
+    let i;
+
+    for (i=0; i < galleryPhotos.length; i++) {
+        let photoLocation = galleryPhotos[i].dataset.location;
+        console.log(photoLocation);
+        array.push(photoLocation);
+    }
+
+    locationSelect.options.length = 0;
+    locationSelect.options[locationSelect.options.length] = new Option("Search by Location", "");
+
+    array.forEach((location) => {
+        var option = document.createElement("option");
+        option.text = location;
+        locationSelect.add(option, locationSelect[0]);
+    })
+}
 
 /*------------------------------------------------------operates the modal--*/
 /*------------took inspiration from https://wesbos.com/beginner-javascript--*/
