@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
-/*----------------------------------------General Page Styles---*/
+/*--GENERAL PAGE STYLES--*/
+
+/*--background colours--*/
 
 body {
     background-color: #eaeaea;
@@ -9,6 +11,8 @@ body {
 .header-footer-color {
     background-image: linear-gradient(#006a94 0%, #00387b 100%);
 }
+
+/*--font colour, style, weight--*/
 
 .header-footer-text {
     color: #eaeaea;
@@ -21,6 +25,8 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
 }
+
+/*--font size--*/
 
 h1 {
     font-size: 4vh;
@@ -46,6 +52,8 @@ h6 {
     font-size: 1.2vh;
 }
 
+/*--button styling--*/
+
 button,
 .btn {
     background-image: linear-gradient(#006a94 0%, #00387b 100%);
@@ -55,6 +63,8 @@ button,
     border-radius: 10px;
     display: block;
 }
+
+/*--hover styling--*/
 
 button:hover,
 .btn:hover {
@@ -75,9 +85,9 @@ button:hover,
     text-decoration: none;
 }
 
-/*----------------------------------------Header---*/
+/*--HEADER STYLES--*/
 
-/*-------------------------------Logo---*/
+/*--logo--*/
 
 .logo {
     text-align: center;
@@ -87,6 +97,8 @@ button:hover,
     height: 25vh;
     padding: 2vh;
 }
+
+/*--navbar burger--*/
 
 .navbar-toggler {
     border: 1px solid #eaeaea;
@@ -104,7 +116,7 @@ button:hover,
     border-color: #BAA571;
 }
 
-/*-------------------------------Nav Bar---*/
+/*--navbar expanded--*/
 
 .navbar-nav {
     margin: auto;
@@ -116,7 +128,19 @@ button:hover,
     padding: 1vh 2.5vw;
 }
 
-/*----------------------------------------Main---*/
+/*--BANNER--*/
+
+.banner {
+    background-image: linear-gradient( #f7d994 0%, #BAA571 100%);
+    text-align: center;
+    padding: 1.5vh 1vw;
+}
+
+.banner h2 {
+    padding: 0vh 0vw;
+}
+
+/*--MAIN SECTION OF PAGE--*/
 
 .main {
     position: relative;
@@ -125,7 +149,7 @@ button:hover,
     overflow: scroll;
 }
 
-/*----------------------------------------Footer---*/
+/*--FOOTER--*/
 
 footer {
     position: absolute;
@@ -144,14 +168,13 @@ footer {
     font-size: 5vh;
 }
 
-/*----------------------------------------About Page---*/
+/*--ABOUT PAGE--*/
 
-.welcome-container {
-    margin-top: 2vh;
-}
+/*--committee photo--*/
 
 .committee-container {
     position: relative;
+    margin-top: 2vh;
 }
 
 .committee-photo {
@@ -167,7 +190,7 @@ footer {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2.5vw;
+    font-size: 3vw;
     background-color: rgba(0, 56, 123, 0.5);
     z-index: 2;
     text-align: center;
@@ -190,7 +213,6 @@ footer {
     padding-top: 2vh;
 }
 
-
 .offers i {
     padding-right: 0;
     margin-right: 0;
@@ -210,7 +232,7 @@ footer {
     margin-top: 4vh;
 }
 
-/*----------------------------------------Sign Up Page---*/
+/*--SIGN UP PAGE--*/
 
 .form-section {
     border: #BAA571 1px solid;
@@ -243,21 +265,7 @@ footer {
     text-align: center;
 }
 
-/*--------------------------------Banner---*/
-
-.banner {
-    background-image: linear-gradient( #f7d994 0%, #BAA571 100%);
-    text-align: center;
-    padding: 1.5vh 1vw;
-}
-
-.banner h2 {
-    padding: 0vh 0vw;
-}
-
-
-/*----------------------------------------Gallery Page---*/
-
+/*--GALLERY PAGE--*/
 
 .gallery-photo-container {
     max-height: 115px;
@@ -281,7 +289,7 @@ footer {
     text-align: center;
 }
 
-/*----------------------------------------Modal---*/
+/*--modal--*/
 
 .modal-body {
     padding: 0;
@@ -320,7 +328,7 @@ footer {
     height: 2.7vh;
 }
 
-/*----------------------------------------Events Page---*/
+/*--EVENTS PAGE--*/
 
 #photoMap {
     width: 100%;
@@ -360,7 +368,7 @@ footer {
     border-radius: 10px;
 }
 
-/*----------------------------------------Contact Page---*/
+/*--CONTACT PAGE--*/
 
 .center-form h2 {
     font-weight: bold;
@@ -382,7 +390,7 @@ footer {
     margin: 4vh 4vw;
 }
 
-/*----------------------------------------Media Queries---*/
+/*--MEDIA QUERIES--*/
 
 @media(max-width: 420px) {
     .gallery-photo-container {
