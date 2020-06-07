@@ -158,6 +158,10 @@ button:hover,
     padding: 0vh 0vw;
 }
 
+.slogan {
+    min-height: 16px;
+}
+
 /*--MAIN SECTION OF PAGE--*/
 
 .main {
@@ -326,7 +330,8 @@ footer {
     padding-left: 1.5vw;
 }
 
-.collapse img {
+.collapse img,
+.collapsing img {
     width: inherit;
 }
 
