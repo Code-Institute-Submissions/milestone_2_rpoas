@@ -131,13 +131,6 @@ function setMarkers(map) {
             eventsList.insertAdjacentElement("afterbegin", currentAccordian);
             //expands relevant event
             $(`#collapse${event.number}`).collapse("show");
-            //removes style of previously selected events
-            accordiansArray.forEach((accordian) => {
-                accordian.classList.remove("selected");
-            });
-            /*/changes style of selected event
-            currentAccordian.classList.add("selected");
-            */
         };
 
         eventsList.insertAdjacentHTML("beforeend", eventListContent);
@@ -147,21 +140,3 @@ function setMarkers(map) {
         });
     });
 };
-
-/*
-
-function clickAccordian() {
-    const accordiansArray = Array.from(document.querySelectorAll(".accordian"));
-
-    accordiansArray.forEach((accordian) => {
-        accordian.addEventListener("click", addSelected);
-    });
-
-    function addSelected() {
-        if (accordian.aria-expanded == "true") {
-            accordian.classList.remove("selected");
-        };
-    };
-};
-
-*/
