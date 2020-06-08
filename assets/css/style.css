@@ -256,6 +256,10 @@ footer {
     padding: 6px;
 }
 
+#mc_embed_signup div.response {
+    width: 100%;
+}
+
 /*--GALLERY PAGE--*/
 
 .gallery-photo-container {
