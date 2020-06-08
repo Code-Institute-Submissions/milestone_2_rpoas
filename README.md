@@ -1,7 +1,7 @@
 
 
 <h1 align="center">
-    <a href=""><img src="/assets/images/rpoasbadge.png" style="center" alt="RPOAS Logo"></a>
+    <a href="https://h4rp3rk.github.io/milestone_2_rpoas/" target="_blank"><img src="/assets/images/rpoasbadge.png" style="center" alt="RPOAS Logo"></a>
 </h1>
 
 <div align="center">
@@ -301,7 +301,7 @@ User testing was carried out throughout the project, which identified some bugs.
 * The Google Maps API increased the font-weight of all text within the same section. This was corrected by targetting text with a class list to reduce the font-weight.
 * There was initial difficulty in deploying the website through GitHub pages. This was caused due to mistakenly creating a css file rather than a CSS folder. This was corrected by removing the empty CSS file and replacing it with a CSS folder.
 * Deploying through GitHub pages also identified an issue with the paths that linked the HTML pages to the CSS and JS pages. The paths were then corrected to ensure that the website deployed fully.
-* The link to the RPOAS Lanarkshire Facebook does not work unless the user is logged into Facebook. Unfortunately, no workaround could be found for this.
+* The link to the RPOAS Lanarkshire Facebook does not work unless the user is logged into Facebook. No workaround could be found for this.
 
 ---
 ## Deployment
@@ -342,123 +342,12 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 * All photos are part of the RPOAS Lanarkshire collection, built up over time through member contributions.
 
 ### Code
-* JS code for the Gallery modal was inspired by a tutorial from the [Wesbos Beginner Javascript Course](https://beginnerjavascript.com/). The code was edited to suit the requirements of the project.
 * The Sign Up form is an embedded [Mailchimp](https://mailchimp.com/help/add-a-signup-form-to-your-website/) form. The JS is taken directly from the website and the HTML has been adapted to meet the needs and styling of the project. 
-* Several different website tutorials were used for inspiration when writing the javascript codes. All websites are credited and links provided at the appropriate sections of the javascript files.
+* JS code used to order the gallery photos by year was heavily influenced by [this tutorial](https://www.sitepoint.com/sort-an-array-of-objects-in-javascript/).
+* JS code for the Gallery modal was inspired by a tutorial from the [Wesbos Beginner Javascript Course](https://beginnerjavascript.com/). The code was edited to suit the requirements of the project.
+* Several other website tutorials were used for inspiration when writing the javascript codes. All websites are credited and links provided at the appropriate sections of the javascript files.
 
 ### Acknowledgements
 * Thanks to my mentor, Jonathan Munz, for his guidance. 
 * Thanks to the Code Institute tutors for teaching me. 
 * Thanks to my dad, Henry Harper, for all his hard work for RPOAS Lanarkshire and providing me with the inspiration for this project.
-
---------------
-
-# MY NOTES/REMINDERS. NOT PART OF FINAL README
-
-## Milestone Project 2 Marking criteria
-
-Project purpose: Presentation of interactive data
-In this project, you'll build an interactive front-end site. The site should respond to the users' actions, 
-allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals.
-
-Value provided:
-Users are able to interact with the site in their particular way, to achieve their personal goals and derive answers to their specific questions.
-The site owner advances their own goals by providing this functionality, potentially by being a regular user themselves.
-
-Mandatory Requirements
-A project violating any of these requirements will FAIL
-
-1. Dynamic Front End Project: Write custom JavaScript, HTML and CSS code to create a front-end web application consisting of one or more HTML pages with significant interactive functionality.
-2. Site Responses: Use JavaScript to have the site produce relevant responses dependent on users' actions.
-3. Information Architecture: Incorporate a main navigation menu (unless irrelevant) and structured layout (you might want to use Bootstrap to accomplish this).
-4. Documentation: Write a README.md file for your project that explains what the project does and the value that it provides to its users.
-5. Version Control: Use Git & GitHub for version control.
-6. Attribution: Maintain clear separation between code written by you and code from external sources (e.g. libraries or tutorials). Attribute any code from external sources to its source via comments above the code and (for larger dependencies) in the README.
-7. Deployment: Deploy the final version of your code to a hosting platform such as GitHub Pages.
-
-Usability and Visual Impact:
-* Project Purpose
-* UX design
-* Suitability for purpose
-* Navigation
-* Ease of use
-* Information Architecture
-* Defensive Design
-Layout and Visual Impact:
-* Responsive Design
-* Image Presentation
-* Colour scheme and typography
-Code Quality:
-* Appropriate use of HTML
-* Appropriate use of CSS
-* Appropriate use of JavaScript
-* Appropriate use of JavaScript APIs
-Software Development practices:
-* Directory Structure and File Naming
-* Version control
-* Testing implementation
-* Testing write-up
-* Readme file
-* Comments
-* Deployment implementation
-* Deployment write-up
-
-## To Do
-### Readme
-x Fix links to wireframes
-x Home Wireframe
-
-### Home Page
-x Add Gallery of committee members
-x Hover over/Click on faces for more info
-x Call to action signup
-x change grid for photo
-
-### Sign Up
-x Form
-x Link to database (Mailchimp?)
-x Paypal link?
-
-### Gallery
-x Style modal
-x Fix bug, no results message clear with each new search 
-x search by location
-x search by year
-x search by location and year at same time
-x clear search results with each form submit
-x fix modal to work with search function
-x Order by asc/desc year
-x How do I show photos that don't have year/location info?
-x Style photos (hover)
-x How do I search when there's more than one location?
-- Operate Gallery with keyboard
-x Can select list be creating automatically?
-
-### Events
-x change the lnglats of markers to match with towns
-x add events
-x expand events list when marker clicked
-x don't delete info window content when another is clicked
-x close infowindow when another is clicked
-x style accordians
-
-
-### Contact
-x Form
-x link to dad's email
-x Add button to upload photos
-x Fix bug that won't include attachments on emails (can't do without paying emailjs subscription)
-x Clear form once email is sent
-x Expand free text section
-- Fit footer to bottom when success message is displayed
-
-## Problems/Questions
-x How do I link contact form with Mailchimp?
-x Why are there red crosses next to some of my github pushes?
-x How do I connect file upload to contact form? (can't do with paying emailjs subscription)
-x How can I get the contact form to clear when send button is pressed?
-- How can the Gallery be operated by keyboard?
-- Why is banner on events page bold?
-- Why are photos taking so long to load? Starting happening after asc/desc js was fixed
-
-
