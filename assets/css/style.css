@@ -253,6 +253,7 @@ footer {
 .center-form button {
     margin: 1vh auto;
     font-size: 3vh;
+    padding: 6px;
 }
 
 /*--GALLERY PAGE--*/
