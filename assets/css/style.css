@@ -108,6 +108,12 @@ button:hover,
     font-size: 2vh;
 }
 
+.center-form h2 {
+    font-weight: bold;
+    padding: 0;
+    margin: 15px 0;
+}
+
 /*--HEADER STYLES--*/
 
 /*--logo--*/
@@ -214,17 +220,13 @@ footer {
 
 /*--about page text--*/
 
-.offers h2 {
-    margin-bottom: 1vh;
-    font-weight: 900;
+.no-margins {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .offers h4 {
     padding: 1vh 2vw;
-}
-
-.offers .testimonials {
-    padding-top: 2vh;
 }
 
 .offers a {
@@ -365,12 +367,6 @@ footer {
 }
 
 /*--CONTACT PAGE--*/
-
-.center-form h2 {
-    font-weight: bold;
-    padding: 0;
-    margin: 15px 0;
-}
 
 .email-message {
     margin-top: 2vh;
