@@ -76,11 +76,17 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col">
+                        <button class="page-refresh" name="page-refresh" onclick="window.location.reload(true);" type="button">Clear Search Results</button>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-12 col-md-6 col-lg-4">
                         <select oninput="search(); filterYear();" class="form-control main-text" id="photo-location" name="photo-location">
                             <option value="">Search by Location</option>
                             <option value="Location not available">Location not available</option>
                             <div class="filtered-locations">
+                            <!--
                                 <option value="aberdeen">Aberdeen</option>
                                 <option value="biggar">Biggar</option>
                                 <option value="bishopbriggs">Bishopbriggs</option>
@@ -99,11 +105,13 @@
                                 <option value="tulliallan">Tulliallan</option>
                                 <option value="uddingston">Uddingston</option>
                                 <option value="wishaw">Wishaw</option>
+                            -->
                             </div>
                         </select>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <select oninput="search(); filterLocation();" class="form-control main-text" id="photo-year" name="photo-year" >
+                            <!--
                             <option value="">Search by Year</option>
                             <option value="Year not available">Year not available</option>
                             <option value="1926">1926</option>
@@ -132,6 +140,7 @@
                             <option value="1996">1996</option>
                             <option value="1997">1997</option>
                             <option value="1999">1999</option>
+                            -->
                         </select>
                     </div>                 
                     <div class="col-12 col-md-6 col-lg-4">
@@ -140,11 +149,6 @@
                             <option value="asc">Ascending</option>
                             <option value="desc">Descending</option>
                         </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <button class="page-refresh" name="page-refresh" onclick="window.location.reload(true);" type="button">Refresh Search</button>
                     </div>
                 </div>
             </form>

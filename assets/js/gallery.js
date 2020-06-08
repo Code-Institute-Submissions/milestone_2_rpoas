@@ -306,14 +306,16 @@ const locationOption = document.querySelector(".filtered-locations");
 
 /*------------------------------------------------------display all photos--*/
 
-function allPhotos(array) {
+function allPhotos() {
     photos.forEach((photo) => {
         searchResultsContainer.insertAdjacentHTML("beforeend", `
             <div class="col-12 col-md-3 col-lg-2 gallery-photo-container" tabindex="0">
-                <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-toggle="modal" data-target="#galleryModal">
+                <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-location="${photo.location}" data-toggle="modal" data-target="#galleryModal">
             </div>`);
     });
     results();
+    filterYear();
+    filterLocation();
     const gallery = Modal(document.querySelector(".search-results-container"));
 }
 
@@ -357,7 +359,6 @@ function search() {
 
 /*------------------------------------------------------shows number of photos in search result--*/
 
-
 function results() {
     const numberImages = Array.from(searchResultsContainer.querySelectorAll("img"));
     const comment = document.querySelector(".results-comment");
@@ -382,14 +383,18 @@ function filterYear() {
 
     for (i=0; i < galleryPhotos.length; i++) {
         let photoYear = galleryPhotos[i].dataset.year;
-        console.log(photoYear);
         array.push(photoYear);
     }
+
+    let sortedArray = array.filter((year, index) => {
+        return array.indexOf(year) === index;
+    });
+    sortedArray.sort();
 
     yearSelect.options.length = 0;
     yearSelect.options[yearSelect.options.length] = new Option("Search by Year", "");
 
-    array.forEach((year) => {
+    sortedArray.forEach((year) => {
         var option = document.createElement("option");
         option.text = year;
         yearSelect.add(option, yearSelect[0]);
@@ -409,11 +414,16 @@ function filterLocation() {
         console.log(photoLocation);
         array.push(photoLocation);
     }
+    
+    let sortedArray = array.filter((location, index) => {
+        return array.indexOf(location) === index;
+    });
+    sortedArray.sort();
 
     locationSelect.options.length = 0;
     locationSelect.options[locationSelect.options.length] = new Option("Search by Location", "");
 
-    array.forEach((location) => {
+    sortedArray.forEach((location) => {
         var option = document.createElement("option");
         option.text = location;
         locationSelect.add(option, locationSelect[0]);

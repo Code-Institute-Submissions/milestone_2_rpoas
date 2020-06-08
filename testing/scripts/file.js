@@ -101,9 +101,9 @@ const photos = [
     {
         title: "Exercise",
         src: "assets/images/gallery/exercise-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: `Do you recognise faces or location? What year was this?`,
-        year: "notAvailable"
+        year: "Year not available"
     },
     {
         title: "Motherwell & Wishaw Burgh Police Football Team (1948)",
@@ -115,7 +115,7 @@ const photos = [
     {
         title: "Francie & Josie (1990)",
         src: "assets/images/gallery/franciejosie-1990-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: " ",
         year: 1990
     },
@@ -124,7 +124,7 @@ const photos = [
         src: "assets/images/gallery/hamiltonsheriffcourt-bagpipes-min.jpg",
         location: "Hamilton",
         caption: `Motherwell & Wishaw Police Pipe Band outside Hamilton Sheriff Court. Do you know what year this was taken?`,
-        year: "notAvailable"
+        year: "Year not available"
     },
     {
         title: "Lanarkshire HQ (1941)",
@@ -145,7 +145,7 @@ const photos = [
     {
         title: "Lanarkshire WPCs (1970)",
         src: "assets/images/gallery/lanarkshirewpc-1970-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: `Can you name anyone?`,
         year: 1970
     },
@@ -162,9 +162,9 @@ const photos = [
     {
         title: "Large Group Photo",
         src: "assets/images/gallery/largegroupphoto-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: " ",
-        year: "notAvailable"
+        year: "Year not available"
     },
     {
         title: "Nelson Mandela Visits Glasgow (1993)",
@@ -206,16 +206,16 @@ const photos = [
     {
         title: "Pipe Band (1996)",
         src: "assets/images/gallery/pipeband-1996-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: " ",
         year: 1996
     },
     {
         title: "Policeman",
         src: "assets/images/gallery/policeman-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: " ",
-        year: "notAvailable"
+        year: "Year not available"
     },
     {
         title: "Strathaven Gala Day (1997)",
@@ -239,14 +239,14 @@ const photos = [
     {
         title: "Traffic Police (1971)",
         src: "assets/images/gallery/traffic-1971-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: `AJA (left) and Jack Paterson (right) of Lanarkshire Constabulary Traffic Dept.`,
         year: 1971
     },
     {
         title: "Lanarkshire Constabulary Traffic Department (1972)",
         src: "assets/images/gallery/traffic-1972-min.jpg",
-        location: "notAvailable",
+        location: "Location not available",
         caption: "Two stalwarts of the Lanarkshire Constabulary Traffic Department, Charlie Young (left) and Willie Docherty (right).",
         year: 1972
     },
@@ -302,20 +302,20 @@ const photos = [
 ];
 
 const searchResultsContainer = document.querySelector(".search-results-container");
-const yearOption = document.querySelector(".filtered-years");
 const locationOption = document.querySelector(".filtered-locations");
 
 /*------------------------------------------------------display all photos--*/
 
-function allPhotos(array) {
+function allPhotos() {
     photos.forEach((photo) => {
         searchResultsContainer.insertAdjacentHTML("beforeend", `
             <div class="col-12 col-md-3 col-lg-2 gallery-photo-container" tabindex="0">
                 <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-toggle="modal" data-target="#galleryModal">
             </div>`);
     });
+    results();
     const gallery = Modal(document.querySelector(".search-results-container"));
-};
+}
 
 document.addEventListener("load", allPhotos());
 
@@ -328,55 +328,104 @@ function search() {
     const inputLocation = document.querySelector("#photo-location").value.toLowerCase();
     const inputYear = document.querySelector("#photo-year").value;
     const noResults = document.querySelector(".no-results");
-    let searchResultsArray = [];
 
     searchResultsContainer.innerHTML = "";
-    noResults.innerHTML = "";
 
     photos.forEach((photo) => {
         const photoLocation = photo.location.toLowerCase();
         const photoYear = photo.year;     
         const photoHTML = `
                 <div class="col-12 col-md-3 col-lg-2 gallery-photo-container" tabindex="0">
-                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
+                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-location="${photo.location}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`;
 
-        if ((inputLocation == photoLocation && inputYear == photoYear) || (inputLocation == photoLocation && inputYear == "") || (inputLocation == "" && inputYear == photoYear)) {
+        if ((inputLocation === photoLocation && inputYear == photoYear) || (inputLocation === photoLocation && inputYear == "") || (inputLocation === "" && inputYear == photoYear)) {
             console.log(photo);
             searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);
-        } else if (!inputLocation == photoLocation && !inputYear == photoYear) {
-            console.log(`no results for ${inputLocation} ${inputYear}`);
-            noResults.innerHTML = `no results for ${inputLocation} ${inputYear}`;
         } else if (inputLocation == "" && inputYear == "") {
             console.log(`no location or input chosen`);
             searchResultsContainer.insertAdjacentHTML("beforeend", photoHTML);  
-        };
+        } else if (inputLocation !== photoLocation && inputYear !== photoYear) {
+            console.log(`does not match ${inputLocation} ${inputYear}`);
+        } else {
+            console.log("error");
+        }
     });
-    /*
-    console.log(searchResultsArray);
-    console.log(photos);
-    photos.forEach((photo) => {
-        console.log(newArray.title);
-    });
-    */
+    results();
     const gallery = Modal(document.querySelector(".search-results-container"));
-};
-/*
-function yearSearch() {
-    const searchResults = Array.from(searchResultsContainer.querySelectorAll("img"));
+}
 
-    searchResults.forEach((searchResult) => {
-        yearOption.innerHTML = `
-        <option value="${searchResult.year}">${searchResult.year}</option>`
-    });
+/*------------------------------------------------------shows number of photos in search result--*/
+
+
+function results() {
+    const numberImages = Array.from(searchResultsContainer.querySelectorAll("img"));
+    const comment = document.querySelector(".results-comment");
+
+    if ((numberImages.length > 1) || (numberImages.length == 0)) {
+        comment.innerHTML = `
+        <h2 class="main-text">Showing ${numberImages.length} photos</h2>`;
+    } else if (numberImages.length == 1) {
+        comment.innerHTML = `
+        <h2 class="main-text">Showing ${numberImages.length} photo</h2>`;
+    };
 };
+
+/*------------------------------------------------------filters year selection options when location search is carried out--*/
+/*--Took inspiration from https://electrictoolbox.com/javascript-add-options-html-select/--*/
+
+function filterYear() {
+    const yearSelect = document.querySelector("#photo-year");
+    const galleryPhotos = document.querySelectorAll(".gallery-photo");
+    let array = [];
+    let i;
+
+    for (i=0; i < galleryPhotos.length; i++) {
+        let photoYear = galleryPhotos[i].dataset.year;
+        console.log(photoYear);
+        array.push(photoYear);
+    }
+
+    yearSelect.options.length = 0;
+    yearSelect.options[yearSelect.options.length] = new Option("Search by Year", "");
+
+    array.forEach((year) => {
+        var option = document.createElement("option");
+        option.text = year;
+        yearSelect.add(option, yearSelect[0]);
+    })
+}
+
+/*------------------------------------------------------filters location selection options when year search is carried out--*/
+
+function filterLocation() {
+    const locationSelect = document.querySelector("#photo-location");
+    const galleryPhotos = document.querySelectorAll(".gallery-photo");
+    let array = [];
+    let i;
+
+    for (i=0; i < galleryPhotos.length; i++) {
+        let photoLocation = galleryPhotos[i].dataset.location;
+        console.log(photoLocation);
+        array.push(photoLocation);
+    }
+
+    locationSelect.options.length = 0;
+    locationSelect.options[locationSelect.options.length] = new Option("Search by Location", "");
+
+    array.forEach((location) => {
+        var option = document.createElement("option");
+        option.text = location;
+        locationSelect.add(option, locationSelect[0]);
+    })
+}
 
 /*------------------------------------------------------operates the modal--*/
 /*------------took inspiration from https://wesbos.com/beginner-javascript--*/
 
 function Modal(searchResultsContainer) {
     const images = Array.from(searchResultsContainer.querySelectorAll("img"));
-    const body = document.querySelector("body")
+    const body = document.querySelector("body");
     const modal = document.querySelector(".modal");
     const prevButton = modal.querySelector(".previous");
     const nextButton = modal.querySelector(".next");
@@ -457,8 +506,7 @@ function sortPhotos(key, order = "asc") {
 
 function sortYear(order) {
     sortedPhotoArray = photos.sort(sortPhotos("year", order));
-    console.log(newPhotoArray);
-    document.addEventListener("load", allPhotos(newPhotoArray));
+    document.addEventListener("load", allPhotos(sortedPhotoArray));
 
     search(sortedPhotoArray);
 }
