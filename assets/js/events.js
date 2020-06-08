@@ -72,7 +72,7 @@ function initMap() {
         center: {lat: 55.8617792, lng: -3.7054024}
     });
     setMarkers(map);
-};
+}
 
 function setMarkers(map) {
     const eventsList = document.querySelector(".events-list");
@@ -131,7 +131,7 @@ function setMarkers(map) {
             eventsList.insertAdjacentElement("afterbegin", currentAccordian);
             //expands relevant event
             $(`#collapse${event.number}`).collapse("show");
-        };
+        }
 
         eventsList.insertAdjacentHTML("beforeend", eventListContent);
         marker.addListener("click", filter);
@@ -139,4 +139,4 @@ function setMarkers(map) {
             infoWindow.close();
         });
     });
-};
+}

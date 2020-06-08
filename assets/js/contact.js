@@ -9,11 +9,11 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log('SUCCESS!', response);
-            centerForm.innerHTML = `<h1 class="email-message">Thanks for your email ${contactForm.fullName.value}. We'll be in touch soon.<br><i class="far fa-thumbs-up"></i></h1>`
+            centerForm.innerHTML = `<h1 class="email-message">Thanks for your email ${contactForm.fullName.value}. We'll be in touch soon.<br><i class="far fa-thumbs-up"></i></h1>`;
         }, 
         function(error) {
             console.log('FAILED...', error);
-            centerForm.innerHTML = `<h1 class="email-message">Sorry ${contactForm.fullName.value}. There's seems to be a problem. Please try to send the email again</h1>`
+            centerForm.innerHTML = `<h1 class="email-message">Sorry ${contactForm.fullName.value}. There's seems to be a problem. Please try to send the email again</h1>`;
         });
     return false;
 }

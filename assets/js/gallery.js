@@ -310,7 +310,7 @@ function allPhotos() {
     photos.forEach((photo) => {
         searchResultsContainer.insertAdjacentHTML("beforeend", `
             <div class="col-12 col-md-3 col-lg-2 gallery-photo-container" tabindex="0">
-                <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-location="${photo.location}" data-toggle="modal" data-target="#galleryModal">
+                <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-location="${photo.location}" alt="${photo.title}" data-toggle="modal" data-target="#galleryModal">
             </div>`);
     });
     results();
@@ -338,7 +338,7 @@ function search() {
         const photoYear = photo.year;     
         const photoHTML = `
                 <div class="col-12 col-md-3 col-lg-2 gallery-photo-container" tabindex="0">
-                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-location="${photo.location}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
+                    <img class="gallery-photo" src="${photo.src}" alt="${photo.title}" data-caption="${photo.caption}" data-year="${photo.year}" data-location="${photo.location}" alt="${photo.title}" data-toggle="modal" data-target="#galleryModal" tabindex="0">
                 </div>`;
 
         if ((inputLocation === photoLocation && inputYear == photoYear) || (inputLocation === photoLocation && inputYear == "") || (inputLocation === "" && inputYear == photoYear)) {
@@ -369,8 +369,8 @@ function results() {
     } else if (numberImages.length == 1) {
         comment.innerHTML = `
         <h2 class="main-text">Showing ${numberImages.length} photo</h2>`;
-    };
-};
+    }
+}
 
 /*------------------------------------------------------filters year selection options when location search is carried out--*/
 /*--Took inspiration from https://electrictoolbox.com/javascript-add-options-html-select/--*/
@@ -398,7 +398,7 @@ function filterYear() {
         var option = document.createElement("option");
         option.text = year;
         yearSelect.add(option, yearSelect[0]);
-    })
+    });
 }
 
 /*------------------------------------------------------filters location selection options when year search is carried out--*/
@@ -427,7 +427,7 @@ function filterLocation() {
         var option = document.createElement("option");
         option.text = location;
         locationSelect.add(option, locationSelect[0]);
-    })
+    });
 }
 
 /*------------------------------------------------------operates the modal--*/

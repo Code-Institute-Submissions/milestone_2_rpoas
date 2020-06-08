@@ -183,8 +183,9 @@ The following tools were used to test the website code and layout throughout the
 * [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) - used throughout the project to resolve layout issues with web pages.
 * [Contrast Ratio](https://contrast-ratio.com/) - used to ensure that colours meet readability guidelines.
 * [Optimizilla](https://imagecompressor.com/) - used to compress image file sizes to improve loading speed.
-* [W3C Markup Validation](https://developers.google.com/web/tools/chrome-devtools/) - used to validate HTML code.
+* [W3C Markup Validation](https://validator.w3.org/) - used to validate HTML code.
 * [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) - used to validate CSS code.
+* [JS Hint](https://jshint.com/) - used to validate JS code
 
 ### User Testing
 
