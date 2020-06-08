@@ -301,6 +301,7 @@ User testing was carried out throughout the project, which identified some bugs.
 * The Google Maps API increased the font-weight of all text within the same section. This was corrected by targetting text with a class list to reduce the font-weight.
 * There was initial difficulty in deploying the website through GitHub pages. This was caused due to mistakenly creating a css file rather than a CSS folder. This was corrected by removing the empty CSS file and replacing it with a CSS folder.
 * Deploying through GitHub pages also identified an issue with the paths that linked the HTML pages to the CSS and JS pages. The paths were then corrected to ensure that the website deployed fully.
+* The link to the RPOAS Lanarkshire Facebook does not work unless the user is logged into Facebook. Unfortunately, no workaround could be found for this.
 
 ---
 ## Deployment
@@ -343,6 +344,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 ### Code
 * JS code for the Gallery modal was inspired by a tutorial from the [Wesbos Beginner Javascript Course](https://beginnerjavascript.com/). The code was edited to suit the requirements of the project.
 * The Sign Up form is an embedded [Mailchimp](https://mailchimp.com/help/add-a-signup-form-to-your-website/) form. The JS is taken directly from the website and the HTML has been adapted to meet the needs and styling of the project. 
+* Several different website tutorials were used for inspiration when writing the javascript codes. All websites are credited and links provided at the appropriate sections of the javascript files.
 
 ### Acknowledgements
 * Thanks to my mentor, Jonathan Munz, for his guidance. 
