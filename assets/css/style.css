@@ -158,10 +158,6 @@ button:hover,
     padding: 0vh 0vw;
 }
 
-.slogan {
-    min-height: 16px;
-}
-
 /*--MAIN SECTION OF PAGE--*/
 
 .main {
@@ -211,7 +207,7 @@ footer {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3.5vw;
+    font-size: 3vw;
     background-color: rgba(0, 56, 123, 0.5);
     z-index: 2;
 }
@@ -247,6 +243,11 @@ footer {
 }
 
 /*--SIGN UP PAGE--*/
+
+#mc_embed_signup form {
+    padding: 0;
+    margin: 0;
+}
 
 #mc_embed_signup button,
 .center-form button {
@@ -382,10 +383,15 @@ footer {
 /*--MEDIA QUERIES--*/
 
 @media(max-width: 420px) {
+    
     .gallery-photo-container {
         margin: 0;
         padding: 0;
         max-height: min-content;
+    }
+
+    .welcome-text {
+        font-size: 4vw;
     }
 
     .committee-photo {
